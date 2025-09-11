@@ -1,20 +1,53 @@
 <html>
-  <head>
-    <title>Market Watch</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-     img {
-       display: block;
-       margin-left: auto;
-       margin-right: auto;
-     }
-    </style>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-  </head>
-  <body>
-    <img src="img/vector/default.svg" alt="Market Watch" style="width:50%;" />
-  </body>
+<head>
+  <title>Market Watch</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      text-align: center;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 50%;
+    }
+    .pill {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.6rem 1.2rem;
+      border-radius: 9999px;
+      background: #1e293b;
+      color: #fff;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(30,41,59,0.5); }
+      50% { box-shadow: 0 0 0 12px rgba(30,41,59,0); }
+    }
+    /* 📱 Mobile adjustments */
+    @media (max-width: 640px) {
+      img {
+        width: 100%;
+        max-width: none;
+      }
+      .pill {
+        font-size: 0.7rem;
+        padding: 0.4rem 0.8rem;
+      }
+    }
+  </style>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+<img src="img/vector/default.svg" alt="Market Watch"/>
+<div class="pill">Coming Soon</div>
+</body>
 </html>
