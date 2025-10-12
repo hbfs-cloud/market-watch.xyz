@@ -13,7 +13,7 @@
     <meta property="og:title" content="MarketWatch AI — Sharia-friendly trading, multilingual briefs, transparent track record">
     <meta property="og:description" content="Protect capital with long-only, Sharia-compliant strategies backed by audio briefs, annotated setups, and auditable performance dashboards in English, Français, العربية, Español, 中文.">
     <meta property="og:url" content="https://ai.market-watch.xyz/">
-    <meta property="og:image" content="https://ai.market-watch.xyz/images/hero-trader.jpg">
+    <meta property="og:image" content="images/hero-trader.jpg">
     <meta property="og:locale" content="en_US">
     <meta property="og:locale:alternate" content="fr_FR">
     <meta property="og:locale:alternate" content="ar_SA">
@@ -22,7 +22,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="MarketWatch AI — Sharia-friendly trading companion">
     <meta name="twitter:description" content="Multilingual audio briefs, annotated setups, capital-preserving strategies, and an auditable model portfolio across US, European, and Asian markets.">
-    <meta name="twitter:image" content="https://ai.market-watch.xyz/images/hero-trader.jpg">
+    <meta name="twitter:image" content="images/hero-trader.jpg">
     <link rel="canonical" href="https://ai.market-watch.xyz/">
     <link rel="alternate" hreflang="en" href="./?lang=en">
     <link rel="alternate" hreflang="x-default" href="./?lang=en">
@@ -45,20 +45,19 @@
 <body>
     <header class="nav">
         <div class="container nav__inner">
-            <div class="nav__brand">
-                <img src="logo.svg" alt="MarketWatch AI" class="nav__logo" width="36" height="36">
-                <span class="nav__title">MarketWatch AI</span>
+            <div class="nav__brand" aria-label="MarketWatch AI">
+                <img src="logo.svg" alt="" class="nav__logo" width="36" height="36" aria-hidden="true">
+                <span class="nav__title" aria-hidden="true">MarketWatch AI</span>
             </div>
             <nav class="nav__links">
                 <a href="#languages" data-i18n="nav.overview">Overview</a>
-                <a href="#education" data-i18n="nav.education">Education</a>
-                <a href="#visuals" data-i18n="nav.setups">Setups</a>
-                <a href="#workflows" data-i18n="nav.workflows">Workflows</a>
+                <a href="#visuals" data-i18n="nav.gallery">A+ Desk</a>
+                <a href="#discipline" data-i18n="nav.discipline">Discipline</a>
+                <a href="#stack" data-i18n="nav.stack">Stack</a>
             </nav>
             <div class="nav__lang" data-i18n-attr-aria-label="nav.languageLabel">
                 <label class="visually-hidden" for="site-language" data-i18n="nav.languageLabel">Language</label>
                 <div class="lang-select-wrapper">
-                    <span class="lang-select__icon" aria-hidden="true">🌐</span>
                     <select id="site-language" class="lang-select" data-role="lang-select" aria-label="Language" data-i18n-attr-aria-label="nav.languageLabel">
                         <option value="en" data-i18n="lang.option.en">🇺🇸 English (EN)</option>
                         <option value="fr" data-i18n="lang.option.fr">🇫🇷 Français (FR)</option>
@@ -66,36 +65,46 @@
                         <option value="es" data-i18n="lang.option.es">🇪🇸 Español (ES)</option>
                         <option value="zh" data-i18n="lang.option.zh">🇨🇳 中文 (ZH)</option>
                     </select>
+                    <span class="lang-current" data-role="lang-current" aria-hidden="true">🇺🇸</span>
                 </div>
-                <span class="lang-hint" data-role="lang-hint"></span>
             </div>
             <a class="button button--ghost" href="https://ai.market-watch.xyz" target="_blank" rel="noopener" data-i18n="nav.launch">Launch App</a>
         </div>
     </header>
 
+    <div class="toast toast--language" data-role="lang-toast" hidden>
+        <div class="toast__body">
+            <i class="ri-translate-2" aria-hidden="true"></i>
+            <span data-role="lang-toast-message"></span>
+            <button type="button" class="toast__close" data-role="lang-toast-close" data-i18n-attr-aria-label="langHint.dismiss">
+                <i class="ri-close-line" aria-hidden="true"></i>
+            </button>
+        </div>
+    </div>
+
     <main>
         <section class="hero">
             <div class="container hero__inner">
                 <div class="hero__copy">
-                    <span class="pill" data-i18n="hero.pill">Education-first beta — free while seats last</span>
-                    <h1 data-i18n="hero.heading">Learn the setup, then trade it with conviction.</h1>
-                    <p data-i18n="hero.body">MarketWatch AI delivers multilingual audio briefs, annotated trade plans, and beginner/intermediate/expert coaching for long-only, Sharia-friendly equities across the US, Europe, and Asia — with capital preservation first and transparent performance tracking.</p>
+                    <span class="pill" data-i18n="hero.pill">A+ setups only — elite detection lab</span>
+                    <h1 data-i18n="hero.heading">Institutional-grade detection for decisive retail trades.</h1>
+                    <p data-i18n="hero.body">MarketWatch AI fuses multi-signal scanners (order flow, liquidity, options, blockchain) with human validation, multilingual coaching, and Sharia-compliant discipline so retail desks catch bottoms, breakouts, and reversals before the crowd.</p>
                     <div class="hero__badges">
-                        <span class="hero-badge" data-i18n="hero.badgeSharia"><i class="ri-mosque-line" aria-hidden="true"></i> Certified Sharia-friendly, long-only strategies</span>
-                        <span class="hero-badge" data-i18n="hero.badgeAlerts"><i class="ri-flashlight-line" aria-hidden="true"></i> Clear trigger/cancel rules with success/failure receipts on web &amp; Discord</span>
-                        <span class="hero-badge" data-i18n="hero.badgeRisk"><i class="ri-shield-keyhole-line" aria-hidden="true"></i> Live risk dashboards: max drawdown, equity curve, risk ratios</span>
+                        <span class="hero-badge" data-i18n="hero.badgeSharia"><i class="ri-mosque-line" aria-hidden="true"></i> Certified Sharia-friendly setups validated by human analysts</span>
+                        <span class="hero-badge" data-i18n="hero.badgeAlerts"><i class="ri-flashlight-line" aria-hidden="true"></i> A+ alerts only: trigger/cancel rules with order-flow &amp; sentiment confluence</span>
+                        <span class="hero-badge" data-i18n="hero.badgeRisk"><i class="ri-shield-keyhole-line" aria-hidden="true"></i> Risk dashboards: max drawdown, live equity curve, iterative review loops</span>
                     </div>
                     <div class="hero__cta">
                         <a class="button" href="https://ai.market-watch.xyz" target="_blank" rel="noopener" data-i18n="hero.ctaPrimary">Start free beta</a>
                         <a class="button button--ghost" href="https://discord.gg/73NSYJA2" target="_blank" rel="noopener"><i class="ri-discord-line"></i> <span data-i18n="hero.ctaDiscord">Join the Discord</span></a>
                     </div>
                     <ul class="hero__highlights">
-                        <li><i class="ri-mic-line"></i> <span data-i18n="hero.highlight1">Audio + text morning briefs in English, Français, العربية, Español, 中文</span></li>
-                        <li><i class="ri-line-chart-line"></i> <span data-i18n="hero.highlight2">Setup gallery with crystal-clear charts and narrated walkthroughs</span></li>
-                        <li><i class="ri-graduation-cap-line"></i> <span data-i18n="hero.highlight3">Beginner · Intermediate · Expert tiers that explain every decision</span></li>
-                        <li><i class="ri-mental-health-line"></i> <span data-i18n="hero.highlight4">Capital preservation first — we stand aside when the edge isn’t there</span></li>
-                        <li><i class="ri-bar-chart-2-line"></i> <span data-i18n="hero.highlight5">Transparent track record and member-auditable model portfolio</span></li>
-                        <li><i class="ri-robot-2-line"></i> <span data-i18n="hero.highlight6">Web app &amp; Discord log every alert with success/failure proof plus ChatGPT, Claude, Gemini connectors</span></li>
+                        <li><i class="ri-brain-line"></i> <span data-i18n="hero.highlight1">Multi-signal detectors (order flow, liquidity, sentiment, blockchain) flag bottoms early</span></li>
+                        <li><i class="ri-line-chart-line"></i> <span data-i18n="hero.highlight2">A+ alert desk &mdash; few signals, deeply annotated, Sharia-compliant entries and exits</span></li>
+                        <li><i class="ri-team-line"></i> <span data-i18n="hero.highlight3">Collaborative desks by symbol keep you accountable&mdash;never trade alone again</span></li>
+                        <li><i class="ri-focus-2-line"></i> <span data-i18n="hero.highlight4">Focus tools: Pomodoro timers, custom audio cues, anti-FOMO and revenge-trade checklists</span></li>
+                        <li><i class="ri-bar-chart-2-line"></i> <span data-i18n="hero.highlight5">Portfolio dashboards, watchlist rankings, and never-deleted Discord receipts</span></li>
+                        <li><i class="ri-robot-2-line"></i> <span data-i18n="hero.highlight6">Automation ready: Pine watchlists, MCP/API/webhooks, Interactive Brokers routing</span></li>
                     </ul>
                 </div>
                 <div class="hero__visual">
@@ -123,7 +132,50 @@
                             </article>
                         </div>
                     </div>
-                    <img class="hero__photo" src="images/hero-trader.jpg" alt="Active trader monitoring charts" loading="lazy">
+                    <div class="watchlist-card" aria-label="Watchlist A+" data-i18n-attr-aria-label="watchlist.title">
+                        <div class="watchlist-card__header">
+                            <div>
+                                <span class="watchlist-card__title" data-i18n="watchlist.title">A+ watchlist — US session</span>
+                                <p class="watchlist-card__filters" data-i18n="watchlist.filters">Filters: Breakout &middot; Sharia &middot; High volume</p>
+                            </div>
+                            <span class="watchlist-card__badge" data-i18n="watchlist.updated">Updated 2m ago</span>
+                        </div>
+                        <ul class="watchlist-card__list">
+                            <li>
+                                <div>
+                                    <strong>NVDA</strong>
+                                    <span class="watchlist-card__name" data-i18n="watchlist.nvda">Nvidia Corp</span>
+                                </div>
+                                <div class="watchlist-card__meta">
+                                    <span class="watchlist-tag watchlist-tag--alpha" data-i18n="watchlist.alpha">Alpha 9.6</span>
+                                    <span class="watchlist-tag">Breakout</span>
+                                    <span class="watchlist-tag">Flow</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <strong>HIMS</strong>
+                                    <span class="watchlist-card__name" data-i18n="watchlist.hims">Hims &amp; Hers</span>
+                                </div>
+                                <div class="watchlist-card__meta">
+                                    <span class="watchlist-tag watchlist-tag--beta" data-i18n="watchlist.beta">Detect 5 days</span>
+                                    <span class="watchlist-tag">Sentiment</span>
+                                    <span class="watchlist-tag">Sharia</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <strong>TSLA</strong>
+                                    <span class="watchlist-card__name" data-i18n="watchlist.tsla">Tesla Inc</span>
+                                </div>
+                                <div class="watchlist-card__meta">
+                                    <span class="watchlist-tag watchlist-tag--gamma" data-i18n="watchlist.gamma">Options skew</span>
+                                    <span class="watchlist-tag">Macro</span>
+                                    <span class="watchlist-tag">Volatile</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
@@ -171,13 +223,16 @@
                     </ul>
                 </div>
                 <aside class="education__card">
+                    <figure class="education__media">
+                        <img src="images/chart-room.jpg" alt="Analysts monitoring market data" loading="lazy" width="420" height="240">
+                    </figure>
                     <h3 data-i18n="education.dataTitle">Realtime market data we watch for you</h3>
                     <ul class="education-data">
-                        <li data-i18n="education.dataPoint1">Prices, volumes, liquidity heatmaps, and tape imbalances updated live.</li>
-                        <li data-i18n="education.dataPoint2">Economic calendar, earnings breaks, options flow, and implied volatility shifts.</li>
-                        <li data-i18n="education.dataPoint3">News wires, SEC filings, corporate actions, and regulatory headlines.</li>
-                        <li data-i18n="education.dataPoint4">Volatility gauges (VIX), inter-market correlations, and seasonal patterns.</li>
-                        <li data-i18n="education.dataPoint5">Cross-asset context from FX majors, crude oil, gold, and macro sentiment.</li>
+                        <li><i class="ri-bar-chart-2-line"></i> <span data-i18n="education.dataPoint1">Depth-of-book, liquidity heatmaps, volume profile, and tape imbalances update in realtime.</span></li>
+                        <li><i class="ri-swap-box-line"></i> <span data-i18n="education.dataPoint2">Options flow, dark pools, insider transactions, and blockchain whale trackers highlight smart money.</span></li>
+                        <li><i class="ri-calendar-event-line"></i> <span data-i18n="education.dataPoint3">Economic calendars, earnings, M&amp;A/OPA pipelines, and sector rotation radar keep context fresh.</span></li>
+                        <li><i class="ri-news-line"></i> <span data-i18n="education.dataPoint4">News wires, SEC filings, dilution/warrant alerts, and historical share float analysis.</span></li>
+                        <li><i class="ri-node-tree"></i> <span data-i18n="education.dataPoint5">Cross-asset correlations across FX, energy, metals, rates, and social sentiment monitors.</span></li>
                     </ul>
                 </aside>
             </div>
@@ -209,55 +264,65 @@
         <section id="usecases" class="section">
             <div class="container">
                 <h2 data-i18n="usecases.title">Real-world workflows you can launch on day one</h2>
-                <div class="usecase-grid">
-                    <article class="usecase-card">
-                        <header>
-                            <span class="usecase-icon"><i class="ri-sun-foggy-line"></i></span>
-                            <h3 data-i18n="usecases.premarket.title">Pre-market routine</h3>
-                        </header>
-                        <p data-i18n="usecases.premarket.body">Build a morning brief in under a minute. AI summarises overnight flows, catalysts, and top movers while you add notes from your research or favourite Discord.</p>
-                        <ul>
-                            <li data-i18n="usecases.premarket.point1">Auto-ingest news, filings, and sentiment shifts</li>
-                            <li data-i18n="usecases.premarket.point2">Beginner, intermediate, and expert tiers for clarity</li>
-                            <li data-i18n="usecases.premarket.point3">Share instantly to Discord, ChatGPT, or Claude connectors</li>
-                        </ul>
-                    </article>
-                    <article class="usecase-card">
-                        <header>
-                            <span class="usecase-icon"><i class="ri-stock-line"></i></span>
-                            <h3 data-i18n="usecases.intraday.title">Intraday execution</h3>
-                        </header>
-                        <p data-i18n="usecases.intraday.body">See scanners fire with entries, stops, RR, and narrative attached. Log partials, request deeper AI analysis, and keep track of conviction without leaving the workspace.</p>
-                        <ul>
-                            <li data-i18n="usecases.intraday.point1">Realtime alerts across equities, crypto, and FX</li>
-                            <li data-i18n="usecases.intraday.point2">Custom risk rules per ticker or strategy</li>
-                            <li data-i18n="usecases.intraday.point3">Send “what changed?” follow-ups to your AI assistant</li>
-                        </ul>
-                    </article>
-                    <article class="usecase-card">
-                        <header>
-                            <span class="usecase-icon"><i class="ri-moon-clear-line"></i></span>
-                            <h3 data-i18n="usecases.after.title">After-hours recap</h3>
-                        </header>
-                        <p data-i18n="usecases.after.body">Wrap the day with a clean recap. Tag wins and lessons, update the equity curve, and push a summary to your Discord community or AI chat of choice.</p>
-                        <ul>
-                            <li data-i18n="usecases.after.point1">Automatic win/loss tagging and equity tracking</li>
-                            <li data-i18n="usecases.after.point2">Attach charts, notes, and due diligence for future you</li>
-                            <li data-i18n="usecases.after.point3">Deliver via Discord, ChatGPT actions, or Claude tools</li>
-                        </ul>
-                    </article>
-                    <article class="usecase-card">
-                        <header>
-                            <span class="usecase-icon"><i class="ri-shield-check-line"></i></span>
-                            <h3 data-i18n="usecases.risk.title">Risk &amp; money management</h3>
-                        </header>
-                        <p data-i18n="usecases.risk.body">Run disciplined sizing with live guardrails. Every alert records the risk budget, what changed on exit, and feeds the shared drawdown and equity dashboards.</p>
-                        <ul>
-                            <li data-i18n="usecases.risk.point1">Max drawdown and equity curve tracking updated in real time.</li>
-                            <li data-i18n="usecases.risk.point2">Risk ratio / R-multiple analytics per alert and aggregated portfolios.</li>
-                            <li data-i18n="usecases.risk.point3">Custom position sizing rules with automatic pause triggers when limits are hit.</li>
-                        </ul>
-                    </article>
+                <div class="workflow-shell">
+                    <button type="button" class="workflow-arrow workflow-arrow--prev" data-role="workflow-prev" data-i18n-attr-aria-label="usecases.prev">
+                        <i class="ri-arrow-left-s-line" aria-hidden="true"></i>
+                        <span class="visually-hidden" data-i18n="usecases.prev">Previous workflow</span>
+                    </button>
+                    <div class="workflow-track" data-role="workflow-track" role="list">
+                        <article class="usecase-card" role="listitem">
+                            <header>
+                                <span class="usecase-icon"><i class="ri-sun-foggy-line"></i></span>
+                                <h3 data-i18n="usecases.premarket.title">Pre-market routine</h3>
+                            </header>
+                            <p data-i18n="usecases.premarket.body">Build a morning brief in under a minute. AI summarises overnight flows, catalysts, and top movers while you add notes from your research or favourite Discord.</p>
+                            <ul>
+                                <li data-i18n="usecases.premarket.point1">Auto-ingest news, filings, and sentiment shifts</li>
+                                <li data-i18n="usecases.premarket.point2">Beginner, intermediate, and expert tiers for clarity</li>
+                                <li data-i18n="usecases.premarket.point3">Share instantly to Discord, ChatGPT, or Claude connectors</li>
+                            </ul>
+                        </article>
+                        <article class="usecase-card" role="listitem">
+                            <header>
+                                <span class="usecase-icon"><i class="ri-stock-line"></i></span>
+                                <h3 data-i18n="usecases.intraday.title">Intraday execution</h3>
+                            </header>
+                            <p data-i18n="usecases.intraday.body">See scanners fire with entries, stops, RR, and narrative attached. Log partials, request deeper AI analysis, and keep track of conviction without leaving the workspace.</p>
+                            <ul>
+                                <li data-i18n="usecases.intraday.point1">Realtime alerts across equities, crypto, and FX</li>
+                                <li data-i18n="usecases.intraday.point2">Custom risk rules per ticker or strategy</li>
+                                <li data-i18n="usecases.intraday.point3">Send “what changed?” follow-ups to your AI assistant</li>
+                            </ul>
+                        </article>
+                        <article class="usecase-card" role="listitem">
+                            <header>
+                                <span class="usecase-icon"><i class="ri-moon-clear-line"></i></span>
+                                <h3 data-i18n="usecases.after.title">After-hours recap</h3>
+                            </header>
+                            <p data-i18n="usecases.after.body">Wrap the day with a clean recap. Tag wins and lessons, update the equity curve, and push a summary to your Discord community or AI chat of choice.</p>
+                            <ul>
+                                <li data-i18n="usecases.after.point1">Automatic win/loss tagging and equity tracking</li>
+                                <li data-i18n="usecases.after.point2">Attach charts, notes, and due diligence for future you</li>
+                                <li data-i18n="usecases.after.point3">Deliver via Discord, ChatGPT actions, or Claude tools</li>
+                            </ul>
+                        </article>
+                        <article class="usecase-card" role="listitem">
+                            <header>
+                                <span class="usecase-icon"><i class="ri-shield-check-line"></i></span>
+                                <h3 data-i18n="usecases.risk.title">Risk &amp; money management</h3>
+                            </header>
+                            <p data-i18n="usecases.risk.body">Run disciplined sizing with live guardrails. Every alert records the risk budget, what changed on exit, and feeds the shared drawdown and equity dashboards.</p>
+                            <ul>
+                                <li data-i18n="usecases.risk.point1">Max drawdown and equity curve tracking updated in real time.</li>
+                                <li data-i18n="usecases.risk.point2">Risk ratio / R-multiple analytics per alert and aggregated portfolios.</li>
+                                <li data-i18n="usecases.risk.point3">Custom position sizing rules with automatic pause triggers when limits are hit.</li>
+                            </ul>
+                        </article>
+                    </div>
+                    <button type="button" class="workflow-arrow workflow-arrow--next" data-role="workflow-next" data-i18n-attr-aria-label="usecases.next">
+                        <i class="ri-arrow-right-s-line" aria-hidden="true"></i>
+                        <span class="visually-hidden" data-i18n="usecases.next">Next workflow</span>
+                    </button>
                 </div>
             </div>
         </section>
@@ -265,55 +330,92 @@
         <section id="visuals" class="section visuals">
             <div class="container visuals__inner">
                 <div class="visuals__copy">
-                    <h2 data-i18n="visuals.title">Use-case gallery with annotated setups</h2>
-                    <p class="lead" data-i18n="visuals.lead">Preview breakout, pullback, and macro trend ideas complete with overlays, narration, and education cues before you place a trade.</p>
+                    <h2 data-i18n="visuals.title">Actionable gallery: alerts, watchlists, portfolio control</h2>
+                    <p class="lead" data-i18n="visuals.lead">Swipe through real examples of our bottom and breakout detectors, Pine-powered watchlists, and portfolio tracking dashboards so you know exactly what A+ looks like.</p>
                     <ul class="visuals-list">
-                        <li><i class="ri-line-chart-line"></i> <span data-i18n="visuals.point1">Auto-generated charts map entry, stop, and target bands with risk math</span></li>
-                        <li><i class="ri-lightbulb-flash-line"></i> <span data-i18n="visuals.point2">AI narration highlights catalysts and macro context in your language</span></li>
-                        <li><i class="ri-group-line"></i> <span data-i18n="visuals.point3">Share each setup instantly via Discord threads or AI chat actions</span></li>
+                        <li><i class="ri-flashlight-line"></i> <span data-i18n="visuals.point1">Alert receipts include trigger, invalidate, size map, and order-book snapshots</span></li>
+                        <li><i class="ri-list-check"></i> <span data-i18n="visuals.point2">Watchlists stack Pine script filters with dynamic tags (union / intersect / subtract)</span></li>
+                        <li><i class="ri-bar-chart-grouped-line"></i> <span data-i18n="visuals.point3">Portfolio dashboards track equity curve, credit counter, and review cadence</span></li>
                     </ul>
                 </div>
-                <div class="gallery-grid gallery-grid--setups">
-                    <figure class="gallery-card gallery-card--setup">
-                        <img src="images/setup-breakout.svg" alt="Annotated breakout setup chart" loading="lazy" width="420" height="220">
-                        <figcaption>
-                            <span class="gallery-card__tier" data-i18n="visuals.tier.beginner">Beginner track</span>
-                            <h3 data-i18n="visuals.card1.title">Opening range breakout</h3>
-                            <p data-i18n="visuals.card1.body">A clean momentum push with pre-defined entry, stop, targets, and risk math narrated in beginner language to reinforce the playbook.</p>
-                            <ul class="gallery-card__list">
-                                <li data-i18n="visuals.card1.point1">Chart overlays highlight entry, stop, and reward-to-risk zones.</li>
-                                <li data-i18n="visuals.card1.point2">Audio recap in five languages clarifies the thesis in 60 seconds.</li>
-                                <li data-i18n="visuals.card1.point3">Education cue explains why we only take the long in Sharia-friendly fashion.</li>
-                            </ul>
-                        </figcaption>
-                    </figure>
-                    <figure class="gallery-card gallery-card--setup">
-                        <img src="images/setup-pullback.svg" alt="Pullback continuation setup chart" loading="lazy" width="420" height="220">
-                        <figcaption>
-                            <span class="gallery-card__tier" data-i18n="visuals.tier.intermediate">Intermediate track</span>
-                            <h3 data-i18n="visuals.card2.title">Trend pullback continuation</h3>
-                            <p data-i18n="visuals.card2.body">Structured pullback on an EU growth name with confluence between VWAP, liquidity, and catalyst timeline for intermediate traders.</p>
-                            <ul class="gallery-card__list">
-                                <li data-i18n="visuals.card2.point1">Narrated walkthrough covers structure, volume profile, and catalyst.</li>
-                                <li data-i18n="visuals.card2.point2">Auto-annotated heatmap shows where scaling in keeps risk contained.</li>
-                                <li data-i18n="visuals.card2.point3">Long-only reminder keeps the play compliant for Sharia mandates.</li>
-                            </ul>
-                        </figcaption>
-                    </figure>
-                    <figure class="gallery-card gallery-card--setup">
-                        <img src="images/setup-macro.svg" alt="Macro trend setup chart" loading="lazy" width="420" height="220">
-                        <figcaption>
-                            <span class="gallery-card__tier" data-i18n="visuals.tier.expert">Expert track</span>
-                            <h3 data-i18n="visuals.card3.title">Macro trend alignment</h3>
-                            <p data-i18n="visuals.card3.body">Asia-listed leader aligned with macro breadth, sector rotation, and credit conditions—complete with diligence links for expert desks.</p>
-                            <ul class="gallery-card__list">
-                                <li data-i18n="visuals.card3.point1">Multi-timeframe overlay exposes regime shifts and risk bands.</li>
-                                <li data-i18n="visuals.card3.point2">Audio analyst note summarises macro, flows, and catalysts.</li>
-                                <li data-i18n="visuals.card3.point3">Checklist badges show education milestones completed by your team.</li>
-                            </ul>
-                        </figcaption>
-                    </figure>
+                <div class="gallery-shell">
+                    <button type="button" class="gallery-arrow gallery-arrow--prev" data-role="gallery-prev" data-i18n-attr-aria-label="visuals.prev">
+                        <i class="ri-arrow-left-s-line" aria-hidden="true"></i>
+                        <span class="visually-hidden" data-i18n="visuals.prev">Previous card</span>
+                    </button>
+                    <div class="gallery-track" data-role="gallery-track" role="list">
+                        <figure class="gallery-card gallery-card--setup" role="listitem">
+                            <img src="images/setup-breakout.svg" alt="Actionable alert card highlighting an exhaustion reversal" loading="lazy" width="420" height="220">
+                            <figcaption>
+                                <span class="gallery-card__tier" data-i18n="visuals.tier.beginner">A+ alert example</span>
+                                <h3 data-i18n="visuals.card1.title">Exhaustion reversal alert</h3>
+                                <p data-i18n="visuals.card1.body">Our bottom detector blends order flow, sentiment, liquidity pivots, and macro catalysts; human analysts sign off before the alert routes to live desks.</p>
+                                <ul class="gallery-card__list">
+                                    <li data-i18n="visuals.card1.point1">Order book, options flow, and insider tape snapshots justify the trigger in plain language.</li>
+                                    <li data-i18n="visuals.card1.point2">Entry/stop/target ladder plus risk-per-share math keep position sizing disciplined.</li>
+                                    <li data-i18n="visuals.card1.point3">Post-trade receipts log outcome, edits, and review notes; nothing gets deleted.</li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                        <figure class="gallery-card gallery-card--setup" role="listitem">
+                            <img src="images/setup-pullback.svg" alt="Watchlist workspace with Pine filters and dynamic tags" loading="lazy" width="420" height="220">
+                            <figcaption>
+                                <span class="gallery-card__tier" data-i18n="visuals.tier.intermediate">Watchlist workspace</span>
+                                <h3 data-i18n="visuals.card2.title">Dynamic watchlist builder</h3>
+                                <p data-i18n="visuals.card2.body">Design profile rules with Pine script, sentiment scores, and credit filters, then rank candidates with detected_days, catalysts, and playbook fit.</p>
+                                <ul class="gallery-card__list">
+                                    <li data-i18n="visuals.card2.point1">Combine tags like breakout, volatile, dilution, buyout, and Sharia-compliant with union/intersect/subtract.</li>
+                                    <li data-i18n="visuals.card2.point2">Feature snapshots explain why each ticker scored: volume surge, insider moves, options skew.</li>
+                                    <li data-i18n="visuals.card2.point3">One-click broadcast to Discord symbol channels, MCP agent, API, or outbound webhooks.</li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                        <figure class="gallery-card gallery-card--setup" role="listitem">
+                            <img src="images/setup-macro.svg" alt="Portfolio accountability dashboard with equity curve and review cadence" loading="lazy" width="420" height="220">
+                            <figcaption>
+                                <span class="gallery-card__tier" data-i18n="visuals.tier.expert">Portfolio oversight</span>
+                                <h3 data-i18n="visuals.card3.title">Accountability dashboard</h3>
+                                <p data-i18n="visuals.card3.body">Equity curve, drawdown, credit usage, and review cadence live in one board so every alert outcome feeds an iterative improvement loop.</p>
+                                <ul class="gallery-card__list">
+                                    <li data-i18n="visuals.card3.point1">Portfolio tiles show planned vs realised trades, risk buckets, and credit counter health.</li>
+                                    <li data-i18n="visuals.card3.point2">Focus timers, mood check-ins, and anti-FOMO prompts keep the desk disciplined.</li>
+                                    <li data-i18n="visuals.card3.point3">LLM automations can stage conditional orders to Interactive Brokers or webhook targets once review is complete.</li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <button type="button" class="gallery-arrow gallery-arrow--next" data-role="gallery-next" data-i18n-attr-aria-label="visuals.next">
+                        <i class="ri-arrow-right-s-line" aria-hidden="true"></i>
+                        <span class="visually-hidden" data-i18n="visuals.next">Next card</span>
+                    </button>
                 </div>
+            </div>
+        </section>
+
+        <section id="discipline" class="section discipline">
+            <div class="container discipline__inner">
+                <div class="discipline__copy">
+                    <h2 data-i18n="discipline.title">Never trade alone again</h2>
+                    <p class="lead" data-i18n="discipline.lead">Our desks combine pro-grade detection with human coaching so retail traders stay calm, avoid FOMO, and press only the A+ setups that pass our risk and mood checks.</p>
+                    <ul class="discipline-list">
+                        <li><i class="ri-user-voice-line"></i> <span data-i18n="discipline.point1">Accountability threads, channel leads, and post-trade debriefs keep FOMO and revenge trades out of the plan.</span></li>
+                        <li><i class="ri-timer-line"></i> <span data-i18n="discipline.point2">Focus blocks, Pomodoro timers, and emotion check-ins align execution with the checklist.</span></li>
+                        <li><i class="ri-stock-line"></i> <span data-i18n="discipline.point3">Retail agility lets us rotate beyond ETF-level returns—no institutional mandate to stay in low-beta baskets.</span></li>
+                        <li><i class="ri-shield-check-line"></i> <span data-i18n="discipline.point4">Shared diligence, watchlist vetting, and stop-honouring culture mean A+ setups remain the only setups we take.</span></li>
+                    </ul>
+                </div>
+                <aside class="discipline__card">
+                    <figure class="discipline__media">
+                        <img src="images/mobile-trader.jpg" alt="Traders collaborating during session" loading="lazy" width="420" height="260">
+                    </figure>
+                    <h3 data-i18n="discipline.card.title">Classic traps we neutralise daily</h3>
+                    <ul class="discipline-card__list">
+                        <li data-i18n="discipline.trap1"><strong>FOMO gap-chasing</strong> — throttled by pre-trade checklist, credit counter, and peer review.</li>
+                        <li data-i18n="discipline.trap2"><strong>Emotional averaging down</strong> — alerts auto-cancel when invalidated; journal prompts force a reset.</li>
+                        <li data-i18n="discipline.trap3"><strong>Solo tunnel vision</strong> — symbol channels, global desk calls, and mood polls surface blind spots instantly.</li>
+                        <li data-i18n="discipline.trap4"><strong>Over-exposure</strong> — portfolio heatmaps and Islamic finance screens keep sizing honest.</li>
+                    </ul>
+                </aside>
             </div>
         </section>
 
@@ -325,60 +427,113 @@
                         <span class="timeline__time">09:31</span>
                         <div class="timeline__body">
                             <h3 data-i18n="workflows.scalp.title">Scalp window discipline</h3>
-                            <p data-i18n="workflows.scalp.body">Map the opening drive with pre-planned levels, circuit-breaker stops, and capital-preservation rules. If the tape isn’t clean, the call is to do nothing.</p>
+                            <p data-i18n="workflows.scalp.body">Multi-signal detectors call the open: liquidity pivots, imbalance ladders, and emotion checks decide whether to strike or stand aside.</p>
                         </div>
                     </div>
                     <div class="timeline__item">
                         <span class="timeline__time">11:45</span>
                         <div class="timeline__body">
                             <h3 data-i18n="workflows.day.title">Intraday momentum checks</h3>
-                            <p data-i18n="workflows.day.body">Monitor conviction meters, request AI recaps, and adjust watchlists as liquidity rotates. Trade only the setups that still align with plan and risk budget.</p>
+                            <p data-i18n="workflows.day.body">Conviction meters digest options flow, insider prints, and blockchain data; watchlists auto-update while the team calibrates risk live.</p>
                         </div>
                     </div>
                     <div class="timeline__item">
                         <span class="timeline__time">15:30</span>
                         <div class="timeline__body">
                             <h3 data-i18n="workflows.swing.title">Swing staging</h3>
-                            <p data-i18n="workflows.swing.body">Review swing candidates, log partials, and sync notes to the shared model portfolio. Education cues remind you why the thesis still stands—or whether to stand down.</p>
+                            <p data-i18n="workflows.swing.body">Swing reviews stitch together due diligence, Pine tags, and Catalyst timelines while peers challenge the thesis before size increases.</p>
                         </div>
                     </div>
                     <div class="timeline__item">
                         <span class="timeline__time" data-i18n="workflows.long.time">Weekly</span>
                         <div class="timeline__body">
                             <h3 data-i18n="workflows.long.title">Long-term portfolio audit</h3>
-                            <p data-i18n="workflows.long.body">Publish the performance log, stress-test exposure, and keep dry powder when macro regimes turn. Every member can audit the track record and model allocations.</p>
+                            <p data-i18n="workflows.long.body">Weekly audits replay trades, update backtests, and publish adjustments. Every outcome feeds the A+ database so the system keeps improving.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <section id="stack" class="section stack">
+            <div class="container">
+                <h2 data-i18n="stack.title">Detection stack, automation, and reliability</h2>
+                <p class="lead" data-i18n="stack.lead">We blend quantitative signal detection, human validation, and enterprise-grade delivery so every alert is rare, transparent, and ready for action.</p>
+                <div class="grid grid--three stack__grid">
+                    <article class="card stack-card">
+                        <h3 data-i18n="stack.detect.title">Advanced detection lab</h3>
+                        <ul class="stack-card__list">
+                            <li data-i18n="stack.detect.point1">Multi-timeframe scanners align order flow, options, insider flow, blockchain data, and sentiment to catch setups early.</li>
+                            <li data-i18n="stack.detect.point2">Profile rules and Pine script filters craft watchlists with union/intersect/subtract logic plus feature snapshots.</li>
+                            <li data-i18n="stack.detect.point3">Human desk vets dilution, warrants, float history, and Sharia compliance before an alert is published.</li>
+                        </ul>
+                    </article>
+                    <article class="card stack-card">
+                        <h3 data-i18n="stack.auto.title">Automation pipeline</h3>
+                        <ul class="stack-card__list">
+                            <li data-i18n="stack.auto.point1">LLM copilots draft conditional orders for the day or week and push to Interactive Brokers, MCP agents, or webhook destinations.</li>
+                            <li data-i18n="stack.auto.point2">OAuth-secured API lets you plug MarketWatch AI into custom dashboards, Zapier-style automations, or prop-style risk checks.</li>
+                            <li data-i18n="stack.auto.point3">Custom alert filters, Pomodoro focus modes, and audio cues surface only the setups your team is cleared to trade.</li>
+                        </ul>
+                    </article>
+                    <article class="card stack-card">
+                        <h3 data-i18n="stack.trust.title">Transparency &amp; reliability</h3>
+                        <ul class="stack-card__list">
+                            <li data-i18n="stack.trust.point1">Backtests, equity curves, max drawdown, and credit usage dashboards ship with every program.</li>
+                            <li data-i18n="stack.trust.point2">Discord archives by symbol and global floor never delete messages—every update is auditable.</li>
+                            <li data-i18n="stack.trust.point3">24/7 monitoring, SLA reporting, and a dedicated engineering team keep connectors healthy.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
         <section id="community" class="section section--alt community">
             <div class="container">
-                <h2 data-i18n="community.title">Voices from the community</h2>
-                <p class="lead" data-i18n="community.lead">Thousands of traders rely on MarketWatch AI to stay disciplined. Here are a few snapshots from recent beta feedback.</p>
-                <div class="profile-grid">
-                    <article class="profile-card">
-                        <img src="images/hero-trader.jpg" alt="Retail trader focusing on screens" loading="lazy">
-                        <div class="profile-card__body">
-                            <h3 data-i18n="community.case1.name">Alex — Madrid</h3>
-                            <p data-i18n="community.case1.quote">“Switching the interface to Español and piping alerts into Discord made my swing routine 10x smoother.”</p>
+                <h2 data-i18n="community.title">Discord floors built for accountability</h2>
+                <p class="lead" data-i18n="community.lead">A global floor for market mood, symbol-specific war rooms, and immutable transcripts mean you never tackle the market solo.</p>
+                <div class="community__layout">
+                    <aside class="community__visual" aria-hidden="true">
+                        <div class="community__header">
+                            <span>#</span>
+                            <span data-i18n="community.channels">channels</span>
                         </div>
-                    </article>
-                    <article class="profile-card">
-                        <img src="images/analyst-smile.jpg" alt="Woman analysing markets" loading="lazy">
-                        <div class="profile-card__body">
-                            <h3 data-i18n="community.case2.name">Leïla — Paris</h3>
-                            <p data-i18n="community.case2.quote">“French briefs plus AI diligence let me share ideas in seconds. The risk stats keep me honest on sizing.”</p>
+                        <ul class="community__channels">
+                            <li><span class="dot dot--general"></span>General</li>
+                            <li><span class="dot dot--macro"></span>Macro</li>
+                            <li><span class="dot dot--crypto"></span>Crypto</li>
+                            <li><span class="dot dot--equity"></span>AAPL</li>
+                            <li><span class="dot dot--equity"></span>TSLA</li>
+                            <li><span class="dot dot--equity"></span>NVDA</li>
+                            <li><span class="dot dot--equity"></span>FREEMIUM-ideas</li>
+                        </ul>
+                        <div class="community__preview">
+                            <p data-i18n="community.preview">Pinned receipts, risk notes, and follow-ups stay searchable forever.</p>
                         </div>
-                    </article>
-                    <article class="profile-card">
-                        <img src="images/mobile-trader.jpg" alt="Trader celebrating a win" loading="lazy">
-                        <div class="profile-card__body">
-                            <h3 data-i18n="community.case3.name">Wei — Singapore</h3>
-                            <p data-i18n="community.case3.quote">“中文 alerts with Asia session coverage mean I never miss setups between Tokyo and NY.”</p>
-                        </div>
-                    </article>
+                    </aside>
+                    <div class="profile-grid">
+                        <article class="profile-card">
+                            <img src="images/hero-trader.jpg" alt="Retail trader focusing on screens" loading="lazy">
+                            <div class="profile-card__body">
+                                <h3 data-i18n="community.case1.name">Global floor updates</h3>
+                                <p data-i18n="community.case1.quote">Morning briefs, macro radar, and credit scoreboard sit in the global floor so the whole desk sees the same plan.</p>
+                            </div>
+                        </article>
+                        <article class="profile-card">
+                            <img src="images/analyst-smile.jpg" alt="Woman analysing markets" loading="lazy">
+                            <div class="profile-card__body">
+                                <h3 data-i18n="community.case2.name">Symbol war rooms</h3>
+                                <p data-i18n="community.case2.quote">Each ticker owns a thread with watchlist evidence, entries, exits, and follow-ups pinned—nothing disappears.</p>
+                            </div>
+                        </article>
+                        <article class="profile-card">
+                            <img src="images/mobile-trader.jpg" alt="Trader celebrating a win" loading="lazy">
+                            <div class="profile-card__body">
+                                <h3 data-i18n="community.case3.name">Transparency by design</h3>
+                                <p data-i18n="community.case3.quote">We never delete messages. Outcomes, edits, and recaps stay searchable so compliance and teammates can audit everything.</p>
+                            </div>
+                        </article>
+                    </div>
                 </div>
             </div>
         </section>
@@ -390,20 +545,20 @@
                     <article class="card card--accent">
                         <i class="ri-discord-line card__icon"></i>
                         <h3 data-i18n="distribution.discord.title">Discord broadcast</h3>
-                        <p data-i18n-html="distribution.discord.body">Actionable alerts with clear activation and cancel conditions, briefs, and signal updates stream into our <strong>Discord community</strong>. Enable notifications to catch entries, exits, follow-ups, and audit every signal—success or failure—with screenshots and orderflow receipts.</p>
-                        <p class="link-note" data-i18n="distribution.discord.note">Request access from inside MarketWatch AI once your account is live.</p>
+                        <p data-i18n-html="distribution.discord.body">Actionable alerts with activation/cancel rules stream into our <strong>Discord floors</strong>: global macro rooms plus symbol-specific threads. Receipts, screenshots, and outcomes stay pinned forever for compliance and coaching.</p>
+                        <p class="link-note" data-i18n="distribution.discord.note">Request access inside MarketWatch AI; we map you to desks, credit limits, and review cadence automatically.</p>
                     </article>
                     <article class="card card--accent">
                         <i class="ri-window-line card__icon"></i>
                         <h3 data-i18n="distribution.web.title">Web workspace</h3>
-                        <p data-i18n-html="distribution.web.body">Collaborate at <strong>ai.market-watch.xyz</strong>. Manage watchlists, approve alerts, inspect success/failure proofs of execution, and review transparent performance logs without juggling PDFs or spreadsheets.</p>
+                        <p data-i18n-html="distribution.web.body">Work from <strong>ai.market-watch.xyz</strong>. Build Pine-powered watchlists, approve A+ alerts, review backtests, and audit portfolio dashboards without juggling PDFs or spreadsheets.</p>
                         <a class="link" href="https://ai.market-watch.xyz" target="_blank" rel="noopener" data-i18n="distribution.web.link">Launch web app</a>
                     </article>
                     <article class="card card--accent">
                         <i class="ri-robot-line card__icon"></i>
                         <h3 data-i18n="distribution.ai.title">ChatGPT &amp; Claude connectors</h3>
-                        <p data-i18n="distribution.ai.body">Trigger MarketWatch AI actions from ChatGPT, Claude, or Gemini to pull briefs, alerts, or due diligence without leaving the chat window.</p>
-                        <a class="link" href="#cta" data-i18n="distribution.ai.link">Enable connectors</a>
+                        <p data-i18n="distribution.ai.body">Call MarketWatch AI from ChatGPT, Claude, Gemini, MCP agents, or your API client to pull briefs, due diligence, or push conditional orders via webhooks.</p>
+                        <a class="link" href="#cta" data-i18n="distribution.ai.link">Enable connectors &amp; API</a>
                     </article>
                 </div>
             </div>
@@ -460,14 +615,16 @@
                     <p class="cta__note" data-i18n="cta.note">Beta access is free. Select risk dashboards and automation tools will move to a lightweight subscription when we exit beta—founding accounts keep preferential pricing.</p>
                 </div>
                 <form class="waitlist-form" data-role="waitlist-form" novalidate>
-                    <div class="waitlist-field waitlist-field--single">
-                        <label class="visually-hidden" for="waitlist-name" data-i18n="waitlist.nameLabel">Full name</label>
-                        <input type="text" id="waitlist-name" name="name" required autocomplete="name" data-i18n-placeholder="waitlist.namePlaceholder" placeholder="Jane Doe">
-                    </div>
-                    <div class="waitlist-field waitlist-field--inline">
-                        <label class="visually-hidden" for="waitlist-email" data-i18n="waitlist.label">Email address</label>
-                        <input type="email" id="waitlist-email" name="email" required autocomplete="email" data-i18n-placeholder="waitlist.placeholder" placeholder="you@example.com">
-                        <button type="submit" class="button" data-role="waitlist-submit" data-i18n="waitlist.submit">Join the waitlist</button>
+                    <div class="waitlist-grid">
+                        <div class="waitlist-field">
+                            <label class="visually-hidden" for="waitlist-name" data-i18n="waitlist.nameLabel">Full name</label>
+                            <input type="text" id="waitlist-name" name="name" required autocomplete="name" data-i18n-placeholder="waitlist.namePlaceholder" placeholder="Jane Doe">
+                        </div>
+                        <div class="waitlist-field">
+                            <label class="visually-hidden" for="waitlist-email" data-i18n="waitlist.label">Email address</label>
+                            <input type="email" id="waitlist-email" name="email" required autocomplete="email" data-i18n-placeholder="waitlist.placeholder" placeholder="you@example.com">
+                        </div>
+                        <button type="submit" class="button waitlist-submit" data-role="waitlist-submit" data-i18n="waitlist.submit">Join the waitlist</button>
                     </div>
                     <p class="waitlist-status" data-role="waitlist-status" aria-live="polite"></p>
                 </form>
@@ -483,9 +640,18 @@
             </div>
             <p data-i18n-html="footer.copy">&copy; <span id="year"></span> MarketWatch AI. Built for traders who move fast.</p>
             <div class="footer__links">
-                <a href="https://stocktwits.com/marketwatchx" target="_blank" rel="noopener" data-i18n="footer.stocktwits">Stocktwits</a>
-                <a href="https://twitter.com/marketwatchxyz" target="_blank" rel="noopener" data-i18n="footer.x">X</a>
-                <a href="https://www.youtube.com/@MarketWatchXYZ" target="_blank" rel="noopener" data-i18n="footer.youtube">YouTube</a>
+                <a class="footer__icon-link" href="https://stocktwits.com/marketwatchx" target="_blank" rel="noopener">
+                    <img src="images/icon-stocktwits.svg" alt="" width="20" height="20" aria-hidden="true">
+                    <span class="visually-hidden" data-i18n="footer.stocktwits">Stocktwits</span>
+                </a>
+                <a class="footer__icon-link" href="https://twitter.com/marketwatchxyz" target="_blank" rel="noopener">
+                    <i class="ri-twitter-x-line" aria-hidden="true"></i>
+                    <span class="visually-hidden" data-i18n="footer.x">X</span>
+                </a>
+                <a class="footer__icon-link" href="https://www.youtube.com/@MarketWatchXYZ" target="_blank" rel="noopener">
+                    <i class="ri-youtube-fill" aria-hidden="true"></i>
+                    <span class="visually-hidden" data-i18n="footer.youtube">YouTube</span>
+                </a>
             </div>
         </div>
     </footer>
@@ -499,6 +665,9 @@
                     'nav.overview': 'Overview',
                     'nav.education': 'Education',
                     'nav.setups': 'Setups',
+                    'nav.gallery': 'A+ Desk',
+                    'nav.discipline': 'Discipline',
+                    'nav.stack': 'Stack',
                     'nav.workflows': 'Workflows',
                     'nav.launch': 'Launch App',
                     'nav.languageLabel': 'Language',
@@ -508,23 +677,24 @@
                     'lang.option.ar': '🇸🇦 العربية (AR)',
                     'lang.option.es': '🇪🇸 Español (ES)',
                     'lang.option.zh': '🇨🇳 中文 (ZH)',
-                    'hero.pill': 'Education-first beta — free while seats last',
-                    'hero.heading': 'Learn the setup, then trade it with conviction.',
-                    'hero.body': 'MarketWatch AI delivers multilingual audio briefs, annotated trade plans, and beginner/intermediate/expert coaching for long-only, Sharia-friendly equities across the US, Europe, and Asia — with capital preservation first and transparent performance tracking.',
+                    'hero.pill': 'A+ setups only — elite detection lab',
+                    'hero.heading': 'Institutional-grade detection for decisive retail trades.',
+                    'hero.body': 'MarketWatch AI fuses multi-signal scanners (order flow, liquidity, options, blockchain) with human validation, multilingual coaching, and Sharia-compliant discipline so retail desks catch bottoms, breakouts, and reversals before the crowd.',
                     'hero.ctaPrimary': 'Start free beta',
                     'hero.ctaDiscord': 'Join the Discord',
-                    'hero.highlight1': 'Audio + text morning briefs in English, Français, العربية, Español, 中文',
-                    'hero.highlight2': 'Setup gallery with crystal-clear charts and narrated walkthroughs',
-                    'hero.highlight3': 'Beginner · Intermediate · Expert tiers that explain every decision',
-                    'hero.highlight4': 'Capital preservation first — we stand aside when the edge isn’t there',
-                    'hero.highlight5': 'Transparent track record plus max drawdown, equity curve, and risk ratio dashboards',
-                    'hero.highlight6': 'Web app & Discord log every alert with success/failure proof plus ChatGPT, Claude, Gemini connectors',
-                    'hero.badgeSharia': 'Certified Sharia-friendly, long-only strategies',
-                    'hero.badgeAlerts': 'Clear trigger/cancel rules with success/failure receipts on web & Discord',
-                    'hero.badgeRisk': 'Live risk dashboards: max drawdown, equity curve, risk ratios',
-                    'langHint.viewing': 'Viewing in English',
-                    'langHint.switch': 'Site available in {lang} — switch now.',
-                    'langHint.unavailable': 'Viewing in English. Use your browser translator if needed.',
+                    'hero.highlight1': 'Multi-signal detectors (order flow, liquidity, sentiment, blockchain) flag bottoms early',
+                    'hero.highlight2': 'A+ alert desk — few signals, deeply annotated, Sharia-compliant entries and exits',
+                    'hero.highlight3': 'Collaborative desks by symbol keep you accountable—never trade alone again',
+                    'hero.highlight4': 'Focus tools: Pomodoro timers, custom audio cues, anti-FOMO and revenge-trade checklists',
+                    'hero.highlight5': 'Portfolio dashboards, watchlist rankings, and never-deleted Discord receipts',
+                    'hero.highlight6': 'Automation ready: Pine watchlists, MCP/API/webhooks, Interactive Brokers routing',
+                    'hero.badgeSharia': 'Certified Sharia-friendly setups validated by human analysts',
+                    'hero.badgeAlerts': 'A+ alerts only: trigger/cancel rules with order-flow & sentiment confluence',
+                    'hero.badgeRisk': 'Risk dashboards: max drawdown, live equity curve, iterative review loops',
+                    'langHint.viewing': 'You\'re already seeing the site in your language.',
+                    'langHint.switch': 'Prefer {lang}? Switch in one tap.',
+                    'langHint.unavailable': 'Your browser language is not supported yet.',
+                    'langHint.dismiss': 'Dismiss language suggestion',
                     'live.feedTitle': 'Live Alert Feed',
                     'live.status': 'Open · NYSE',
                     'live.card1.title': 'Momentum squeeze in NVDA',
@@ -537,6 +707,15 @@
                     'live.card3.title': 'ChatGPT & Claude connector',
                     'live.card3.body': 'Ask your favourite chatbot for the latest brief or alert. MarketWatch AI responds instantly with fresh data and trade context.',
                     'live.card3.tag': 'Connector',
+                    'watchlist.title': 'A+ watchlist — US session',
+                    'watchlist.filters': 'Filters: Breakout · Sharia · High volume',
+                    'watchlist.updated': 'Updated 2m ago',
+                    'watchlist.alpha': 'Alpha 9.6',
+                    'watchlist.beta': 'Detect 5 days',
+                    'watchlist.gamma': 'Options skew',
+                    'watchlist.nvda': 'Nvidia Corp',
+                    'watchlist.hims': 'Hims & Hers',
+                    'watchlist.tsla': 'Tesla Inc',
                     'languages.title': 'Signals that speak your language',
                     'languages.lead': 'MarketWatch AI ships every brief, alert, and deep-dive analysis as audio + text in English, Français, العربية, Español, and 中文—ready for US, European, and Asian sessions.',
                     'lang.en.title': 'English',
@@ -557,15 +736,15 @@
                     'education.point4': 'Daily explainers teach the why behind each signal so you become self-sufficient.',
                     'education.point5': 'Track-record dashboards, max drawdown, equity curve, and risk ratio analytics that every member can audit.',
                     'education.dataTitle': 'Realtime market data we watch for you',
-                    'education.dataPoint1': 'Prices, volumes, liquidity heatmaps, and tape imbalances updated live.',
-                    'education.dataPoint2': 'Economic calendar, earnings breaks, options flow, and implied volatility shifts.',
-                    'education.dataPoint3': 'News wires, SEC filings, corporate actions, and regulatory headlines.',
-                    'education.dataPoint4': 'Volatility gauges (VIX), inter-market correlations, and seasonal patterns.',
-                    'education.dataPoint5': 'Cross-asset context from FX majors, crude oil, gold, and macro sentiment.',
+                    'education.dataPoint1': 'Depth-of-book, liquidity heatmaps, volume profile, and tape imbalances update in realtime.',
+                    'education.dataPoint2': 'Options flow, dark pools, insider transactions, and blockchain whale trackers highlight smart money.',
+                    'education.dataPoint3': 'Economic calendars, earnings, M&A/OPA pipelines, and sector rotation radar keep context fresh.',
+                    'education.dataPoint4': 'News wires, SEC filings, dilution/warrant alerts, and historical share float analysis.',
+                    'education.dataPoint5': 'Cross-asset correlations across FX, energy, metals, rates, and social sentiment monitors.',
                     'social.title': 'Stay connected across every feed',
                     'social.lead': 'Follow realtime snippets, trade recaps, and platform updates on your favourite networks. We publish the same multilingual insight everywhere so you never miss a setup.',
                     'social.discord.title': 'Discord community',
-                    'social.discord.body': 'Collaborate with traders inside our invite-only Discord hub once you\'re onboarded.',
+                    'social.discord.body': 'Global floors plus symbol threads keep everyone synced; transcripts never vanish.',
                     'social.stocktwits.title': 'Stocktwits @marketwatchx',
                     'social.stocktwits.body': 'Catch the daily playbook, sentiment polls, and snapshots tailored for the Stocktwits community.',
                     'social.x.title': 'X @marketwatchxyz',
@@ -597,60 +776,91 @@
                     'usecases.after.point3': 'Deliver via Discord, ChatGPT actions, or Claude tools',
                     'usecases.risk.title': 'Risk & money management',
                     'usecases.risk.body': 'Run disciplined sizing with live guardrails. Every alert records the risk budget, what changed on exit, and feeds the shared drawdown and equity dashboards.',
+                    'usecases.prev': 'Previous workflow',
+                    'usecases.next': 'Next workflow',
                     'usecases.risk.point1': 'Max drawdown and equity curve tracking updated in real time.',
                     'usecases.risk.point2': 'Risk ratio / R-multiple analytics per alert and aggregated portfolios.',
                     'usecases.risk.point3': 'Custom position sizing rules with automatic pause triggers when limits are hit.',
-                    'visuals.title': 'Use-case gallery with annotated setups',
-                    'visuals.lead': 'Preview breakout, pullback, and macro trend ideas complete with overlays, narration, and education cues before you place a trade.',
-                    'visuals.point1': 'Auto-generated charts map entry, stop, and target bands with risk math',
-                    'visuals.point2': 'AI narration highlights catalysts and macro context in your language',
-                    'visuals.point3': 'Share each setup instantly via Discord threads or AI chat actions',
-                    'visuals.tier.beginner': 'Beginner track',
-                    'visuals.tier.intermediate': 'Intermediate track',
-                    'visuals.tier.expert': 'Expert track',
-                    'visuals.card1.title': 'Opening range breakout',
-                    'visuals.card1.body': 'A clean momentum push with pre-defined entry, stop, targets, and risk math narrated in beginner language to reinforce the playbook.',
-                    'visuals.card1.point1': 'Chart overlays highlight entry, stop, and reward-to-risk zones.',
-                    'visuals.card1.point2': 'Audio recap in five languages clarifies the thesis in 60 seconds.',
-                    'visuals.card1.point3': 'Education cue explains why we only take the long in Sharia-friendly fashion.',
-                    'visuals.card2.title': 'Trend pullback continuation',
-                    'visuals.card2.body': 'Structured pullback on an EU growth name with confluence between VWAP, liquidity, and catalyst timeline for intermediate traders.',
-                    'visuals.card2.point1': 'Narrated walkthrough covers structure, volume profile, and catalyst.',
-                    'visuals.card2.point2': 'Auto-annotated heatmap shows where scaling in keeps risk contained.',
-                    'visuals.card2.point3': 'Long-only reminder keeps the play compliant for Sharia mandates.',
-                    'visuals.card3.title': 'Macro trend alignment',
-                    'visuals.card3.body': 'Asia-listed leader aligned with macro breadth, sector rotation, and credit conditions—complete with diligence links for expert desks.',
-                    'visuals.card3.point1': 'Multi-timeframe overlay exposes regime shifts and risk bands.',
-                    'visuals.card3.point2': 'Audio analyst note summarises macro, flows, and catalysts.',
-                    'visuals.card3.point3': 'Checklist badges show education milestones completed by your team.',
+                    'visuals.title': 'Actionable gallery: alerts, watchlists, portfolio control',
+                    'visuals.lead': 'Swipe through real examples of our bottom and breakout detectors, Pine-powered watchlists, and portfolio tracking dashboards so you know exactly what A+ looks like.',
+                    'visuals.point1': 'Alert receipts include trigger, invalidate, size map, and order-book snapshots',
+                    'visuals.point2': 'Watchlists stack Pine script filters with dynamic tags (union / intersect / subtract)',
+                    'visuals.point3': 'Portfolio dashboards track equity curve, credit counter, and review cadence',
+                    'visuals.prev': 'Previous card',
+                    'visuals.next': 'Next card',
+                    'visuals.tier.beginner': 'A+ alert example',
+                    'visuals.tier.intermediate': 'Watchlist workspace',
+                    'visuals.tier.expert': 'Portfolio oversight',
+                    'visuals.card1.title': 'Exhaustion reversal alert',
+                    'visuals.card1.body': 'Our bottom detector blends order flow, sentiment, liquidity pivots, and macro catalysts; human analysts sign off before the alert routes to live desks.',
+                    'visuals.card1.point1': 'Order book, options flow, and insider tape snapshots justify the trigger in plain language.',
+                    'visuals.card1.point2': 'Entry/stop/target ladder plus risk-per-share math keep position sizing disciplined.',
+                    'visuals.card1.point3': 'Post-trade receipts log outcome, edits, and review notes; nothing gets deleted.',
+                    'visuals.card2.title': 'Dynamic watchlist builder',
+                    'visuals.card2.body': 'Design profile rules with Pine script, sentiment scores, and credit filters, then rank candidates with detected_days, catalysts, and playbook fit.',
+                    'visuals.card2.point1': 'Combine tags like breakout, volatile, dilution, buyout, and Sharia-compliant with union/intersect/subtract.',
+                    'visuals.card2.point2': 'Feature snapshots explain why each ticker scored: volume surge, insider moves, options skew.',
+                    'visuals.card2.point3': 'One-click broadcast to Discord symbol channels, MCP agent, API, or outbound webhooks.',
+                    'visuals.card3.title': 'Accountability dashboard',
+                    'visuals.card3.body': 'Equity curve, drawdown, credit usage, and review cadence live in one board so every alert outcome feeds an iterative improvement loop.',
+                    'visuals.card3.point1': 'Portfolio tiles show planned vs realised trades, risk buckets, and credit counter health.',
+                    'visuals.card3.point2': 'Focus timers, mood check-ins, and anti-FOMO prompts keep the desk disciplined.',
+                    'visuals.card3.point3': 'LLM automations can stage conditional orders to Interactive Brokers or webhook targets once review is complete.',
+                    'discipline.title': 'Never trade alone again',
+                    'discipline.lead': 'Our desks combine pro-grade detection with human coaching so retail traders stay calm, avoid FOMO, and press only the A+ setups that pass our risk and mood checks.',
+                    'discipline.point1': 'Accountability threads, channel leads, and post-trade debriefs keep FOMO and revenge trades out of the plan.',
+                    'discipline.point2': 'Focus blocks, Pomodoro timers, and emotion check-ins align execution with the checklist.',
+                    'discipline.point3': 'Retail agility lets us rotate beyond ETF-level returns—no institutional mandate to stay in low-beta baskets.',
+                    'discipline.point4': 'Shared diligence, watchlist vetting, and stop-honouring culture mean A+ setups remain the only setups we take.',
+                    'discipline.card.title': 'Classic traps we neutralise daily',
+                    'discipline.trap1': 'FOMO gap-chasing — throttled by pre-trade checklist, credit counter, and peer review.',
+                    'discipline.trap2': 'Emotional averaging down — alerts auto-cancel when invalidated; journal prompts force a reset.',
+                    'discipline.trap3': 'Solo tunnel vision — symbol channels, global desk calls, and mood polls surface blind spots instantly.',
+                    'discipline.trap4': 'Over-exposure — portfolio heatmaps and Islamic finance screens keep sizing honest.',
                     'workflows.title': 'Trade horizons from scalps to long holds',
                     'workflows.scalp.title': 'Scalp window discipline',
-                    'workflows.scalp.body': 'Map the opening drive with pre-planned levels, circuit-breaker stops, and capital-preservation rules. If the tape isn’t clean, the call is to do nothing.',
+                    'workflows.scalp.body': 'Multi-signal detectors call the open: liquidity pivots, imbalance ladders, and emotion checks decide whether to strike or stand aside.',
                     'workflows.day.title': 'Intraday momentum checks',
-                    'workflows.day.body': 'Monitor conviction meters, request AI recaps, and adjust watchlists as liquidity rotates. Trade only the setups that still align with plan and risk budget.',
+                    'workflows.day.body': 'Conviction meters digest options flow, insider prints, and blockchain data; watchlists auto-update while the team calibrates risk live.',
                     'workflows.swing.title': 'Swing staging',
-                    'workflows.swing.body': 'Review swing candidates, log partials, and sync notes to the shared model portfolio. Education cues remind you why the thesis still stands—or whether to stand down.',
+                    'workflows.swing.body': 'Swing reviews stitch together due diligence, Pine tags, and catalyst timelines while peers challenge the thesis before size increases.',
                     'workflows.long.time': 'Weekly',
                     'workflows.long.title': 'Long-term portfolio audit',
-                    'workflows.long.body': 'Publish the performance log, stress-test exposure, and keep dry powder when macro regimes turn. Every member can audit the track record and model allocations.',
-                    'community.title': 'Voices from the community',
-                    'community.lead': 'Thousands of traders rely on MarketWatch AI to stay disciplined. Here are a few snapshots from recent beta feedback.',
-                    'community.case1.name': 'Alex — Madrid',
-                    'community.case1.quote': '“Switching the interface to Español and piping alerts into Discord made my swing routine 10x smoother.”',
-                    'community.case2.name': 'Leïla — Paris',
-                    'community.case2.quote': '“French briefs plus AI diligence let me share ideas in seconds. The risk stats keep me honest on sizing.”',
-                    'community.case3.name': 'Wei — Singapore',
-                    'community.case3.quote': '“中文 alerts with Asia session coverage mean I never miss setups between Tokyo and NY.”',
+                    'workflows.long.body': 'Weekly audits replay trades, update backtests, and publish adjustments. Every outcome feeds the A+ database so the system keeps improving.',
+                    'stack.title': 'Detection stack, automation, and reliability',
+                    'stack.lead': 'We blend quantitative signal detection, human validation, and enterprise-grade delivery so every alert is rare, transparent, and ready for action.',
+                    'stack.detect.title': 'Advanced detection lab',
+                    'stack.detect.point1': 'Multi-timeframe scanners align order flow, options, insider flow, blockchain data, and sentiment to catch setups early.',
+                    'stack.detect.point2': 'Profile rules and Pine script filters craft watchlists with union/intersect/subtract logic plus feature snapshots.',
+                    'stack.detect.point3': 'Human desk vets dilution, warrants, float history, and Sharia compliance before an alert is published.',
+                    'stack.auto.title': 'Automation pipeline',
+                    'stack.auto.point1': 'LLM copilots draft conditional orders for the day or week and push to Interactive Brokers, MCP agents, or webhook destinations.',
+                    'stack.auto.point2': 'OAuth-secured API lets you plug MarketWatch AI into custom dashboards, Zapier-style automations, or prop-style risk checks.',
+                    'stack.auto.point3': 'Custom alert filters, Pomodoro focus modes, and audio cues surface only the setups your team is cleared to trade.',
+                    'stack.trust.title': 'Transparency & reliability',
+                    'stack.trust.point1': 'Backtests, equity curves, max drawdown, and credit usage dashboards ship with every program.',
+                    'stack.trust.point2': 'Discord archives by symbol and global floor never delete messages—every update is auditable.',
+                    'stack.trust.point3': '24/7 monitoring, SLA reporting, and a dedicated engineering team keep connectors healthy.',
+                    'community.title': 'Discord floors built for accountability',
+                    'community.lead': 'A global floor for market mood, symbol-specific war rooms, and immutable transcripts mean you never tackle the market solo.',
+                    'community.case1.name': 'Global floor updates',
+                    'community.case1.quote': 'Morning briefs, macro radar, and credit scoreboard sit in the global floor so the whole desk sees the same plan.',
+                    'community.case2.name': 'Symbol war rooms',
+                    'community.case2.quote': 'Each ticker owns a thread with watchlist evidence, entries, exits, and follow-ups pinned—nothing disappears.',
+                    'community.case3.name': 'Transparency by design',
+                    'community.case3.quote': 'We never delete messages. Outcomes, edits, and recaps stay searchable so compliance and teammates can audit everything.',
+                    'community.channels': 'channels',
+                    'community.preview': 'Pinned receipts, risk notes, and follow-ups stay searchable forever.',
                     'distribution.title': 'Surface intel wherever you trade',
                     'distribution.discord.title': 'Discord broadcast',
-                    'distribution.discord.body': 'Actionable alerts with clear activation and cancel conditions, briefs, and signal updates stream into our <strong>Discord community</strong>. Enable notifications to catch entries, exits, follow-ups, and audit every signal—success or failure—with screenshots and orderflow receipts.',
-                    'distribution.discord.note': 'Request access from inside MarketWatch AI once your account is live.',
+                    'distribution.discord.body': 'Actionable alerts with activation/cancel rules stream into our <strong>Discord floors</strong>: global macro rooms plus symbol-specific threads. Receipts, screenshots, and outcomes stay pinned forever for compliance and coaching.',
+                    'distribution.discord.note': 'Request access inside MarketWatch AI; we map you to desks, credit limits, and review cadence automatically.',
                     'distribution.web.title': 'Web workspace',
-                    'distribution.web.body': 'Collaborate at <strong>ai.market-watch.xyz</strong>. Manage watchlists, approve alerts, inspect success/failure proofs of execution, and review transparent performance logs without juggling PDFs or spreadsheets.',
+                    'distribution.web.body': 'Work from <strong>ai.market-watch.xyz</strong>. Build Pine-powered watchlists, approve A+ alerts, review backtests, and audit portfolio dashboards without juggling PDFs or spreadsheets.',
                     'distribution.web.link': 'Launch web app',
                     'distribution.ai.title': 'ChatGPT &amp; Claude connectors',
-                    'distribution.ai.body': 'Trigger MarketWatch AI actions from ChatGPT, Claude, or Gemini to pull briefs, alerts, or due diligence without leaving the chat window.',
-                    'distribution.ai.link': 'Enable connectors',
+                    'distribution.ai.body': 'Call MarketWatch AI from ChatGPT, Claude, Gemini, MCP agents, or your API client to pull briefs, due diligence, or push conditional orders via webhooks.',
+                    'distribution.ai.link': 'Enable connectors & API',
                     'cta.title': 'Join the beta — free while we fine-tune',
                     'cta.body': 'Help shape a trading companion built for retail speed. Beta traders get unlimited alerts, connector access, and direct influence over the roadmap.',
                     'cta.note': 'Beta access is free today. When we graduate from beta, premium automation and analytics will sit behind a lightweight subscription—but founding accounts lock in preferential pricing.',
@@ -676,6 +886,9 @@
                     'nav.overview': 'Vue d’ensemble',
                     'nav.education': 'Formation',
                     'nav.setups': 'Setups',
+                    'nav.gallery': 'Desk A+',
+                    'nav.discipline': 'Discipline',
+                    'nav.stack': 'Stack',
                     'nav.workflows': 'Routines',
                     'nav.launch': 'Ouvrir l\'application',
                     'nav.languageLabel': 'Langue',
@@ -685,23 +898,24 @@
                     'lang.option.ar': '🇸🇦 العربية (AR)',
                     'lang.option.es': '🇪🇸 Espagnol (ES)',
                     'lang.option.zh': '🇨🇳 Chinois (ZH)',
-                    'hero.pill': 'Bêta axée pédagogie — gratuit pour le moment',
-                    'hero.heading': 'Comprenez le setup, puis exécutez avec conviction.',
-                    'hero.body': 'MarketWatch AI livre des briefs audio multilingues, des plans annotés et un coaching Débutant / Intermédiaire / Expert sur des actions long-only conformes à la charia aux États-Unis, en Europe et en Asie — avec la préservation du capital en priorité et une performance transparente.',
+                    'hero.pill': 'Setups A+ uniquement — laboratoire de détection',
+                    'hero.heading': 'Détection niveau institutional pour des trades retail décisifs.',
+                    'hero.body': 'MarketWatch AI combine des scanners multi-signal (order flow, liquidité, options, blockchain), une validation humaine, du coaching multilingue et une discipline sharia pour que les desks retail détectent creux, breakouts et retournements avant la foule.',
                     'hero.ctaPrimary': 'Démarrer la bêta gratuite',
                     'hero.ctaDiscord': 'Rejoindre le Discord',
-                    'hero.highlight1': 'Briefs audio + texte en English, Français, العربية, Español, 中文',
-                    'hero.highlight2': 'Galerie de setups avec graphiques limpides et narration guidée',
-                    'hero.highlight3': 'Paliers Débutant · Intermédiaire · Expert qui expliquent chaque décision',
-                    'hero.highlight4': 'Priorité au capital — si l’edge n’est pas là, on reste en retrait',
-                    'hero.highlight5': 'Track record transparent et portefeuille modèle auditable par chaque membre',
-                    'hero.highlight6': 'Journal web & Discord pour chaque alerte avec preuves succès/échec + connecteurs ChatGPT, Claude, Gemini',
-                    'hero.badgeSharia': 'Stratégies long only certifiées conformes à la charia',
-                    'hero.badgeAlerts': 'Alertes actionnables avec règles claires et preuves succès/échec sur web & Discord',
-                    'hero.badgeRisk': 'Tableaux de risque en direct : max drawdown, courbe d’équité, ratios de risque',
-                    'langHint.viewing': 'Affichage en Français',
-                    'langHint.switch': 'Disponible en {lang} — basculez en un clic.',
-                    'langHint.unavailable': 'Affichage en Français. Utilisez la traduction automatique si besoin.',
+                    'hero.highlight1': 'Détecteurs multi-signal (order flow, liquidité, sentiment, blockchain) attrapent les bottoms en avance',
+                    'hero.highlight2': 'Desk d\'alertes A+ — peu de signaux, annotations profondes, entrées/sorties halal',
+                    'hero.highlight3': 'Desks collaboratifs par symbole : plus jamais seul face au marché',
+                    'hero.highlight4': 'Outils de focus : Pomodoro, alertes audio custom, checklists anti-FOMO & revenge trade',
+                    'hero.highlight5': 'Dashboards portefeuille, rankings watchlist et reçus Discord jamais supprimés',
+                    'hero.highlight6': 'Automatisation prête : watchlists Pine, MCP/API/webhooks, routage Interactive Brokers',
+                    'hero.badgeSharia': 'Setups halal certifiés et validés par des analystes humains',
+                    'hero.badgeAlerts': 'Alertes A+ seulement : triggers/invalidation avec confluence flux & sentiment',
+                    'hero.badgeRisk': 'Dashboards de risque : max drawdown, courbe d\'équité live, revues itératives',
+                    'langHint.viewing': 'Vous consultez déjà le site dans votre langue.',
+                    'langHint.switch': 'Préférez {lang} ? Changez en un clic.',
+                    'langHint.unavailable': 'La langue de votre navigateur n\'est pas encore prise en charge.',
+                    'langHint.dismiss': 'Masquer la suggestion de langue',
                     'live.feedTitle': 'Flux d’alertes en direct',
                     'live.status': 'Ouvert · NYSE',
                     'live.card1.title': 'Squeeze de momentum sur NVDA',
@@ -714,6 +928,15 @@
                     'live.card3.title': 'Connecteur ChatGPT & Claude',
                     'live.card3.body': 'Demandez à votre chatbot favori le dernier brief ou signal. MarketWatch AI répond instantanément avec des données fraîches.',
                     'live.card3.tag': 'Connecteur',
+                    'watchlist.title': 'Watchlist A+ — session US',
+                    'watchlist.filters': 'Filtres : Breakout · Halal · Fort volume',
+                    'watchlist.updated': 'Mis à jour il y a 2 min',
+                    'watchlist.alpha': 'Alpha 9,6',
+                    'watchlist.beta': 'Détecté 5 jours',
+                    'watchlist.gamma': 'Skew options',
+                    'watchlist.nvda': 'Nvidia Corp',
+                    'watchlist.hims': 'Hims & Hers',
+                    'watchlist.tsla': 'Tesla Inc',
                     'languages.title': 'Des signaux dans votre langue',
                     'languages.lead': 'MarketWatch AI publie chaque brief, alerte et analyse audio + texte en English, Français, العربية, Español et 中文 pour suivre les sessions américaine, européenne et asiatique.',
                     'lang.en.title': 'Anglais',
@@ -751,60 +974,91 @@
                     'usecases.after.point3': 'Diffusez via Discord, actions ChatGPT ou outils Claude',
                     'usecases.risk.title': 'Gestion du risque & du capital',
                     'usecases.risk.body': 'Pilotez le sizing avec des garde-fous en temps réel. Chaque alerte journalise le budget risque, les ajustements à la sortie et alimente les tableaux de drawdown et d’équité.',
+                    'usecases.prev': 'Workflow précédent',
+                    'usecases.next': 'Workflow suivant',
                     'usecases.risk.point1': 'Suivi temps réel du max drawdown et de la courbe d’équité.',
                     'usecases.risk.point2': 'Analyses des ratios de risque / R-multiple par alerte et pour le portefeuille.',
                     'usecases.risk.point3': 'Règles de sizing personnalisées avec déclencheurs d’arrêt automatique lorsque les limites sont atteintes.',
-                    'visuals.title': 'Galerie de cas d\'usage annotés',
-                    'visuals.lead': 'Explorez breakout, pullback et tendance macro avec overlays, narration et repères pédagogiques avant d\'engager du capital.',
-                    'visuals.point1': 'Graphiques auto-générés indiquant entrées, stops, objectifs et ratio risque',
-                    'visuals.point2': 'Narration IA détaillant catalyseurs et contexte macro dans votre langue',
-                    'visuals.point3': 'Partage instantané vers Discord ou vos intégrations IA préférées',
-                    'visuals.tier.beginner': 'Parcours Débutant',
-                    'visuals.tier.intermediate': 'Parcours Intermédiaire',
-                    'visuals.tier.expert': 'Parcours Expert',
-                    'visuals.card1.title': 'Breakout sur range d\'ouverture',
-                    'visuals.card1.body': 'Momentum propre avec entrée, stop, objectifs et risque expliqués dans un langage accessible pour ancrer le playbook.',
-                    'visuals.card1.point1': 'Overlays soulignant zones d\'entrée, de stop et de ratio rendement/risque.',
-                    'visuals.card1.point2': 'Brief audio en cinq langues clarifiant la thèse en 60 secondes.',
-                    'visuals.card1.point3': 'Encart pédagogique rappelant pourquoi seule la position acheteuse est prise.',
-                    'visuals.card2.title': 'Pullback tendance',
-                    'visuals.card2.body': 'Retrait structuré sur une valeur de croissance européenne avec confluence VWAP, liquidité et calendrier catalyseur pour les traders intermédiaires.',
-                    'visuals.card2.point1': 'Narration couvrant structure, profil de volume et catalyseur.',
-                    'visuals.card2.point2': 'Heatmap annotée montrant comment lisser l\'entrée tout en contenant le risque.',
-                    'visuals.card2.point3': 'Rappel long-only pour respecter les contraintes charia.',
-                    'visuals.card3.title': 'Alignement macro structurel',
-                    'visuals.card3.body': 'Leader coté en Asie aligné avec la rotation sectorielle, la breadth et le crédit — avec liens de diligence pour les desks experts.',
-                    'visuals.card3.point1': 'Vue multi-UT révélant changement de régime et bandes de risque.',
-                    'visuals.card3.point2': 'Note audio analyste résumant macro, flux et catalyseurs.',
-                    'visuals.card3.point3': 'Badges checklist illustrant les jalons pédagogiques complétés par l\'équipe.',
+                    'visuals.title': 'Galerie actionnable : alertes, watchlists, pilotage portefeuille',
+                    'visuals.lead': 'Faites défiler de vrais exemples de nos détecteurs de creux et breakouts, des watchlists propulsées par Pine et des dashboards portefeuille pour visualiser un setup A+.',
+                    'visuals.point1': 'Les reçus d\'alerte incluent trigger, invalidation, sizing et snapshots du carnet d\'ordres',
+                    'visuals.point2': 'Les watchlists combinent filtres Pine script et tags dynamiques (union / intersection / soustraction)',
+                    'visuals.point3': 'Les dashboards portefeuille suivent courbe d\'équité, compteur de crédits et cadence de revue',
+                    'visuals.prev': 'Carte précédente',
+                    'visuals.next': 'Carte suivante',
+                    'visuals.tier.beginner': 'Exemple d\'alerte A+',
+                    'visuals.tier.intermediate': 'Workspace watchlist',
+                    'visuals.tier.expert': 'Pilotage portefeuille',
+                    'visuals.card1.title': 'Alerte retournement d\'épuisement',
+                    'visuals.card1.body': 'Notre détecteur de creux mixe order flow, sentiment, pivots de liquidité et catalyseurs macro ; l\'équipe humaine valide avant diffusion live.',
+                    'visuals.card1.point1': 'Carnet d\'ordres, flux options et prints insiders justifient le trigger en clair.',
+                    'visuals.card1.point2': 'Échelle entrée/stop/targets + risk per share disciplinent la taille.',
+                    'visuals.card1.point3': 'Reçus post-trade, edits et notes de revue restent accessibles — rien n\'est supprimé.',
+                    'visuals.card2.title': 'Constructeur de watchlist dynamique',
+                    'visuals.card2.body': 'Composez des Profile Rules avec Pine, scores de sentiment et filtres de crédit, puis classez les candidats via detected_days, catalyseurs et fit playbook.',
+                    'visuals.card2.point1': 'Combinez tags breakout, volatile, dilution, buyout, halal via union/intersection/soustraction.',
+                    'visuals.card2.point2': 'Snapshots de features expliquent chaque score : volume, mouvement insider, skew options.',
+                    'visuals.card2.point3': 'Diffusion en un clic vers canaux symbole Discord, agent MCP, API ou webhooks.',
+                    'visuals.card3.title': 'Dashboard d\'accountability',
+                    'visuals.card3.body': 'Courbe d\'équité, drawdown, crédits et cadence de revue dans un board pour alimenter la boucle A+.',
+                    'visuals.card3.point1': 'Tuiles portefeuille : plan vs réalisé, buckets de risque, état du compteur de crédits.',
+                    'visuals.card3.point2': 'Timers focus, check-in humeur et prompts anti-FOMO gardent la discipline.',
+                    'visuals.card3.point3': 'Automations LLM peuvent préparer des ordres conditionnels IB ou webhooks après revue.',
+                    'discipline.title': 'Ne tradez plus jamais seul',
+                    'discipline.lead': 'Nos desks mixent détection pro et coaching humain pour calmer les émotions retail, éviter le FOMO et n\'exécuter que les setups A+ validés.',
+                    'discipline.point1': 'Threads d\'accountability, leads de canal et débriefs post-trade bloquent FOMO et revenge trade.',
+                    'discipline.point2': 'Blocs focus, minuteurs Pomodoro et check-ins émotion alignent l\'exécution sur la checklist.',
+                    'discipline.point3': 'Agilité retail : pas de contrainte ETF, on vise des rendements bien au-dessus du beta.',
+                    'discipline.point4': 'Diligence partagée, watchlists filtrées et respect strict des stops = setups A+ uniquement.',
+                    'discipline.card.title': 'Pièges neutralisés chaque jour',
+                    'discipline.trap1': 'FOMO sur gaps — checklist pré-trade, compteur de crédits et peer review coupent court.',
+                    'discipline.trap2': 'Moyennage émotionnel — l\'alerte s\'annule dès invalidation, le journal relance à zéro.',
+                    'discipline.trap3': 'Tunnel vision solo — canaux symbole, calls globaux et sondages humeur révèlent les angles morts.',
+                    'discipline.trap4': 'Sur-exposition — heatmaps portefeuille et filtres finance islamique cadrent les tailles.',
                     'workflows.title': 'Du scalping aux positions long terme',
                     'workflows.scalp.title': 'Discipline sur la fenêtre de scalping',
-                    'workflows.scalp.body': 'Cadrez l’ouverture avec niveaux pré-définis, stops coupe-circuit et règles de préservation du capital. Si le flux n’est pas propre, on s’abstient.',
+                    'workflows.scalp.body': 'Les détecteurs multi-signal pilotent l\'ouverture : pivots de liquidité, imbalance et état émotionnel dictent action ou abstention.',
                     'workflows.day.title': 'Contrôles intraday de momentum',
-                    'workflows.day.body': 'Surveillez les compteurs de conviction, demandez des recaps IA et ajustez les watchlists selon la rotation de liquidité. N’exécutez que les setups alignés avec le plan et le risque.',
+                    'workflows.day.body': 'Les compteurs de conviction digèrent flux options, prints insiders et données blockchain ; les watchlists se mettent à jour pendant que l\'équipe calibre le risque.',
                     'workflows.swing.title': 'Mise en scène des swings',
-                    'workflows.swing.body': 'Passez en revue les candidats swing, consignez les prises partielles et synchronisez les notes avec le portefeuille modèle partagé. Les rappels pédagogiques confirment ou invalident la thèse.',
+                    'workflows.swing.body': 'Les revues swing croisent diligence, tags Pine et timelines catalystes pendant que les pairs challengent la thèse avant de grossir.',
                     'workflows.long.time': 'Hebdomadaire',
                     'workflows.long.title': 'Audit portefeuille long terme',
-                    'workflows.long.body': 'Publiez le journal de performance, testez l’exposition et gardez des liquidités lorsque le macro change. Chaque membre peut auditer le track record et les allocations modèle.',
-                    'community.title': 'La communauté en parle',
-                    'community.lead': 'Des milliers de traders utilisent MarketWatch AI pour rester disciplinés. Quelques retours de la bêta.',
-                    'community.case1.name': 'Alex — Madrid',
-                    'community.case1.quote': '« Passer l\'interface en espagnol et diffuser les alertes sur Discord a fluidifié mon swing. »',
-                    'community.case2.name': 'Leïla — Paris',
-                    'community.case2.quote': '« Les briefs en français et la diligence IA me permettent de partager une idée en secondes. »',
-                    'community.case3.name': 'Wei — Singapour',
-                    'community.case3.quote': '« Les alertes 中文 avec la session asiatique signifient zéro setup manqué entre Tokyo et New York. »',
+                    'workflows.long.body': 'Les audits hebdo rejouent les trades, actualisent backtests et publient les ajustements. Chaque outcome nourrit la base A+.',
+                    'stack.title': 'Stack de détection, automatisation et fiabilité',
+                    'stack.lead': 'Nous combinons détection quantitative, validation humaine et livraison enterprise pour produire des alertes rares, transparentes et actionnables.',
+                    'stack.detect.title': 'Laboratoire de détection avancé',
+                    'stack.detect.point1': 'Scanners multi-timeframe alignent order flow, options, insiders, blockchain et sentiment pour capter tôt.',
+                    'stack.detect.point2': 'Profile Rules et filtres Pine créent des watchlists avec logique union/intersection/soustraction et snapshots.',
+                    'stack.detect.point3': 'Le desk vérifie dilution, warrants, historique de flottant et conformité Sharia avant publication.',
+                    'stack.auto.title': 'Pipeline d\'automatisation',
+                    'stack.auto.point1': 'Copilotes LLM rédigent ordres conditionnels jour/semaine et les poussent vers IB, agents MCP ou webhooks.',
+                    'stack.auto.point2': 'API sécurisée OAuth pour brancher MarketWatch AI à vos dashboards, automatisations ou contrôles de risque.',
+                    'stack.auto.point3': 'Filtres d\'alerte custom, modes focus et signaux audio ne laissent remonter que les setups autorisés.',
+                    'stack.trust.title': 'Transparence & fiabilité',
+                    'stack.trust.point1': 'Backtests, courbes d\'équité, max drawdown et usage des crédits livrés avec chaque programme.',
+                    'stack.trust.point2': 'Archives Discord par symbole et floor global : aucun message supprimé, audit facile.',
+                    'stack.trust.point3': 'Monitoring 24/7, SLA publiés et équipe d\'ingénieurs dédiée à la disponibilité.',
+                    'community.title': 'Des floors Discord pour l\'accountability',
+                    'community.lead': 'Floor global pour le mood, war rooms par symbole et transcripts immuables : jamais seul face au marché.',
+                    'community.case1.name': 'Floor global',
+                    'community.case1.quote': 'Briefs matinaux, radar macro et compteur crédit sont partagés pour que tout le desk suive le même plan.',
+                    'community.case2.name': 'War rooms symbole',
+                    'community.case2.quote': 'Chaque ticker possède un thread avec preuves watchlist, entrées, sorties et follow-ups épinglés.',
+                    'community.case3.name': 'Transparence totale',
+                    'community.case3.quote': 'Aucun message n\'est supprimé : outcomes, edits et recaps restent consultables pour compliance et coaching.',
+                    'community.channels': 'canaux',
+                    'community.preview': 'Reçus, notes de risque et suivis épinglés restent consultables en permanence.',
                     'distribution.title': 'Diffusez l\'info où vous tradez',
                     'distribution.discord.title': 'Diffusion Discord',
-                    'distribution.discord.body': 'Des alertes actionnables avec règles d’activation/annulation claires, briefs et signaux arrivent sur notre <strong>communauté Discord</strong>. Activez les notifications pour capter entrées, sorties, suivis et consulter chaque preuve d’exécution (succès ou échec).',
-                    'distribution.discord.note': 'Demandez votre accès directement dans MarketWatch AI une fois votre compte ouvert.',
+                    'distribution.discord.body': 'Les alertes actionnables arrivent dans nos <strong>floors Discord</strong> : rooms globales et threads symbole. Reçus, captures et outcomes restent épinglés pour la compliance.',
+                    'distribution.discord.note': 'Demandez l\'accès depuis MarketWatch AI : on vous assigne desks, crédits et cadence de revue automatiquement.',
                     'distribution.web.title': 'Espace web',
-                    'distribution.web.body': 'Collaborez sur <strong>ai.market-watch.xyz</strong>. Gérez listes, validez les alertes avec preuves de succès/échec, ajustez les paliers et consultez un track record transparent sans tableurs.',
+                    'distribution.web.body': 'Depuis <strong>ai.market-watch.xyz</strong>, construisez des watchlists Pine, validez les alertes A+, relisez backtests et dashboards portefeuille sans tableurs.',
                     'distribution.web.link': 'Ouvrir l\'app web',
                     'distribution.ai.title': 'Connecteurs ChatGPT &amp; Claude',
-                    'distribution.ai.body': 'Déclenchez MarketWatch AI depuis ChatGPT, Claude ou Gemini pour récupérer briefs, alertes et diligence sans quitter la conversation.',
-                    'distribution.ai.link': 'Activer les connecteurs',
+                    'distribution.ai.body': 'Appelez MarketWatch AI depuis ChatGPT, Claude, Gemini, agents MCP ou votre client API pour tirer briefs, due diligence ou pousser des ordres conditionnels via webhooks.',
+                    'distribution.ai.link': 'Activer connecteurs & API',
                     'cta.title': 'Rejoignez la bêta — gratuite pendant l\'ajustement',
                     'cta.body': 'Aidez-nous à façonner un copilote de trading taillé pour la vitesse. Accès illimité, connecteurs et influence directe sur la roadmap.',
                     'cta.note': 'L’accès bêta reste gratuit. À la sortie de bêta, certaines automatisations et analyses passeront sur un abonnement léger — les comptes fondateurs conserveront un tarif préférentiel.',
@@ -830,6 +1084,9 @@
                     'nav.overview': 'نظرة عامة',
                     'nav.education': 'التعليم',
                     'nav.setups': 'السيناريوهات',
+                    'nav.gallery': 'مكتب A+',
+                    'nav.discipline': 'الانضباط',
+                    'nav.stack': 'البنية',
                     'nav.workflows': 'سير العمل',
                     'nav.launch': 'فتح التطبيق',
                     'nav.languageLabel': 'اللغة',
@@ -839,23 +1096,24 @@
                     'lang.option.ar': '🇸🇦 العربية (AR)',
                     'lang.option.es': '🇪🇸 الإسبانية (ES)',
                     'lang.option.zh': '🇨🇳 الصينية (ZH)',
-                    'hero.pill': 'نسخة تجريبية تعليمية — مجاناً حالياً',
-                    'hero.heading': 'افهم الإعداد ثم نفّذه بثقة.',
-                    'hero.body': 'يقدّم MarketWatch AI موجزات صوتية متعددة اللغات، خطط تداول مشروحة، وتدريب مستويات المبتدئ/المتوسط/الخبير على أسهم طويلة فقط متوافقة مع الشريعة في الولايات المتحدة وأوروبا وآسيا — مع أولوية للحفاظ على رأس المال وشفافية كاملة للأداء.',
+                    'hero.pill': 'إعدادات A+ فقط — مختبر اكتشاف متقدم',
+                    'hero.heading': 'رصد بمستوى مؤسسي لتداولات تجزئة حاسمة.',
+                    'hero.body': 'يمزج MarketWatch AI بين ماسحات متعددة الإشارات (تدفق الأوامر، السيولة، الخيارات، البلوك تشين) والتحقق البشري والتدريب متعدد اللغات وانضباط متوافق مع الشريعة لكي تلتقط مكاتب التجزئة القيعان والاختراقات والانعكاسات قبل الجميع.',
                     'hero.ctaPrimary': 'ابدأ النسخة التجريبية مجاناً',
                     'hero.ctaDiscord': 'انضم إلى Discord',
-                    'hero.highlight1': 'موجزات صوتية + نص باللغات English، Français، العربية، Español، 中文',
-                    'hero.highlight2': 'معرض إعدادات بوضوح كامل مع شرح صوتي خطوة بخطوة',
-                    'hero.highlight3': 'مسارات مبتدئ · متوسط · خبير تشرح كل قرار',
-                    'hero.highlight4': 'أولوية الحفاظ على رأس المال — نبتعد عندما لا يوجد تفوق واضح',
-                    'hero.highlight5': 'سجل أداء شفاف مع تتبع السحب الأقصى، منحنى العائد ونسب المخاطرة',
-                    'hero.highlight6': 'تسجّل الواجهة والـ Discord كل تنبيه مع إثبات النجاح/الفشل إضافة إلى موصلات ChatGPT وClaude وGemini',
-                    'hero.badgeSharia': 'استراتيجيات متوافقة مع الشريعة (Long Only) موثقة وشفافة',
-                    'hero.badgeAlerts': 'تنبيهات قابلة للتنفيذ مع قواعد واضحة وإثبات نجاح/فشل على الويب وDiscord',
-                    'hero.badgeRisk': 'لوحات مخاطر مباشرة: السحب الأقصى، منحنى العائد، نسب المخاطرة',
-                    'langHint.viewing': 'الموقع معروض بالعربية',
-                    'langHint.switch': 'الموقع متاح بـ {lang} — يمكنك التبديل فوراً.',
-                    'langHint.unavailable': 'الموقع معروض بالعربية. استخدم الترجمة التلقائية عند الحاجة.',
+                    'hero.highlight1': 'ماسحات متعددة الإشارات (تدفق الأوامر، السيولة، المشاعر، البلوك تشين) تلتقط القيعان مبكرًا',
+                    'hero.highlight2': 'مكتب التنبيهات A+ — إشارات قليلة، شرح عميق، دخول وخروج متوافقان مع الشريعة',
+                    'hero.highlight3': 'مكاتب تعاونية حسب الرمز تحفظ عليك المساءلة — لن تتداول منفردًا مجددًا',
+                    'hero.highlight4': 'أدوات تركيز: مؤقتات بومودورو، تنبيهات صوتية مخصصة، قوائم فحص ضد FOMO والانتقام',
+                    'hero.highlight5': 'لوحات محفظة، تصنيفات قوائم المراقبة، وسجلات Discord لا تُحذف أبدًا',
+                    'hero.highlight6': 'جاهزة للأتمتة: قوائم Pine، MCP/API/webhooks، توجيه Interactive Brokers',
+                    'hero.badgeSharia': 'إعدادات متوافقة مع الشريعة مصدّق عليها من محللين بشريين',
+                    'hero.badgeAlerts': 'تنبيهات A+ فقط: قواعد تفعيل/إلغاء مع تلاقي تدفق الأوامر والمشاعر',
+                    'hero.badgeRisk': 'لوحات مخاطر: أكبر سحب، منحنى رأس المال المباشر، دورات مراجعة متكررة',
+                    'langHint.viewing': 'أنت تشاهد الموقع بلغتك بالفعل.',
+                    'langHint.switch': 'تفضّل {lang}؟ بدّل بلمسة واحدة.',
+                    'langHint.unavailable': 'لغة متصفحك غير مدعومة بعد.',
+                    'langHint.dismiss': 'إخفاء اقتراح اللغة',
                     'live.feedTitle': 'تدفق التنبيهات المباشر',
                     'live.status': 'مفتوح · بورصة نيويورك',
                     'live.card1.title': 'اندفاع زخم على سهم NVDA',
@@ -868,6 +1126,15 @@
                     'live.card3.title': 'موصل ChatGPT وClaude',
                     'live.card3.body': 'اطلب من روبوتك المفضل أحدث موجز أو تنبيه. MarketWatch AI يرد فوراً ببيانات جديدة وسياق تداول.',
                     'live.card3.tag': 'موصل',
+                    'watchlist.title': 'قائمة مراقبة A+ — جلسة الولايات المتحدة',
+                    'watchlist.filters': 'الفلاتر: اختراق · مطابق للشريعة · حجم مرتفع',
+                    'watchlist.updated': 'تم التحديث قبل دقيقتين',
+                    'watchlist.alpha': 'ألفا 9.6',
+                    'watchlist.beta': 'مرصودة منذ 5 أيام',
+                    'watchlist.gamma': 'انحراف الخيارات',
+                    'watchlist.nvda': 'شركة نفيديا',
+                    'watchlist.hims': 'Hims & Hers',
+                    'watchlist.tsla': 'تسلا',
                     'languages.title': 'إشارات بلغتك',
                     'languages.lead': 'ينشر MarketWatch AI كل موجز وتنبيه وتحليل بصوت ونص باللغات English، Français، العربية، Español، 中文 مع دعم لجلسات أمريكا وأوروبا وآسيا.',
                     'lang.en.title': 'English',
@@ -888,11 +1155,11 @@
                     'education.point4': 'شروحات يومية للسبب وراء كل إشارة لتصبح مستقلاً.',
                     'education.point5': 'لوحات الأداء، السحب الأقصى، منحنى العائد وتحليلات نسب المخاطرة متاحة لتدقيق جميع الأعضاء.',
                     'education.dataTitle': 'بيانات السوق اللحظية التي نراقبها لأجلك',
-                    'education.dataPoint1': 'الأسعار، الأحجام، خرائط السيولة وتوازن الأوامر بشكل حي.',
-                    'education.dataPoint2': 'الأجندة الاقتصادية، نتائج الشركات، تدفقات الأوبشن وتقلب IV.',
-                    'education.dataPoint3': 'وكالات الأنباء، إفصاحات SEC، والأحداث التنظيمية.',
-                    'education.dataPoint4': 'مؤشرات التقلب (VIX)، الارتباطات بين الأسواق والأنماط الموسمية.',
-                    'education.dataPoint5': 'سياق عبر الأصول من العملات الرئيسية، النفط، الذهب، والمزاج الكلي.',
+                    'education.dataPoint1': 'عمق دفتر الأوامر، خرائط السيولة، بروفايل الحجم وعدم توازن الشريط في الزمن الفعلي.',
+                    'education.dataPoint2': 'تدفقات الخيارات، الدارك بولز، صفقات المطلعين، ومتتبعات حيتان البلوك تشين للعملات المشفرة.',
+                    'education.dataPoint3': 'التقويمات الاقتصادية، الأرباح، صفقات الاستحواذ/الاندماج، ورادار تدوير القطاعات.',
+                    'education.dataPoint4': 'وكالات الأنباء، إفصاحات SEC، تنبيهات التخفيف/الضمانات، وتحليل تاريخي لحجم الطرح.',
+                    'education.dataPoint5': 'ارتباطات بين الأصول عبر العملات، الطاقة، المعادن، أسعار الفائدة، ومؤشرات المشاعر الاجتماعية.',
                     'personas.title': 'مصمم للمتداولين الأفراد الجادين',
                     'personas.momentum.title': 'صياد الزخم',
                     'personas.momentum.body': 'ابدأ بملخص سريع، راقب القوائم لحظياً، ونفّذ التنبيهات مع نقاط دخول وخروج محسوبة مسبقاً.',
@@ -918,54 +1185,85 @@
                     'usecases.after.point3': 'أرسل عبر Discord أو إجراءات ChatGPT أو أدوات Claude',
                     'usecases.risk.title': 'إدارة المخاطر ورأس المال',
                     'usecases.risk.body': 'تحكم في أحجام المراكز عبر قياسات المخاطر الحية والحواجز التلقائية. كل تنبيه يسجل ميزانية المخاطر، ما تغير عند الخروج، ويغذي لوحات السحب الأقصى ومنحنى العائد.',
+                    'usecases.prev': 'التدفق السابق',
+                    'usecases.next': 'التدفق التالي',
                     'usecases.risk.point1': 'تتبع فوري للسحب الأقصى ومنحنى العائد.',
                     'usecases.risk.point2': 'تحليلات نسبة المخاطرة / R-multiple لكل تنبيه وعلى مستوى المحفظة.',
                     'usecases.risk.point3': 'قواعد تحديد حجم مخصصة مع مشغلات إيقاف تلقائي عند تجاوز الحدود.',
-                    'visuals.title': 'معرض إعدادات مشروحة حسب المستوى',
-                    'visuals.lead': 'استعرض اختراقات، ارتدادات، واتجاهات كليّة مع طبقات توضيح وسرد تعليمي قبل دخول الصفقة.',
-                    'visuals.point1': 'رسوم تولّد تلقائياً مناطق الدخول والوقف والأهداف مع حساب المخاطرة',
-                    'visuals.point2': 'سرد ذكاء اصطناعي يبرز المحفزات والسياق الكلي بلغتك',
-                    'visuals.point3': 'شارك كل إعداد فوراً عبر قنوات Discord أو تكاملات المحادثة الذكية',
-                    'visuals.tier.beginner': 'مسار المبتدئين',
-                    'visuals.tier.intermediate': 'مسار المتوسطين',
-                    'visuals.tier.expert': 'مسار المحترفين',
-                    'visuals.card1.title': 'اختراق نطاق الافتتاح',
-                    'visuals.card1.body': 'دفع زخم واضح مع دخول ووقف وأهداف وحساب مخاطر بصياغة مبسطة لترسيخ الخطة.',
-                    'visuals.card1.point1': 'طبقات الرسم تبرز مناطق الدخول والوقف ونطاق العائد إلى المخاطرة.',
-                    'visuals.card1.point2': 'موجز صوتي بخمس لغات يوضح الفكرة خلال 60 ثانية.',
-                    'visuals.card1.point3': 'ملاحظة تعليمية تشرح سبب التركيز على صفقة الشراء المتوافقة مع الشريعة.',
-                    'visuals.card2.title': 'استمرار اتجاه بعد ارتداد',
-                    'visuals.card2.body': 'ارتداد منظم على سهم نمو أوروبي مع تلاقي VWAP والسيولة وجدول المحفزات للمتداولين المتوسطين.',
-                    'visuals.card2.point1': 'سرد يشرح البنية، ملف السيولة، والمحرك الأساسي.',
-                    'visuals.card2.point2': 'خريطة حرارية توضح أين يظل التدرج في الدخول ضمن حدود المخاطرة.',
-                    'visuals.card2.point3': 'تذكير بالصفقات الطويلة فقط للالتزام بمتطلبات الشريعة.',
-                    'visuals.card3.title': 'محاذاة اتجاهية كبرى',
-                    'visuals.card3.body': 'شركة رائدة مدرجة في آسيا متوافقة مع اتساع السوق، التناوب القطاعي، وظروف الائتمان مع روابط للعناية الواجبة.',
-                    'visuals.card3.point1': 'تراكب متعدد الأطر الزمنية يكشف تبدل النظام ونطاقات المخاطرة.',
-                    'visuals.card3.point2': 'ملاحظة محلل صوتية تلخص العوامل الماكرو والتدفقات.',
-                    'visuals.card3.point3': 'شارات قائمة التحقق توضح مراحل التعلم المنجزة لفريقك.',
+                    'visuals.title': 'معرض قابل للتنفيذ: تنبيهات، قوائم مراقبة، وضبط محفظة',
+                    'visuals.lead': 'اسحب لتشاهد أمثلة حقيقية لكاشفات القيعان والاختراقات، قوائم مراقبة مدعومة بـ Pine، ولوحات محفظة حتى ترى ما يعنيه الإعداد A+.',
+                    'visuals.point1': 'إيصالات التنبيه تشمل التفعيل، الإلغاء، حجم المركز، ولقطات دفتر الأوامر',
+                    'visuals.point2': 'قوائم المراقبة تجمع فلاتر Pine مع وسوم ديناميكية (اتحاد / تقاطع / طرح)',
+                    'visuals.point3': 'لوحات المحفظة تتابع منحنى رأس المال، عدّاد الاعتمادات، وإيقاع المراجعة',
+                    'visuals.prev': 'البطاقة السابقة',
+                    'visuals.next': 'البطاقة التالية',
+                    'visuals.tier.beginner': 'مثال تنبيه A+',
+                    'visuals.tier.intermediate': 'مساحة عمل للقوائم',
+                    'visuals.tier.expert': 'إشراف على المحفظة',
+                    'visuals.card1.title': 'تنبيه انعكاس إرهاق',
+                    'visuals.card1.body': 'كاشف القيعان يجمع بين تدفق الأوامر والمشاعر ومحاور السيولة والمحفزات الكلية؛ يوافق الفريق البشري قبل إرسال التنبيه للمكاتب الحية.',
+                    'visuals.card1.point1': 'لقطات دفتر الأوامر، تدفق الخيارات، وتحركات المطلعين تبرر التفعيل بلغة واضحة.',
+                    'visuals.card1.point2': 'سلم دخول/وقف/أهداف مع حساب المخاطرة لكل سهم يحافظ على انضباط الحجم.',
+                    'visuals.card1.point3': 'إيصالات ما بعد الصفقة، التعديلات، وملاحظات المراجعة تظل متاحة — لا يُحذف شيء.',
+                    'visuals.card2.title': 'منشئ قائمة مراقبة ديناميكي',
+                    'visuals.card2.body': 'صمّم قواعد الملف الشخصي باستخدام Pine، درجات المشاعر، ومرشحات الائتمان، ثم رتّب المرشحين حسب detected_days والمحفزات وملاءمة الخطة.',
+                    'visuals.card2.point1': 'اجمع وسوم مثل اختراق، متقلب، تخفيف، استحواذ، متوافق مع الشريعة عبر الاتحاد/التقاطع/الطرح.',
+                    'visuals.card2.point2': 'لقطات السمات تشرح سبب تسجيل كل سهم: زيادة حجم، تحركات المطلعين، انحراف الخيارات.',
+                    'visuals.card2.point3': 'بث بنقرة واحدة إلى قنوات Discord الخاصة بالرمز، عامل MCP، API أو webhooks.',
+                    'visuals.card3.title': 'لوحة المساءلة',
+                    'visuals.card3.body': 'منحنى رأس المال، السحب، استخدام الاعتمادات، وإيقاع المراجعة في لوحة واحدة ليغذي كل ناتج حلقة التحسين.',
+                    'visuals.card3.point1': 'بطاقات المحفظة تعرض المخطط مقابل التنفيذ، دلاء المخاطر، وصحة عدّاد الاعتمادات.',
+                    'visuals.card3.point2': 'مؤقتات التركيز، فحوصات المزاج، وتنبيهات مكافحة FOMO تحافظ على الانضباط.',
+                    'visuals.card3.point3': 'الأتمتة بالذكاء الاصطناعي تولد أوامر مشروطة لـ Interactive Brokers أو webhooks بعد الموافقة.',
+                    'discipline.title': 'لا تتداول منفردًا بعد اليوم',
+                    'discipline.lead': 'تمزج مكاتبنا بين الرصد الاحترافي والتدريب البشري لتبقى هادئًا، تتجنب FOMO، ولا تنفذ إلا إعدادات A+ المجازة.',
+                    'discipline.point1': 'سلاسل المساءلة، قادة القنوات، ومراجعات ما بعد الصفقة تمنع FOMO والتداول الانتقامي.',
+                    'discipline.point2': 'فترات التركيز، مؤقتات بومودورو، وتقييم الحالة العاطفية تواكب قائمة الفحص.',
+                    'discipline.point3': 'خفة حركة المتداول الفردي تتيح عوائد أعلى من صناديق المؤشرات — بلا قيود مؤسسية.',
+                    'discipline.point4': 'عناية مشتركة، تدقيق قوائم المراقبة، وثقافة احترام الوقف تعني أننا ننفذ إعدادات A+ فقط.',
+                    'discipline.card.title': 'مصائد نحيدها يوميًا',
+                    'discipline.trap1': 'مطاردة الفجوات بدافع FOMO — قائمة الفحص، عدّاد الاعتمادات، ومراجعة الزملاء توقفها.',
+                    'discipline.trap2': 'المتوسطات العاطفية — يُلغى التنبيه عند الانتهاك؛ مذكرات التداول تُعيدك للبداية.',
+                    'discipline.trap3': 'الرؤية النفقية الفردية — قنوات الرموز، النداءات الجماعية، واستطلاعات المزاج تكشف الثغرات فورًا.',
+                    'discipline.trap4': 'التعرض المفرط — خرائط حرارة المحفظة وفلاتر الشريعة تضبط الأحجام.',
                     'workflows.title': 'من السكالب إلى المدى الطويل ضمن إطار واحد',
                     'workflows.scalp.title': 'انضباط نافذة السكالب',
-                    'workflows.scalp.body': 'حدّد حركة الافتتاح بمستويات جاهزة، وقف خسارة طارئ، وقواعد لحماية رأس المال. إذا لم يكن السوق نظيفاً فقرارنا هو عدم التداول.',
+                    'workflows.scalp.body': 'كاشفات متعددة الإشارات تضبط الافتتاح: محاور السيولة، سلالم عدم التوازن، وفحص الحالة يقرر التنفيذ أو التوقف.',
                     'workflows.day.title': 'مراجعات الزخم أثناء اليوم',
-                    'workflows.day.body': 'راقب مؤشرات القناعة، اطلب ملخصات الذكاء الاصطناعي، وعدّل قوائم المتابعة مع تغيّر السيولة. نفّذ فقط الإعدادات المتوافقة مع الخطة والميزانية المخاطرية.',
+                    'workflows.day.body': 'مقاييس القناعة تدمج تدفق الخيارات، طبعات المطلعين، وبيانات البلوك تشين؛ تتحدث قوائم المراقبة ذاتيًا بينما يضبط الفريق المخاطرة.',
                     'workflows.swing.title': 'تهيئة صفقات السوينغ',
-                    'workflows.swing.body': 'راجع فرص السوينغ، دوّن عمليات التخفيض، وزامن الملاحظات مع المحفظة النموذجية المشتركة. التذكيرات التعليمية تؤكد استمرار الفكرة أو ضرورة التوقف.',
+                    'workflows.swing.body': 'مراجعات السوينغ تربط بين العناية الواجبة، أوسمة Pine، وخطط المحفزات فيما يتحدى الزملاء الفرضية قبل زيادة الحجم.',
                     'workflows.long.time': 'أسبوعي',
                     'workflows.long.title': 'تدقيق المحفظة طويلة المدى',
-                    'workflows.long.body': 'انشر سجل الأداء، اختبر مستويات الانكشاف، واحتفظ بالسيولة عندما يتغير السياق الكلي. يمكن لكل عضو تدقيق السجل والمحفظة النموذجية.',
-                    'community.title': 'أصوات من المجتمع',
-                    'community.lead': 'آلاف المتداولين يعتمدون على MarketWatch AI للانضباط. هذه بعض آراء النسخة التجريبية.',
-                    'community.case1.name': 'أليكس — مدريد',
-                    'community.case1.quote': '"تفعيل الواجهة الإسبانية وربط التنبيهات بـ Discord جعل تداول السوينغ أكثر سلاسة."',
-                    'community.case2.name': 'ليلى — باريس',
-                    'community.case2.quote': '"الملخصات الفرنسية مع المراجعة الذكية تسمح لي بمشاركة الفكرة خلال ثوانٍ."',
-                    'community.case3.name': 'وي — سنغافورة',
-                    'community.case3.quote': '"تنبيهات 中文 مع تغطية الجلسة الآسيوية تعني ألا أفوّت أي فرصة بين طوكيو ونيويورك."',
+                    'workflows.long.body': 'مراجعات أسبوعية تعيد تشغيل الصفقات، تحدّث الباك تست، وتنشر التعديلات. كل نتيجة تغذي قاعدة إعدادات A+.',
+                    'stack.title': 'بنية الاكتشاف والأتمتة والموثوقية',
+                    'stack.lead': 'نمزج بين اكتشاف كمي، تحقق بشري، وتسليم بمستوى المؤسسات لتكون كل تنبيه نادرًا، شفافًا، وقابلًا للتنفيذ.',
+                    'stack.detect.title': 'مختبر اكتشاف متقدم',
+                    'stack.detect.point1': 'ماسحات متعددة الأطر توائم تدفق الأوامر، الخيارات، المطلعين، بيانات البلوك تشين، والمشاعر لالتقاط الإعدادات مبكرًا.',
+                    'stack.detect.point2': 'قواعد الملف الشخصي وفلاتر Pine تصنع قوائم مراقبة بمنطق اتحاد/تقاطع/طرح مع لقطات سمات.',
+                    'stack.detect.point3': 'الفريق البشري يراجع التخفيف، الضمانات، تاريخ الطرح، والالتزام الشرعي قبل نشر التنبيه.',
+                    'stack.auto.title': 'سير عمل الأتمتة',
+                    'stack.auto.point1': 'مساعدو LLM يصيغون أوامر مشروطة لليوم أو الأسبوع ويرسلونها إلى Interactive Brokers أو MCP أو webhooks.',
+                    'stack.auto.point2': 'API مؤمن بـ OAuth لربط MarketWatch AI بلوحاتك، أتمتاتك، أو ضوابط المخاطر.',
+                    'stack.auto.point3': 'مرشحات تنبيه مخصصة، أوضاع تركيز، وإشارات صوتية لا تُظهر إلا الإعدادات المصرح بها.',
+                    'stack.trust.title': 'شفافية وموثوقية',
+                    'stack.trust.point1': 'باك تست، منحنيات رأس مال، أكبر سحب، ولوحات استخدام الاعتمادات لكل برنامج.',
+                    'stack.trust.point2': 'أرشيفات Discord حسب الرمز والفور العالمي لا تحذف الرسائل — كل شيء قابل للتدقيق.',
+                    'stack.trust.point3': 'مراقبة 24/7، تقارير SLA، وفريق هندسي متخصص يحافظ على جاهزية الموصلات.',
+                    'community.title': 'مكاتب Discord لبناء المساءلة',
+                    'community.lead': 'فور عالمي للحالة المزاجية، غرف حرب لكل رمز، ونصوص ثابتة تعني أنك لن تواجه السوق وحدك.',
+                    'community.case1.name': 'الفور العالمي',
+                    'community.case1.quote': 'الموجزات الصباحية، رادار الماكرو، وعدّاد الاعتمادات متاحة للجميع لاتباع الخطة نفسها.',
+                    'community.case2.name': 'غرف الرموز',
+                    'community.case2.quote': 'كل سهم له سلسلة بها الأدلة، نقاط الدخول/الخروج، والمتابعات المثبتة — لا شيء يختفي.',
+                    'community.case3.name': 'شفافية مصممة',
+                    'community.case3.quote': 'لا نحذف الرسائل. النتائج والتعديلات والمراجعات تبقى قابلة للبحث للامتثال والتدريب.',
+                    'community.channels': 'القنوات',
+                    'community.preview': 'الإيصالات المثبتة وملاحظات المخاطر والمتابعات تبقى قابلة للبحث دائماً.',
                     'social.title': 'ابقَ متصلاً عبر كل القنوات',
                     'social.lead': 'تابع اللقطات الفورية، ملخصات التداول وتحديثات المنصة على شبكاتك المفضلة. نفس الرؤى المتعددة اللغات في كل مكان حتى لا يفوتك أي إعداد.',
                     'social.discord.title': 'مجتمع Discord',
-                    'social.discord.body': 'تعاون مع المتداولين داخل مركز Discord الخاص بنا بعد إكمال عملية الانضمام.',
+                    'social.discord.body': 'Floors عالمية وخيوط لكل رمز تبقي الجميع متزامنًا؛ السجلات لا تُمحى.',
                     'social.stocktwits.title': 'Stocktwits @marketwatchx',
                     'social.stocktwits.body': 'خطة يومية، استطلاعات شعور ومرئيات مصممة لمجتمع Stocktwits.',
                     'social.x.title': 'X @marketwatchxyz',
@@ -974,14 +1272,14 @@
                     'social.youtube.body': 'تحليلات مطولة، نصائح المنصة وملخصات أسبوعية مع ترجمات متعددة اللغات.',
                     'distribution.title': 'انشر المعلومات حيثما تتداول',
                     'distribution.discord.title': 'بث عبر Discord',
-                    'distribution.discord.body': 'تنبيهات قابلة للتنفيذ مع شروط تفعيل وإلغاء واضحة، إضافة إلى الموجزات والإشارات، تصل إلى <strong>مجتمعنا على Discord</strong>. فعّل الإشعارات لالتقاط نقاط الدخول والخروج والمتابعة ومراجعة الأدلة المرفقة لكل إشارة (نجاح أو فشل).',
-                    'distribution.discord.note': 'اطلب الانضمام من داخل منصة MarketWatch AI عند تفعيل حسابك.',
+                    'distribution.discord.body': 'تنبيهات قابلة للتنفيذ بقواعد تفعيل/إلغاء تصل إلى <strong>Floors Discord</strong> الخاصة بنا: غرف عالمية وخيوط لكل رمز. تبقى الإيصالات واللقطات والنتائج مثبتة للامتثال.',
+                    'distribution.discord.note': 'اطلب الوصول من داخل MarketWatch AI؛ نعينك تلقائيًا على المكاتب وحدود الائتمان وإيقاع المراجعة.',
                     'distribution.web.title': 'منصة الويب',
-                    'distribution.web.body': 'تعاون على <strong>ai.market-watch.xyz</strong>. إدارة قوائم المراقبة، اعتماد التنبيهات مع أدلة التنفيذ (نجاح/فشل)، وضبط المستويات مع سجل أداء شفاف بعيداً عن الجداول المعقدة.',
+                    'distribution.web.body': 'اعمل من <strong>ai.market-watch.xyz</strong>. ابنِ قوائم Pine، وافق على تنبيهات A+، راجع الباك تست، وادقق لوحات المحفظة بدون جداول.',
                     'distribution.web.link': 'فتح منصة الويب',
                     'distribution.ai.title': 'موصلات ChatGPT وClaude',
-                    'distribution.ai.body': 'اطلب من ChatGPT أو Claude أو Gemini جلب briefs وتنبيهات ودراسة العناية بلمسة واحدة.',
-                    'distribution.ai.link': 'تفعيل الموصلات',
+                    'distribution.ai.body': 'استدع MarketWatch AI من ChatGPT أو Claude أو Gemini أو عوامل MCP أو عميل API لسحب الموجزات والعناية الواجبة أو دفع أوامر مشروطة عبر webhooks.',
+                    'distribution.ai.link': 'تفعيل الموصلات وواجهة API',
                     'cta.title': 'انضم إلى النسخة التجريبية — مجاناً أثناء التطوير',
                     'cta.body': 'ساهم في بناء رفيق تداول سريع. متداولو النسخة التجريبية يحصلون على تنبيهات غير محدودة وموصلات ودور في تشكيل خارطة الطريق.',
                     'cta.note': 'الوصول في وضع البيتا مجاني حالياً. عند الانتقال إلى الإصدار المدفوع ستنتقل بعض أدوات الأتمتة والتحليلات إلى اشتراك خفيف — الحسابات المؤسسة ستحصل على تسعير مميز.',
@@ -1007,6 +1305,9 @@
                     'nav.overview': 'Resumen',
                     'nav.education': 'Formación',
                     'nav.setups': 'Setups',
+                    'nav.gallery': 'Mesa A+',
+                    'nav.discipline': 'Disciplina',
+                    'nav.stack': 'Stack',
                     'nav.workflows': 'Flujos diarios',
                     'nav.launch': 'Abrir app',
                     'nav.languageLabel': 'Idioma',
@@ -1016,23 +1317,24 @@
                     'lang.option.ar': '🇸🇦 Árabe (AR)',
                     'lang.option.es': '🇪🇸 Español (ES)',
                     'lang.option.zh': '🇨🇳 中文 (ZH)',
-                    'hero.pill': 'Beta enfocada en formación — gratis mientras siga',
-                    'hero.heading': 'Aprende el setup y ejecútalo con convicción.',
-                    'hero.body': 'MarketWatch AI entrega briefs de audio multilingües, planes anotados y coaching Principiante/Intermedio/Experto en acciones long-only compatibles con la sharia en EE. UU., Europa y Asia — con preservación del capital como prioridad y un desempeño totalmente transparente.',
+                    'hero.pill': 'Solo setups A+ — laboratorio de detección',
+                    'hero.heading': 'Detección de nivel institucional para traders retail decisivos.',
+                    'hero.body': 'MarketWatch AI combina escáneres multi-señal (order flow, liquidez, opciones, blockchain), validación humana, coaching multilingüe y disciplina sharia para que las mesas retail detecten suelos, breakouts y giros antes que la multitud.',
                     'hero.ctaPrimary': 'Empezar beta gratis',
                     'hero.ctaDiscord': 'Unirse a Discord',
-                    'hero.highlight1': 'Briefs en audio + texto en English, Français, العربية, Español, 中文',
-                    'hero.highlight2': 'Galería de setups con gráficos claros y narración guiada',
-                    'hero.highlight3': 'Niveles Principiante · Intermedio · Experto que explican cada decisión',
-                    'hero.highlight4': 'Preservar el capital primero — si no hay edge, no forzamos la operación',
-                    'hero.highlight5': 'Track record transparente con max drawdown, curva de equity y ratios de riesgo auditables',
-                    'hero.highlight6': 'Web y Discord registran cada alerta con prueba de éxito/fracaso más conectores ChatGPT, Claude, Gemini',
-                    'hero.badgeSharia': 'Estrategias long-only certificadas como compatibles con la sharia',
-                    'hero.badgeAlerts': 'Alertas accionables con reglas claras y comprobantes de éxito/fracaso en web y Discord',
-                    'hero.badgeRisk': 'Paneles de riesgo en vivo: max drawdown, curva de equity y ratios de riesgo',
-                    'langHint.viewing': 'Estás viendo el sitio en Español',
-                    'langHint.switch': 'El sitio está disponible en {lang}; cambia en un clic.',
-                    'langHint.unavailable': 'Mostramos el sitio en Español. Usa la traducción automática si lo prefieres.',
+                    'hero.highlight1': 'Detectores multi-señal (flow, liquidez, sentimiento, blockchain) anticipan los suelos',
+                    'hero.highlight2': 'Mesa de alertas A+ — pocas señales, anotadas a fondo, entradas y salidas halal',
+                    'hero.highlight3': 'Mesas colaborativas por símbolo: nunca vuelvas a operar solo',
+                    'hero.highlight4': 'Herramientas de foco: temporizadores Pomodoro, avisos sonoros custom, checklists anti-FOMO y revenge trade',
+                    'hero.highlight5': 'Dashboards de cartera, rankings de watchlist y recibos de Discord que nunca se borran',
+                    'hero.highlight6': 'Listo para automatizar: watchlists Pine, MCP/API/webhooks, ruteo a Interactive Brokers',
+                    'hero.badgeSharia': 'Setups halal certificados y validados por analistas humanos',
+                    'hero.badgeAlerts': 'Alertas A+ solamente: reglas de trigger/cancel con confluencia de flujo y sentimiento',
+                    'hero.badgeRisk': 'Dashboards de riesgo: max drawdown, curva de equity en vivo, ciclos de revisión iterativos',
+                    'langHint.viewing': 'Ya ves el sitio en tu idioma.',
+                    'langHint.switch': '¿Prefieres {lang}? Cambia con un clic.',
+                    'langHint.unavailable': 'El idioma de tu navegador todavía no está disponible.',
+                    'langHint.dismiss': 'Ocultar sugerencia de idioma',
                     'live.feedTitle': 'Flujo de alertas en vivo',
                     'live.status': 'Abierto · NYSE',
                     'live.card1.title': 'Squeeze de momentum en NVDA',
@@ -1045,6 +1347,15 @@
                     'live.card3.title': 'Conector ChatGPT & Claude',
                     'live.card3.body': 'Pídele a tu chatbot favorito el brief o alerta más reciente. MarketWatch AI responde al instante con datos frescos y contexto.',
                     'live.card3.tag': 'Conector',
+                    'watchlist.title': 'Watchlist A+ — sesión EEUU',
+                    'watchlist.filters': 'Filtros: Breakout · Halal · Alto volumen',
+                    'watchlist.updated': 'Actualizado hace 2 min',
+                    'watchlist.alpha': 'Alfa 9.6',
+                    'watchlist.beta': 'Detectado 5 días',
+                    'watchlist.gamma': 'Sesgo opciones',
+                    'watchlist.nvda': 'Nvidia Corp',
+                    'watchlist.hims': 'Hims & Hers',
+                    'watchlist.tsla': 'Tesla Inc',
                     'languages.title': 'Señales en tu idioma',
                     'languages.lead': 'MarketWatch AI publica cada brief, alerta y análisis como audio + texto en English, Français, العربية, Español y 中文, listo para las sesiones de EE. UU., Europa y Asia.',
                     'lang.en.title': 'Inglés',
@@ -1065,44 +1376,21 @@
                     'education.point4': 'Explicaciones diarias del porqué detrás de cada señal para que alcances autonomía.',
                     'education.point5': 'Tableros de rendimiento, max drawdown, curva de equity y ratios de riesgo auditables por cada miembro.',
                     'education.dataTitle': 'Datos de mercado en tiempo real que vigilamos por ti',
-                    'education.dataPoint1': 'Precios, volúmenes, mapas de liquidez e imbalances del tape en vivo.',
-                    'education.dataPoint2': 'Calendario macro, earnings, flujo de opciones y cambios en volatilidad implícita.',
-                    'education.dataPoint3': 'Newswires, archivos de la SEC, corporate actions y titulares regulatorios.',
-                    'education.dataPoint4': 'Indicadores de volatilidad (VIX), correlaciones inter-mercado y estacionalidad.',
-                    'education.dataPoint5': 'Contexto cross-asset de divisas mayores, crudo, oro y sentimiento macro.',
-                    'education.title': 'Un compagnon pédagogique pour chaque niveau',
-                    'education.lead': 'Chaque setup inclut narration multilingue, graphiques annotés et checklists par niveau pour que débutants, intermédiaires et experts comprennent le “pourquoi” avant d\'agir.',
-                    'education.point1': 'Briefs texte et audio en cinq langues avec transcriptions fidèles.',
-                    'education.point2': 'Packs d’images et annotations graphiques : une image explique souvent plus vite un setup.',
-                    'education.point3': 'Trois niveaux (Débutant / Intermédiaire / Expert) pour progresser pas à pas.',
-                    'education.point4': 'Des explications quotidiennes du “pourquoi” pour gagner en autonomie.',
-                    'education.point5': 'Tableaux de performance, max drawdown, courbe d’équité et ratios de risque auditables par tous les membres.',
-                    'education.dataTitle': 'Données de marché temps réel que nous surveillons',
-                    'education.dataPoint1': 'Prix, volumes, cartes de liquidité et flux d’ordres en direct.',
-                    'education.dataPoint2': 'Agenda macro, publications de résultats, flux options et volatilité implicite.',
-                    'education.dataPoint3': 'Newswires, dépôts réglementaires (SEC) et actions corporate.',
-                    'education.dataPoint4': 'Indicateurs de volatilité (VIX), corrélations inter-marchés et saisonnalité.',
-                    'education.dataPoint5': 'Contexte cross-asset : devises majeures, pétrole, or et sentiment macro.',
+                    'education.dataPoint1': 'Profundidad de libro, mapas de liquidez, volume profile y desequilibrios del tape en tiempo real.',
+                    'education.dataPoint2': 'Flujo de opciones, dark pools, operaciones de insiders y trackers de ballenas en blockchain.',
+                    'education.dataPoint3': 'Calendarios económicos, earnings, pipeline de M&A/OPA y radar de rotación sectorial.',
+                    'education.dataPoint4': 'Newswires, filings SEC, alertas de dilución/warrants y análisis histórico del float.',
+                    'education.dataPoint5': 'Correlaciones inter-activo en FX, energía, metales, tasas y monitores de sentimiento social.',
                     'social.title': 'Mantente conectado en cada canal',
                     'social.lead': 'Sigue fragmentos en vivo, recaps de trading y novedades del producto en tus redes favoritas. El mismo insight multilingüe en todas partes para no perder oportunidades.',
                     'social.discord.title': 'Comunidad en Discord',
-                    'social.discord.body': 'Colabora con traders dentro de nuestro hub privado de Discord cuando completes el onboarding.',
+                    'social.discord.body': 'Floors globales y hilos por símbolo mantienen a todos sincronizados; las transcripciones jamás se borran.',
                     'social.stocktwits.title': 'Stocktwits @marketwatchx',
                     'social.stocktwits.body': 'Playbook diario, encuestas de sentimiento y visuales diseñados para la comunidad de Stocktwits.',
                     'social.x.title': 'X @marketwatchxyz',
                     'social.x.body': 'Scalps en tiempo real, hilos educativos y changelog del producto en formato corto.',
                     'social.youtube.title': 'YouTube @MarketWatchXYZ',
                     'social.youtube.body': 'Breakdowns largos, trucos de la plataforma y recaps semanales con subtítulos multilingües.',
-                    'social.title': 'Restez connectés sur tous les canaux',
-                    'social.lead': 'Suivez les extraits en temps réel, les recaps et l’actualité produit sur vos réseaux préférés. Les mêmes insights multilingues partout, pour ne rien manquer.',
-                    'social.discord.title': 'Communauté Discord',
-                    'social.discord.body': 'Collaborez avec les traders au sein de notre hub Discord privé une fois onboardé.',
-                    'social.stocktwits.title': 'Stocktwits @marketwatchx',
-                    'social.stocktwits.body': 'Brief quotidien, sondages de sentiment et visuels adaptés à la communauté Stocktwits.',
-                    'social.x.title': 'X @marketwatchxyz',
-                    'social.x.body': 'Scalps en temps réel, fils pédagogiques et changelog produit en format court.',
-                    'social.youtube.title': 'YouTube @MarketWatchXYZ',
-                    'social.youtube.body': 'Débriefings longs, astuces plateforme et recaps hebdos avec sous-titres multilingues.',
                     'personas.title': 'Creado para traders retail exigentes',
                     'personas.momentum.title': 'Cazador de momentum',
                     'personas.momentum.body': 'Abre con un brief conciso, gestiona watchlists en vivo y ejecuta alertas con entradas y stops calculados.',
@@ -1128,60 +1416,91 @@
                     'usecases.after.point3': 'Entrega vía Discord, acciones ChatGPT o herramientas Claude',
                     'usecases.risk.title': 'Gestión de riesgo y capital',
                     'usecases.risk.body': 'Activa un dimensionamiento disciplinado con métricas de riesgo en vivo y barreras automáticas. Cada alerta registra el presupuesto de riesgo, los cambios al cerrar y alimenta los tableros de drawdown y equity.',
+                    'usecases.prev': 'Workflow anterior',
+                    'usecases.next': 'Siguiente workflow',
                     'usecases.risk.point1': 'Seguimiento en tiempo real del max drawdown y la curva de equity.',
                     'usecases.risk.point2': 'Análisis de ratio de riesgo / R-multiple por alerta y cartera.',
                     'usecases.risk.point3': 'Reglas de position sizing personalizadas con disparadores de pausa automática cuando se superan los límites.',
-                    'visuals.title': 'Galería de casos con setups anotados',
-                    'visuals.lead': 'Explora breakouts, pullbacks y tendencias macro con overlays, narración y guías educativas antes de arriesgar capital.',
-                    'visuals.point1': 'Gráficos generados automáticamente muestran entrada, stop y objetivos con RR',
-                    'visuals.point2': 'Narración IA resalta catalizadores y contexto macro en tu idioma',
-                    'visuals.point3': 'Comparte cada setup al instante por Discord o acciones de chats IA',
-                    'visuals.tier.beginner': 'Ruta Principiante',
-                    'visuals.tier.intermediate': 'Ruta Intermedia',
-                    'visuals.tier.expert': 'Ruta Experta',
-                    'visuals.card1.title': 'Breakout del rango inicial',
-                    'visuals.card1.body': 'Impulso limpio con entrada, stop, objetivos y riesgo explicados en lenguaje sencillo para reforzar el plan.',
-                    'visuals.card1.point1': 'Overlays marcan zonas de entrada, stop y recompensa/riesgo.',
-                    'visuals.card1.point2': 'Resumen en audio de 60 segundos en cinco idiomas aclara la tesis.',
-                    'visuals.card1.point3': 'Nota educativa explica por qué sólo tomamos el lado largo compatible con la sharia.',
-                    'visuals.card2.title': 'Continuación tras retroceso',
-                    'visuals.card2.body': 'Retroceso estructurado en un líder europeo con confluencia VWAP, liquidez y calendario de catalizadores para traders intermedios.',
-                    'visuals.card2.point1': 'Narración cubre estructura, perfil de volumen y catalizador.',
-                    'visuals.card2.point2': 'Mapa de calor muestra cómo escalar sin salirte del riesgo.',
-                    'visuals.card2.point3': 'Recordatorio long-only para cumplir con mandatos de sharia.',
-                    'visuals.card3.title': 'Alineación macro tendencial',
-                    'visuals.card3.body': 'Líder listado en Asia alineado con amplitud, rotación sectorial y crédito, con enlaces de diligencia para mesas expertas.',
-                    'visuals.card3.point1': 'Superposición multi-temporal revela cambios de régimen y bandas de riesgo.',
-                    'visuals.card3.point2': 'Nota de audio del analista resume macro, flujos y catalizadores.',
-                    'visuals.card3.point3': 'Insignias de checklist muestran los hitos educativos completados por tu equipo.',
+                    'visuals.title': 'Galería accionable: alertas, watchlists y control de cartera',
+                    'visuals.lead': 'Desliza para ver ejemplos reales de nuestros detectores de suelos y breakouts, watchlists con Pine y dashboards de cartera para entender qué es un setup A+.',
+                    'visuals.point1': 'Los recibos de alertas incluyen trigger, invalidación, tamaño y snapshots del libro de órdenes',
+                    'visuals.point2': 'Las watchlists combinan filtros de Pine con tags dinámicos (unión / intersección / resta)',
+                    'visuals.point3': 'Los dashboards de cartera siguen la curva de equity, contador de créditos y cadencia de revisión',
+                    'visuals.prev': 'Tarjeta anterior',
+                    'visuals.next': 'Siguiente tarjeta',
+                    'visuals.tier.beginner': 'Ejemplo de alerta A+',
+                    'visuals.tier.intermediate': 'Workspace de watchlist',
+                    'visuals.tier.expert': 'Supervisión de cartera',
+                    'visuals.card1.title': 'Alerta de reversión por agotamiento',
+                    'visuals.card1.body': 'Nuestro detector de suelos mezcla order flow, sentimiento, pivotes de liquidez y catalizadores macro; el equipo humano aprueba antes de enviar a los desks en vivo.',
+                    'visuals.card1.point1': 'Libro de órdenes, flujo de opciones y prints de insiders justifican el trigger con lenguaje claro.',
+                    'visuals.card1.point2': 'Escalera de entrada/stop/targets y risk per share mantienen la disciplina del tamaño.',
+                    'visuals.card1.point3': 'Recibos post-trade, ediciones y notas de revisión permanecen visibles — nada se borra.',
+                    'visuals.card2.title': 'Constructor dinámico de watchlists',
+                    'visuals.card2.body': 'Diseña Profile Rules con Pine, scores de sentimiento y filtros de crédito; clasifica candidatos por detected_days, catalizadores y ajuste al playbook.',
+                    'visuals.card2.point1': 'Combina tags breakout, volatile, dilution, buyout y halal con unión/intersección/resta.',
+                    'visuals.card2.point2': 'Snapshots de features explican cada puntaje: volumen, movimientos insider, skew de opciones.',
+                    'visuals.card2.point3': 'Difunde con un clic a canales de símbolo en Discord, agente MCP, API o webhooks.',
+                    'visuals.card3.title': 'Dashboard de accountability',
+                    'visuals.card3.body': 'Curva de equity, drawdown, uso de créditos y ritmo de revisión en un tablero que alimenta el ciclo A+.',
+                    'visuals.card3.point1': 'Tarjetas de cartera muestran plan vs ejecutado, buckets de riesgo y salud del contador de créditos.',
+                    'visuals.card3.point2': 'Temporizadores de foco, check-ins de ánimo y prompts anti-FOMO mantienen la disciplina.',
+                    'visuals.card3.point3': 'Automatizaciones LLM preparan órdenes condicionales para Interactive Brokers o webhooks tras la revisión.',
+                    'discipline.title': 'Nunca vuelvas a operar solo',
+                    'discipline.lead': 'Nuestras mesas combinan detección pro y coaching humano para mantener la calma, evitar el FOMO y ejecutar solo setups A+ aprobados.',
+                    'discipline.point1': 'Hilos de accountability, líderes de canal y debriefs post trade bloquean el FOMO y la venganza.',
+                    'discipline.point2': 'Bloques de foco, Pomodoro y chequeos emocionales alinean la ejecución con la checklist.',
+                    'discipline.point3': 'Agilidad retail: sin mandatos de ETF, perseguimos rendimientos superiores al beta.',
+                    'discipline.point4': 'Diligencia compartida, watchlists filtradas y respeto al stop aseguran que solo tomemos setups A+.',
+                    'discipline.card.title': 'Trampas que neutralizamos a diario',
+                    'discipline.trap1': 'Perseguir gaps por FOMO — checklist previa, contador de créditos y revisión de pares lo frenan.',
+                    'discipline.trap2': 'Promediar por emoción — la alerta se cancela al invalidarse; el diario obliga a reiniciar.',
+                    'discipline.trap3': 'Visión de túnel en solitario — canales por símbolo, calls globales y encuestas de ánimo exponen puntos ciegos.',
+                    'discipline.trap4': 'Sobreexposición — heatmaps de cartera y filtros halal controlan el tamaño.',
                     'workflows.title': 'De scalping a posiciones de largo plazo',
                     'workflows.scalp.title': 'Disciplina en la ventana de scalping',
-                    'workflows.scalp.body': 'Define la apertura con niveles preplanificados, stops de seguridad y reglas de preservación de capital. Si el flujo no es limpio, la decisión es no operar.',
+                    'workflows.scalp.body': 'Detectores multi-señal mandan en la apertura: pivotes de liquidez, escaleras de imbalance y chequeo emocional dictan actuar o esperar.',
                     'workflows.day.title': 'Chequeos intradía de momentum',
-                    'workflows.day.body': 'Supervisa los medidores de convicción, solicita recaps de IA y ajusta las watchlists conforme rota la liquidez. Sólo ejecuta setups alineados con el plan y el riesgo.',
+                    'workflows.day.body': 'Medidores de convicción procesan flujo de opciones, prints insider y datos blockchain; las watchlists se autoajustan mientras el equipo calibra el riesgo.',
                     'workflows.swing.title': 'Preparación de swings',
-                    'workflows.swing.body': 'Revisa candidatos swing, registra parciales y sincroniza notas con la cartera modelo compartida. Los recordatorios educativos confirman la tesis o invitan a pausar.',
+                    'workflows.swing.body': 'Revisiones swing integran due diligence, tags Pine y líneas de tiempo de catalizadores mientras los pares desafían la tesis antes de ampliar tamaño.',
                     'workflows.long.time': 'Semanal',
                     'workflows.long.title': 'Auditoría de cartera a largo plazo',
-                    'workflows.long.body': 'Publica el historial de rendimiento, somete la exposición a pruebas de estrés y conserva liquidez cuando cambia el régimen macro. Cada miembro puede auditar el track record y las asignaciones modelo.',
-                    'community.title': 'Voces de la comunidad',
-                    'community.lead': 'Miles de traders confían en MarketWatch AI para mantener la disciplina. Este es el feedback de la beta.',
-                    'community.case1.name': 'Alex — Madrid',
-                    'community.case1.quote': '“Cambiar la interfaz a español y enviar alertas a Discord hizo mi rutina swing mucho más fluida.”',
-                    'community.case2.name': 'Leïla — París',
-                    'community.case2.quote': '“Los briefs en francés y la diligencia IA me permiten compartir ideas en segundos; las métricas de riesgo me mantienen honesta.”',
-                    'community.case3.name': 'Wei — Singapur',
-                    'community.case3.quote': '“Las alertas 中文 con cobertura asiática significan cero setups perdidos entre Tokio y Nueva York.”',
+                    'workflows.long.body': 'Auditorías semanales repasan trades, actualizan backtests y publican ajustes. Cada resultado alimenta la base A+.',
+                    'stack.title': 'Stack de detección, automatización y fiabilidad',
+                    'stack.lead': 'Combinamos detección cuantitativa, validación humana y entrega enterprise para alertas raras, transparentes y accionables.',
+                    'stack.detect.title': 'Laboratorio de detección avanzado',
+                    'stack.detect.point1': 'Escáneres multi-timeframe alinean flow, opciones, insiders, blockchain y sentimiento para anticipar setups.',
+                    'stack.detect.point2': 'Profile Rules y filtros Pine crean watchlists con lógica de unión/intersección/resta y snapshots.',
+                    'stack.detect.point3': 'La mesa revisa dilución, warrants, historial del float y cumplimiento sharia antes de publicar.',
+                    'stack.auto.title': 'Pipeline de automatización',
+                    'stack.auto.point1': 'Copilotos LLM redactan órdenes condicionales diarias o semanales y las envían a IB, agentes MCP o webhooks.',
+                    'stack.auto.point2': 'API con OAuth para conectar MarketWatch AI con dashboards, automatizaciones o controles de riesgo propios.',
+                    'stack.auto.point3': 'Filtros de alertas personalizados, modos de foco y señales sonoras muestran solo setups autorizados.',
+                    'stack.trust.title': 'Transparencia y fiabilidad',
+                    'stack.trust.point1': 'Backtests, curvas de equity, max drawdown y uso de créditos acompañan cada programa.',
+                    'stack.trust.point2': 'Archivos de Discord por símbolo y floor global: nunca se borra nada y todo es auditable.',
+                    'stack.trust.point3': 'Monitorización 24/7, reportes SLA y un equipo de ingeniería dedicado cuidan las integraciones.',
+                    'community.title': 'Floors de Discord para la accountability',
+                    'community.lead': 'Floor global para el pulso, war rooms por símbolo y transcripciones inmutables: jamás operas solo.',
+                    'community.case1.name': 'Floor global',
+                    'community.case1.quote': 'Brief matinal, radar macro y contador de créditos visibles para que toda la mesa siga el mismo plan.',
+                    'community.case2.name': 'War rooms por símbolo',
+                    'community.case2.quote': 'Cada ticker tiene hilo con evidencia, entradas, salidas y follow-ups fijados — nada desaparece.',
+                    'community.case3.name': 'Transparencia total',
+                    'community.case3.quote': 'Nunca borramos mensajes. Resultados, ediciones y recapitulaciones siguen buscables para compliance.',
+                    'community.channels': 'canales',
+                    'community.preview': 'Recibos fijados, notas de riesgo y seguimientos permanecen disponibles siempre.',
                     'distribution.title': 'Lleva la información a donde operas',
                     'distribution.discord.title': 'Broadcast en Discord',
-                    'distribution.discord.body': 'Alertas accionables con condiciones de activación/cancelación definidas, briefs y señales fluyen hacia nuestra <strong>comunidad de Discord</strong>. Activa notificaciones para capturar entradas, salidas, seguimientos y revisar pruebas de éxito o fracaso de cada alerta.',
-                    'distribution.discord.note': 'Solicita acceso desde MarketWatch AI cuando tu cuenta esté lista.',
+                    'distribution.discord.body': 'Alertas accionables con reglas de activación/cancelación llegan a nuestros <strong>floors de Discord</strong>: salas globales y hilos por símbolo. Recibos, capturas y resultados quedan fijados.',
+                    'distribution.discord.note': 'Pide acceso dentro de MarketWatch AI; te asignamos desks, créditos y cadencia de revisión automáticamente.',
                     'distribution.web.title': 'Workspace web',
-                    'distribution.web.body': 'Colabora en <strong>ai.market-watch.xyz</strong>. Gestiona listas, valida alertas con evidencia de éxito/fracaso, ajusta niveles y revisa un track record transparente sin hojas de cálculo.',
+                    'distribution.web.body': 'Desde <strong>ai.market-watch.xyz</strong> construyes watchlists Pine, apruebas alertas A+, revisas backtests y dashboards de cartera sin hojas de cálculo.',
                     'distribution.web.link': 'Abrir app web',
                     'distribution.ai.title': 'Conectores ChatGPT &amp; Claude',
-                    'distribution.ai.body': 'Llama a MarketWatch AI desde ChatGPT, Claude o Gemini para obtener briefs, alertas o diligencia sin salir del chat.',
-                    'distribution.ai.link': 'Habilitar conectores',
+                    'distribution.ai.body': 'Invoca MarketWatch AI desde ChatGPT, Claude, Gemini, agentes MCP o tu cliente API para obtener briefs, due diligence o enviar órdenes condicionales vía webhooks.',
+                    'distribution.ai.link': 'Activar conectores y API',
                     'cta.title': 'Únete a la beta — gratis mientras afinamos',
                     'cta.body': 'Ayúdanos a construir un compañero de trading veloz. Los beta testers obtienen alertas ilimitadas, conectores y voz en la hoja de ruta.',
                     'cta.note': 'El acceso a la beta es gratuito. Cuando salgamos de beta, ciertas automatizaciones y analíticas pasarán a un plan de suscripción ligero — las cuentas fundadoras conservarán precios preferenciales.',
@@ -1207,6 +1526,9 @@
                     'nav.overview': '概览',
                     'nav.education': '学习',
                     'nav.setups': 'Setup 图库',
+                    'nav.gallery': 'A+ 案例库',
+                    'nav.discipline': '纪律',
+                    'nav.stack': '技术栈',
                     'nav.workflows': '交易节奏',
                     'nav.launch': '打开应用',
                     'nav.languageLabel': '语言',
@@ -1216,23 +1538,24 @@
                     'lang.option.ar': '🇸🇦 阿拉伯语 (AR)',
                     'lang.option.es': '🇪🇸 西班牙语 (ES)',
                     'lang.option.zh': '🇨🇳 中文 (ZH)',
-                    'hero.pill': '教育优先公测 — 名额有限免费体验',
-                    'hero.heading': '先理解 Setup，再自信执行。',
-                    'hero.body': 'MarketWatch AI 提供多语言音频简报、标注交易计划，以及初级/进阶/专家分层辅导，专注符合沙里亚的美欧亚股票多头策略——资金安全优先，业绩完全透明。',
+                    'hero.pill': '仅提供 A+ 套利 — 高阶侦测实验室',
+                    'hero.heading': '机构级侦测，给零售交易者决定性优势。',
+                    'hero.body': 'MarketWatch AI 将多信号扫描（订单流、流动性、期权、区块链）、人工复核、多语言辅导与符合伊斯兰教法的纪律结合起来，让零售团队在大众之前捕捉底部、突破和反转。',
                     'hero.ctaPrimary': '免费开始公测',
                     'hero.ctaDiscord': '加入 Discord',
-                    'hero.highlight1': '音频 + 文本晨间简报：English、Français、العربية、Español、中文',
-                    'hero.highlight2': '清晰图表与语音解说的 Setup 展示墙',
-                    'hero.highlight3': '初级 · 进阶 · 专家三级框架，解释每一步决策',
-                    'hero.highlight4': '资金安全优先——没有胜算就不出手',
-                    'hero.highlight5': '透明战绩并附最大回撤、权益曲线与风险比率面板',
-                    'hero.highlight6': 'Web 端与 Discord 记录每条警报并附成功/失败凭证，同时连接 ChatGPT、Claude、Gemini',
-                    'hero.badgeSharia': '符合沙里亚的多头策略，审计透明',
-                    'hero.badgeAlerts': '明确触发/失效规则的可执行警报，Web 与 Discord 提供成功/失败凭证',
-                    'hero.badgeRisk': '实时风险面板：最大回撤、权益曲线、风险比率',
-                    'langHint.viewing': '当前以中文显示',
-                    'langHint.switch': '网站支持 {lang}，可立即切换。',
-                    'langHint.unavailable': '当前以中文显示。如需其他语言，可使用浏览器翻译。',
+                    'hero.highlight1': '多信号侦测（订单流、流动性、情绪、区块链）提前锁定底部',
+                    'hero.highlight2': 'A+ 警报台——信号少而精，深入注释，进出场符合清真要求',
+                    'hero.highlight3': '按符号划分的协作交易台让你不再独行',
+                    'hero.highlight4': '专注工具：番茄钟、自定义声音提醒、反 FOMO/报复性交易清单',
+                    'hero.highlight5': '组合仪表板、观察名单排名、从不删除的 Discord 凭证',
+                    'hero.highlight6': '自动化就绪：Pine 观察名单、MCP/API/webhook、Interactive Brokers 路由',
+                    'hero.badgeSharia': '人类分析师验证的清真长线策略',
+                    'hero.badgeAlerts': '仅限 A+ 警报：触发/失效规则配合订单流与情绪共振',
+                    'hero.badgeRisk': '风险面板：最大回撤、实时权益曲线、迭代复盘循环',
+                    'langHint.viewing': '你已经在使用该语言查看本站。',
+                    'langHint.switch': '更喜欢 {lang}？点击即可切换。',
+                    'langHint.unavailable': '暂未支持你的浏览器语言。',
+                    'langHint.dismiss': '关闭语言提示',
                     'live.feedTitle': '实时警报流',
                     'live.status': '开市 · 纽交所',
                     'live.card1.title': 'NVDA 动能挤压',
@@ -1245,6 +1568,15 @@
                     'live.card3.title': 'ChatGPT & Claude 连接器',
                     'live.card3.body': '让常用聊天机器人索取最新简报或警报，MarketWatch AI 即刻返回最新数据与交易上下文。',
                     'live.card3.tag': '连接器',
+                    'watchlist.title': 'A+ 观察名单 — 美股时段',
+                    'watchlist.filters': '筛选：突破 · 清真 · 大成交',
+                    'watchlist.updated': '2 分钟前更新',
+                    'watchlist.alpha': 'Alpha 9.6',
+                    'watchlist.beta': '监测 5 天',
+                    'watchlist.gamma': '期权偏斜',
+                    'watchlist.nvda': '英伟达',
+                    'watchlist.hims': 'Hims & Hers',
+                    'watchlist.tsla': '特斯拉',
                     'languages.title': '多语言信号，随时切换',
                     'languages.lead': 'MarketWatch AI 以音频 + 文本形式发布全部简报、警报与分析，支持 English、Français、العربية、Español、中文，覆盖美欧亚市场时段。',
                     'lang.en.title': '英语',
@@ -1265,11 +1597,11 @@
                     'education.point4': '每日讲解信号背后的逻辑，帮助你建立自主体系。',
                     'education.point5': '战绩看板、最大回撤、权益曲线与风险比率分析，所有成员均可审查。',
                     'education.dataTitle': '我们为你实时监控的市场数据',
-                    'education.dataPoint1': '价格、成交量、流动性热图与盘口失衡实时更新。',
-                    'education.dataPoint2': '宏观日历、财报快讯、期权流与隐含波动率变化。',
-                    'education.dataPoint3': '新闻快讯、SEC 披露、公司行为与监管头条。',
-                    'education.dataPoint4': '波动率指标（VIX）、跨市场相关性与季节性规律。',
-                    'education.dataPoint5': '外汇主要货币、原油、黄金与宏观情绪的联动背景。',
+                    'education.dataPoint1': '订单簿深度、流动性热图、成交量剖面与带宽失衡实时刷新。',
+                    'education.dataPoint2': '期权流、暗池、内部人交易与区块链鲸鱼跟踪锁定聪明资金。',
+                    'education.dataPoint3': '经济日历、财报、并购/收购进度与行业轮动雷达保持背景更新。',
+                    'education.dataPoint4': '新闻机构、SEC 文件、稀释/权证提醒与历史流通股分析。',
+                    'education.dataPoint5': '跨资产相关性覆盖外汇、能源、金属、利率及社交情绪监控。',
                     'personas.title': '为严谨的散户交易者打造',
                     'personas.momentum.title': '动量猎手',
                     'personas.momentum.body': '以精炼晨报开场，实时管理自选股，并用预设进出场执行警报。',
@@ -1295,54 +1627,85 @@
                     'usecases.after.point3': '通过 Discord、ChatGPT 动作或 Claude 工具发送',
                     'usecases.risk.title': '风险与资金管理',
                     'usecases.risk.body': '借助实时风险护栏实现严格的仓位控制。每条警报都会记录风险预算、出场时的变化，并同步到共享的回撤与权益面板。',
+                    'usecases.prev': '上一条流程',
+                    'usecases.next': '下一条流程',
                     'usecases.risk.point1': '实时追踪最大回撤和权益曲线。',
                     'usecases.risk.point2': '按警报及组合查看风险比率 / R-multiple 分析。',
                     'usecases.risk.point3': '自定义仓位规则，达到上限自动触发暂停。',
-                    'visuals.title': '多级别 Setup 图库',
-                    'visuals.lead': '在下单前先浏览突破、回调与宏观趋势思路，配套覆盖图层、语音解说与训练提示。',
-                    'visuals.point1': '自动绘制进场、止损、目标与风险收益区间',
-                    'visuals.point2': 'AI 语音在你选择的语言中解释催化剂与宏观背景',
-                    'visuals.point3': '一键分享到 Discord 频道或各类 AI 聊天动作',
-                    'visuals.tier.beginner': '初级路线',
-                    'visuals.tier.intermediate': '进阶路线',
-                    'visuals.tier.expert': '专家路线',
-                    'visuals.card1.title': '开盘突破',
-                    'visuals.card1.body': '规则清晰的动量推进，带有标准化进场、止损、目标与风险测算，讲解语气偏向初学者。',
-                    'visuals.card1.point1': '图层突出进场/止损/收益比核心区域。',
-                    'visuals.card1.point2': '60 秒五语音频快速复盘交易逻辑。',
-                    'visuals.card1.point3': '教育备注解释为何只做符合沙里亚的多头。',
-                    'visuals.card2.title': '趋势回踩延续',
-                    'visuals.card2.body': '欧股成长龙头的结构化回踩，结合 VWAP、流动性与催化日程，适合进阶交易者。',
-                    'visuals.card2.point1': '语音讲解结构、成交分布与驱动因素。',
-                    'visuals.card2.point2': '热力图演示如何分批进场并控制风险。',
-                    'visuals.card2.point3': '多头限定提示确保遵循沙里亚要求。',
-                    'visuals.card3.title': '宏观趋势联动',
-                    'visuals.card3.body': '亚洲龙头与广度、板块轮动和信用环境同向，附上专家级尽调链接。',
-                    'visuals.card3.point1': '多周期叠加揭示 regime 转换与风险区间。',
-                    'visuals.card3.point2': '分析师语音概括宏观、资金流与催化。',
-                    'visuals.card3.point3': '清单徽章显示团队已完成的学习里程碑。',
+                    'visuals.title': '可落地的案例库：警报、观察名单、组合控制',
+                    'visuals.lead': '横向滑动查看真实底部/突破侦测、Pine 驱动的观察名单与组合仪表板，清楚知道 A+ 套利长什么样。',
+                    'visuals.point1': '警报回执包含触发、失效、仓位规模与订单簿快照',
+                    'visuals.point2': '观察名单叠加 Pine 过滤与动态标签（并集/交集/差集）',
+                    'visuals.point3': '组合面板跟踪权益曲线、信用计数与复盘节奏',
+                    'visuals.prev': '上一张卡片',
+                    'visuals.next': '下一张卡片',
+                    'visuals.tier.beginner': 'A+ 警报示例',
+                    'visuals.tier.intermediate': '观察名单工作台',
+                    'visuals.tier.expert': '组合监管',
+                    'visuals.card1.title': '耗竭反转警报',
+                    'visuals.card1.body': '底部侦测融合订单流、情绪、流动性枢轴与宏观催化；人工团队批准后才推送至实时交易台。',
+                    'visuals.card1.point1': '订单簿、期权流、内部人买卖截图用通俗语言说明触发理由。',
+                    'visuals.card1.point2': '进/止/目标阶梯与单股风险计算保持仓位纪律。',
+                    'visuals.card1.point3': '交易结果、修改与复盘笔记永久保留——绝不会删除。',
+                    'visuals.card2.title': '动态观察名单构建器',
+                    'visuals.card2.body': '使用 Pine、情绪得分与信用过滤制定 Profile Rule，再依据 detected_days、催化与剧本匹配度排名标的。',
+                    'visuals.card2.point1': '可将突破、波动、稀释、收购、清真等标签以并/交/差方式组合。',
+                    'visuals.card2.point2': '特征快照解释每个评分：成交量激增、内部人动向、期权偏斜。',
+                    'visuals.card2.point3': '一键推送至 Discord 符号频道、MCP 代理、API 或 webhook。',
+                    'visuals.card3.title': '责任制仪表板',
+                    'visuals.card3.body': '权益曲线、回撤、信用使用与复盘节奏集中在一板，确保每次警报结果进入改进循环。',
+                    'visuals.card3.point1': '组合卡片显示计划 vs 实现、风险桶与信用计数健康度。',
+                    'visuals.card3.point2': '专注计时器、情绪检查与反 FOMO 提示维持交易纪律。',
+                    'visuals.card3.point3': 'LLM 自动化可在审核后向 Interactive Brokers 或 webhook 准备条件单。',
+                    'discipline.title': '别再独自交易',
+                    'discipline.lead': '我们把专业侦测与人工教练结合，让零售交易者保持冷静，远离 FOMO，只执行通过情绪与风险检查的 A+ 套利。',
+                    'discipline.point1': '责任线程、频道负责人与复盘会阻挡 FOMO 和报复性交易。',
+                    'discipline.point2': '专注时段、番茄钟与情绪打卡让执行紧扣清单。',
+                    'discipline.point3': '零售灵活，无需被 ETF 约束，可追求远超基准的收益。',
+                    'discipline.point4': '共同尽调、过滤观察名单与严格止损文化保证只执行 A+ 套利。',
+                    'discipline.card.title': '我们每日化解的陷阱',
+                    'discipline.trap1': 'FOMO 追高缺口 — 通过清单、信用计数与同侪审核刹车。',
+                    'discipline.trap2': '情绪性摊平 — 警报失效即自动取消，日志提示重新评估。',
+                    'discipline.trap3': '独自盲点 — 符号频道、全球语音与情绪投票即时暴露风险。',
+                    'discipline.trap4': '仓位过度 — 组合热图与清真筛选控制仓位。',
                     'workflows.title': '涵盖短线到长线的一体化流程',
                     'workflows.scalp.title': '开盘短线纪律',
-                    'workflows.scalp.body': '用预设价格、熔断式止损和资金保护规则规划开盘。若行情不干净，就选择观望。',
+                    'workflows.scalp.body': '多信号侦测掌控开盘：流动性枢轴、不平衡阶梯与情绪检查决定出击或观望。',
                     'workflows.day.title': '日内动能复核',
-                    'workflows.day.body': '监控信号置信度，调用 AI 回顾，并随流动性轮动调整自选列表。仅执行仍符合计划与风险预算的 setup。',
+                    'workflows.day.body': '信心指标融合期权流、内部成交与区块链数据；观察名单自动更新，团队实时校准风险。',
                     'workflows.swing.title': '波段布局',
-                    'workflows.swing.body': '复盘波段候选、记录减仓，并与共享模型组合同步备注。教育提示确认 Thesis 是否成立或提醒撤退。',
+                    'workflows.swing.body': '波段复盘整合尽调、Pine 标签与催化时间线，同伴在加仓前质疑假设。',
                     'workflows.long.time': '每周',
                     'workflows.long.title': '长期组合审计',
-                    'workflows.long.body': '发布绩效日志、压测敞口，并在宏观切换时保留现金。每位成员都可审核战绩与模型仓位。',
-                    'community.title': '社区之声',
-                    'community.lead': '数以千计的交易者依赖 MarketWatch AI 保持自律，以下是部分内测反馈。',
-                    'community.case1.name': 'Alex — Madrid',
-                    'community.case1.quote': '“把界面切换到西班牙语并将警报推送至 Discord，让我的 swing 流程顺畅十倍。”',
-                    'community.case2.name': 'Leïla — Paris',
-                    'community.case2.quote': '“法语简报加上 AI 尽调让我几秒就能分享想法，风险数据也帮我控制仓位。”',
-                    'community.case3.name': 'Wei — Singapore',
-                    'community.case3.quote': '“中文警报覆盖亚洲时段，再也不会错过东京到纽约之间的机会。”',
+                    'workflows.long.body': '每周审计重播交易、更新回测并公布调整，每个结果都滋养 A+ 数据库。',
+                    'stack.title': '侦测、自动化与可靠性的技术栈',
+                    'stack.lead': '我们融合量化侦测、人工审核与企业级交付，让每条警报稀缺、透明且可执行。',
+                    'stack.detect.title': '先进侦测实验室',
+                    'stack.detect.point1': '多时间框扫描对齐订单流、期权、内部人、区块链与情绪，抢先捕捉机会。',
+                    'stack.detect.point2': 'Profile Rule 与 Pine 过滤构建支持并/交/差逻辑的观察名单并附带特征快照。',
+                    'stack.detect.point3': '人工团队在发布前审核稀释、权证、流通股历史与清真合规。',
+                    'stack.auto.title': '自动化流水线',
+                    'stack.auto.point1': 'LLM 副驾生成日/周条件单，并推送至 Interactive Brokers、MCP 代理或 webhook。',
+                    'stack.auto.point2': 'OAuth 安全的 API 可接入自建看板、自动化或风控流程。',
+                    'stack.auto.point3': '自定义警报过滤、专注模式与音频提示只呈现获准的交易。',
+                    'stack.trust.title': '透明与稳定',
+                    'stack.trust.point1': '每项策略附带回测、权益曲线、最大回撤与信用使用面板。',
+                    'stack.trust.point2': '按符号与全球楼层的 Discord 档案永不删除——完全可审计。',
+                    'stack.trust.point3': '7x24 监控、SLA 报告与专职工程团队维护连接健康。',
+                    'community.title': 'Discord 楼层确保彼此督导',
+                    'community.lead': '全球楼层掌握情绪，符号战房与不可变记录让你不再单打独斗。',
+                    'community.case1.name': '全球楼层',
+                    'community.case1.quote': '晨间简报、宏观雷达与信用计分共享，全员遵循同一份计划。',
+                    'community.case2.name': '符号战房',
+                    'community.case2.quote': '每只股票拥有专属线程，证据、进出场与跟进全部固定在顶端。',
+                    'community.case3.name': '透明架构',
+                    'community.case3.quote': '我们从不删帖，结果、调整、复盘都可搜索，方便合规与教练。',
+                    'community.channels': '频道',
+                    'community.preview': '固定的凭证、风险笔记与跟进消息永远可查。',
                     'social.title': '掌握每个社交渠道',
                     'social.lead': '在常用的社交网络上获取实时片段、交易复盘与平台更新。同样的多语言洞察随处同步，确保不错过任何机会。',
                     'social.discord.title': 'Discord 社群',
-                    'social.discord.body': '加入后即可在我们的私密 Discord 中与交易者协作。',
+                    'social.discord.body': '全球楼层与符号线程让团队保持同步；记录永久保存。',
                     'social.stocktwits.title': 'Stocktwits @marketwatchx',
                     'social.stocktwits.body': '每日操作计划、情绪投票和专为 Stocktwits 社群定制的图表。',
                     'social.x.title': 'X @marketwatchxyz',
@@ -1351,14 +1714,14 @@
                     'social.youtube.body': '长篇复盘、平台技巧与每周总结，配备多语言字幕。',
                     'distribution.title': '在你交易的地方同步情报',
                     'distribution.discord.title': 'Discord 广播',
-                    'distribution.discord.body': '带有明确触发 / 失效条件的执行型警报、简报与信号推送到我们的 <strong>Discord 社群</strong>。开启通知即可捕捉入场、出场、后续跟进，并查看每条警报（成功或失败）的截图与明细证明。',
-                    'distribution.discord.note': '账号启用后，可在 MarketWatch AI 内申请加入社区。',
+                    'distribution.discord.body': '含触发/失效规则的执行警报推送到我们的 <strong>Discord 楼层</strong>：全球房间加符号线程。凭证、截图与结果永久固定，方便稽核。',
+                    'distribution.discord.note': '在 MarketWatch AI 内申请访问，我们会自动配置楼层、信用额度与复盘节奏。',
                     'distribution.web.title': '网页版工作台',
-                    'distribution.web.body': '协同工作请访问 <strong>ai.market-watch.xyz</strong>，管理自选列表、审核含成功/失败证据的警报、调整层级，并查看透明的绩效记录，无需电子表格。',
+                    'distribution.web.body': '访问 <strong>ai.market-watch.xyz</strong> 构建 Pine 观察名单、批准 A+ 警报、查看回测与组合仪表板，无需电子表格。',
                     'distribution.web.link': '打开网页版',
                     'distribution.ai.title': 'ChatGPT &amp; Claude 连接器',
-                    'distribution.ai.body': '在 ChatGPT、Claude 或 Gemini 中调用 MarketWatch AI，直接获取简报、警报或尽调。',
-                    'distribution.ai.link': '启用连接器',
+                    'distribution.ai.body': '通过 ChatGPT、Claude、Gemini、MCP 代理或 API 客户端调用 MarketWatch AI，获取简报、尽调或通过 webhook 推送条件单。',
+                    'distribution.ai.link': '启用连接器与 API',
                     'cta.title': '加入公测 — 调优期间免费',
                     'cta.body': '帮助我们打造高速交易助手。公测用户可获得无限警报、连接器以及路线图优先权。',
                     'cta.primary': '免费开始',
@@ -1382,7 +1745,10 @@
             };
 
             const langSelect = document.querySelector('[data-role="lang-select"]');
-            const langHint = document.querySelector('[data-role="lang-hint"]');
+            const langToast = document.querySelector('[data-role="lang-toast"]');
+            const langToastMessage = document.querySelector('[data-role="lang-toast-message"]');
+            const langToastClose = document.querySelector('[data-role="lang-toast-close"]');
+            const langCurrent = document.querySelector('[data-role="lang-current"]');
             const textNodes = document.querySelectorAll('[data-i18n]');
             const htmlNodes = document.querySelectorAll('[data-i18n-html]');
             const ariaLabelNodes = document.querySelectorAll('[data-i18n-attr-aria-label]');
@@ -1394,8 +1760,16 @@
             const waitlistStatus = document.querySelector('[data-role="waitlist-status"]');
             const waitlistEndpoint = 'https://ai.market-watch.xyz/join_beta';
             const originalSubmitText = waitlistSubmit ? waitlistSubmit.textContent : '';
+            const LANG_TOAST_KEY = 'marketwatch-lang-toast-dismissed';
+            const galleryTrack = document.querySelector('[data-role="gallery-track"]');
+            const galleryPrev = document.querySelector('[data-role="gallery-prev"]');
+            const galleryNext = document.querySelector('[data-role="gallery-next"]');
+            const workflowTrack = document.querySelector('[data-role="workflow-track"]');
+            const workflowPrev = document.querySelector('[data-role="workflow-prev"]');
+            const workflowNext = document.querySelector('[data-role="workflow-next"]');
 
             let currentLanguage = defaultLang;
+            let langToastDismissed = false;
 
             function resolveFrom(lang, key) {
                 const table = translations[lang];
@@ -1412,6 +1786,18 @@
                 }
                 const fallbackTable = translations[defaultLang];
                 return fallbackTable && Object.prototype.hasOwnProperty.call(fallbackTable, key) ? fallbackTable[key] : '';
+            }
+
+            function updateLanguageToast(safeLang, message) {
+                if (!langToast || !langToastMessage) {
+                    return;
+                }
+                if (!message || langToastDismissed) {
+                    langToast.setAttribute('hidden', 'hidden');
+                    return;
+                }
+                langToastMessage.textContent = message;
+                langToast.removeAttribute('hidden');
             }
 
             function applyLanguage(lang) {
@@ -1448,22 +1834,36 @@
 
                 if (langSelect) {
                     langSelect.value = safeLang;
+                    if (langCurrent) {
+                        const option = langSelect.querySelector(`option[value="${safeLang}"]`) || langSelect.options[0];
+                        if (option) {
+                            const labelText = option.textContent.trim();
+                            const [rawFlag, ...rest] = labelText.split(' ');
+                            const labelKey = `lang.option.${safeLang}`;
+                            const translated = resolve(safeLang, labelKey) || '';
+                            const translatedParts = translated.trim().split(' ');
+                            const translatedFlag = translatedParts[0] || '';
+                            const translatedLabel = translatedParts.slice(1).join(' ').trim();
+                            const fallbackLabel = rest.join(' ').trim();
+                            const displayFlag = rawFlag || translatedFlag || labelText;
+                            const displayLabel = translatedLabel || fallbackLabel || labelText;
+                            langCurrent.innerHTML = `${displayFlag} <span class="lang-current__text">${displayLabel}</span>`;
+                        }
+                    }
                 }
 
-                if (langHint) {
-                    let hintMessage = '';
-                    if (browserSupportedLang) {
-                        if (safeLang === browserSupportedLang) {
-                            hintMessage = resolve(safeLang, 'langHint.viewing');
-                        } else {
-                            const nativeName = resolveFrom(browserSupportedLang, 'lang.native') || browserSupportedLang.toUpperCase();
-                            hintMessage = resolve(safeLang, 'langHint.switch').replace('{lang}', nativeName);
-                        }
+                let hintMessage = '';
+                if (browserSupportedLang) {
+                    if (safeLang === browserSupportedLang) {
+                        hintMessage = resolve(safeLang, 'langHint.viewing');
                     } else {
-                        hintMessage = resolve(safeLang, 'langHint.unavailable');
+                        const nativeName = resolveFrom(browserSupportedLang, 'lang.native') || browserSupportedLang.toUpperCase();
+                        hintMessage = resolve(safeLang, 'langHint.switch').replace('{lang}', nativeName);
                     }
-                    langHint.textContent = hintMessage;
+                } else {
+                    hintMessage = resolve(safeLang, 'langHint.unavailable');
                 }
+                updateLanguageToast(safeLang, hintMessage);
 
                 try {
                     localStorage.setItem(STORAGE_KEY, safeLang);
@@ -1480,6 +1880,8 @@
                 langSelect.addEventListener('change', (event) => {
                     applyLanguage(event.target.value);
                 });
+            } else if (langCurrent) {
+                langCurrent.innerHTML = '🌐';
             }
 
             const browserLangRaw = (navigator.language || navigator.userLanguage || '').slice(0, 2).toLowerCase();
@@ -1503,7 +1905,63 @@
                 }
             }
 
+            try {
+                langToastDismissed = localStorage.getItem(LANG_TOAST_KEY) === '1';
+            } catch (_) {
+                langToastDismissed = false;
+            }
+
             applyLanguage(initial);
+
+            function scrollGallery(direction) {
+                if (!galleryTrack) {
+                    return;
+                }
+                const isRTL = document.documentElement.dir === 'rtl';
+                const step = Math.max(galleryTrack.clientWidth * 0.8, 240);
+                const delta = direction * step * (isRTL ? -1 : 1);
+                galleryTrack.scrollBy({ left: delta, behavior: 'smooth' });
+            }
+
+            function scrollWorkflow(direction) {
+                if (!workflowTrack) {
+                    return;
+                }
+                const isRTL = document.documentElement.dir === 'rtl';
+                const step = Math.max(workflowTrack.clientWidth * 0.8, 260);
+                const delta = direction * step * (isRTL ? -1 : 1);
+                workflowTrack.scrollBy({ left: delta, behavior: 'smooth' });
+            }
+
+            if (galleryPrev) {
+                galleryPrev.addEventListener('click', () => scrollGallery(-1));
+            }
+
+            if (galleryNext) {
+                galleryNext.addEventListener('click', () => scrollGallery(1));
+            }
+
+            if (workflowPrev) {
+                workflowPrev.addEventListener('click', () => scrollWorkflow(-1));
+            }
+
+            if (workflowNext) {
+                workflowNext.addEventListener('click', () => scrollWorkflow(1));
+            }
+
+            if (langToastClose) {
+                langToastClose.addEventListener('click', () => {
+                    langToastDismissed = true;
+                    if (langToast) {
+                        langToast.setAttribute('hidden', 'hidden');
+                    }
+                    try {
+                        localStorage.setItem(LANG_TOAST_KEY, '1');
+                    } catch (_) {
+                        /* ignore */
+                    }
+                });
+            }
 
             async function submitWaitlist(name, email) {
                 const payload = {
