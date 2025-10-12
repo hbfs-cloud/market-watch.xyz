@@ -1,0 +1,16 @@
+{
+  "name": "MarketWatch AI",
+  "short_name": "MarketWatch",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "lang": "en-US",
+  "background_color": "#0b1629",
+  "theme_color": "#2563eb",
+  "description": "Actionable market intelligence, alerts, and briefs from MarketWatch AI.",
+  "icons": [
+    { "src": "web-app-manifest-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "web-app-manifest-512x512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "logo.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
