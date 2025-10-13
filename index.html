@@ -41,6 +41,61 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
     <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Organization",
+                "name": "MarketWatch AI",
+                "url": "https://ai.market-watch.xyz/",
+                "logo": "https://ai.market-watch.xyz/logo.svg",
+                "description": "MarketWatch AI delivers multilingual trading alerts, Sharia-compliant research, and audited performance dashboards for disciplined retail desks.",
+                "sameAs": [
+                    "https://twitter.com/marketwatchxyz",
+                    "https://stocktwits.com/marketwatchx",
+                    "https://www.youtube.com/@MarketWatchXYZ"
+                ],
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "contactType": "sales",
+                    "email": "hello@market-watch.xyz"
+                }
+            },
+            {
+                "@type": "SoftwareApplication",
+                "name": "MarketWatch AI Trading Companion",
+                "operatingSystem": "Web",
+                "applicationCategory": "FinTechApplication",
+                "url": "https://ai.market-watch.xyz/",
+                "offers": {
+                    "@type": "Offer",
+                    "price": "0",
+                    "priceCurrency": "USD",
+                    "availability": "https://schema.org/PreOrder",
+                    "description": "Free beta access with elite A+ alerts, accountability workflows, and automation connectors."
+                },
+                "creator": {
+                    "@type": "Organization",
+                    "name": "MarketWatch AI"
+                },
+                "featureList": [
+                    "Multi-signal detection across order flow, liquidity, options, and blockchain data",
+                    "Human-validated, Sharia-compliant A+ alerts with annotated receipts",
+                    "Automation connectors for MCP, ChatGPT, webhooks, and Interactive Brokers",
+                    "Risk dashboards with equity curve, drawdown, and credit usage telemetry"
+                ]
+            }
+        ]
+    }
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y9Y9K4EDJL"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Y9Y9K4EDJL');
+    </script>
 </head>
 <body>
     <header class="nav">
@@ -488,6 +543,79 @@
             </div>
         </section>
 
+        <section id="performance" class="section performance">
+            <div class="container performance__layout">
+                <div class="performance__copy">
+                    <h2 data-i18n="performance.title">Proven outcomes you can audit in real time</h2>
+                    <p class="lead" data-i18n="performance.lead">Every alert ships with rolling stats, Discord receipts, and dashboards so you can verify our edge without marketing fluff.</p>
+                    <ul class="performance__list">
+                        <li data-i18n="performance.point1">Backtests compare expectation versus realised reward/risk so desk leaders can size with confidence.</li>
+                        <li data-i18n="performance.point2">Outcome receipts update equity curve, drawdown log, and alert reliability scores after every session.</li>
+                        <li data-i18n="performance.point3">External reviewers sample trades weekly and publish commentary that feeds the next iteration.</li>
+                    </ul>
+                </div>
+                <aside class="performance__panel">
+                    <figure class="performance__media">
+                        <img src="images/performance-dashboard.svg" loading="lazy" width="460" height="280" data-i18n-attr-alt="performance.imageAlt">
+                    </figure>
+                    <div class="performance__stats">
+                        <article class="stat-card">
+                            <span class="stat-card__value" data-i18n="performance.stat1.value">72%</span>
+                            <h3 class="stat-card__label" data-i18n="performance.stat1.label">Rolling win rate on A+ setups (18-month sample)</h3>
+                            <p class="stat-card__note" data-i18n="performance.stat1.note">Verified during weekly manual reviews.</p>
+                        </article>
+                        <article class="stat-card">
+                            <span class="stat-card__value" data-i18n="performance.stat2.value">3.4x</span>
+                            <h3 class="stat-card__label" data-i18n="performance.stat2.label">Average reward-to-risk once an alert triggers</h3>
+                            <p class="stat-card__note" data-i18n="performance.stat2.note">Measured from trigger to planned exit ladder.</p>
+                        </article>
+                        <article class="stat-card">
+                            <span class="stat-card__value" data-i18n="performance.stat3.value">-4.8%</span>
+                            <h3 class="stat-card__label" data-i18n="performance.stat3.label">Max drawdown across the model portfolio</h3>
+                            <p class="stat-card__note" data-i18n="performance.stat3.note">Protected by enforced stops and credit guardrails.</p>
+                        </article>
+                        <article class="stat-card">
+                            <span class="stat-card__value" data-i18n="performance.stat4.value">143</span>
+                            <h3 class="stat-card__label" data-i18n="performance.stat4.label">Documented playbooks in the A+ knowledge base</h3>
+                            <p class="stat-card__note" data-i18n="performance.stat4.note">Each includes catalysts, translations, and post-trade debrief.</p>
+                        </article>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section id="lifecycle" class="section section--alt lifecycle">
+            <div class="container lifecycle__inner">
+                <h2 data-i18n="lifecycle.title">Lifecycle automations keep every alert improving</h2>
+                <p class="lead" data-i18n="lifecycle.lead">We orchestrate the loop from detection to review so humans focus on judgement while MarketWatch AI synchronises evidence and actions.</p>
+                <ol class="lifecycle__steps">
+                    <li class="lifecycle-step">
+                        <span class="lifecycle-step__badge">01</span>
+                        <h3 data-i18n="lifecycle.step1.title">Detect</h3>
+                        <p data-i18n="lifecycle.step1.body">Multi-signal scanners fuse order flow, liquidity sweeps, options skew, insider moves, and blockchain flows.</p>
+                    </li>
+                    <li class="lifecycle-step">
+                        <span class="lifecycle-step__badge">02</span>
+                        <h3 data-i18n="lifecycle.step2.title">Validate</h3>
+                        <p data-i18n="lifecycle.step2.body">Analysts confirm catalysts, float/dilution checks, Sharia compliance, and position sizing math before publishing.</p>
+                    </li>
+                    <li class="lifecycle-step">
+                        <span class="lifecycle-step__badge">03</span>
+                        <h3 data-i18n="lifecycle.step3.title">Publish</h3>
+                        <p data-i18n="lifecycle.step3.body">Alerts route to web, Discord, MCP agents, and webhooks with receipts, focus prompts, and automation-ready payloads.</p>
+                    </li>
+                    <li class="lifecycle-step">
+                        <span class="lifecycle-step__badge">04</span>
+                        <h3 data-i18n="lifecycle.step4.title">Review</h3>
+                        <p data-i18n="lifecycle.step4.body">Post-trade outcomes auto-log, update dashboards, trigger accountability threads, and refresh backtests.</p>
+                    </li>
+                </ol>
+                <div class="lifecycle__cta">
+                    <p data-i18n="lifecycle.note">Each stage is timestamped, signed, and exposed via API so compliance, bots, and human traders stay aligned.</p>
+                </div>
+            </div>
+        </section>
+
         <section id="community" class="section section--alt community">
             <div class="container">
                 <h2 data-i18n="community.title">Discord floors built for accountability</h2>
@@ -564,6 +692,74 @@
             </div>
         </section>
 
+        <section id="security" class="section security">
+            <div class="container security__inner">
+                <div class="security__header">
+                    <h2 data-i18n="security.title">Security, compliance, and uptime you can trust</h2>
+                    <p class="lead" data-i18n="security.lead">Enterprise guardrails protect every dataset, connector, and replay so your desks operate with confidence.</p>
+                </div>
+                <div class="security__grid">
+                    <article class="security-card">
+                        <span class="security-card__icon"><i class="ri-shield-check-line" aria-hidden="true"></i></span>
+                        <h3 data-i18n="security.card1.title">Data handling</h3>
+                        <p data-i18n="security.card1.body">End-to-end encryption, segregated EU/US clusters, and signed webhook payloads keep intelligence private.</p>
+                    </article>
+                    <article class="security-card">
+                        <span class="security-card__icon"><i class="ri-key-2-line" aria-hidden="true"></i></span>
+                        <h3 data-i18n="security.card2.title">Access control</h3>
+                        <p data-i18n="security.card2.body">SAML/OAuth SSO, least-privilege roles, and channel-level permissions map traders to desks automatically.</p>
+                    </article>
+                    <article class="security-card">
+                        <span class="security-card__icon"><i class="ri-pulse-line" aria-hidden="true"></i></span>
+                        <h3 data-i18n="security.card3.title">Reliability SLAs</h3>
+                        <p data-i18n="security.card3.body">99.9% uptime target with active-active failover, synthetic monitoring, and instant incident comms.</p>
+                    </article>
+                    <article class="security-card">
+                        <span class="security-card__icon"><i class="ri-file-shield-2-line" aria-hidden="true"></i></span>
+                        <h3 data-i18n="security.card4.title">Audit &amp; oversight</h3>
+                        <p data-i18n="security.card4.body">Immutable logs, SOC 2 roadmap, halal supervision, and weekly compliance recaps keep standards high.</p>
+                    </article>
+                </div>
+                <p class="security__note" data-i18n="security.note">Dedicated engineers monitor health 24/7 and publish SLA metrics to every client workspace.</p>
+            </div>
+        </section>
+
+        <section id="insights" class="section section--alt insights">
+            <div class="container">
+                <h2 data-i18n="insights.title">Latest desk insights</h2>
+                <p class="lead" data-i18n="insights.lead">We ship weekly breakdowns on detection, discipline, and compliance so you can benchmark your own process.</p>
+                <div class="insights__grid">
+                    <article class="insight-card">
+                        <div class="insight-card__media insight-card__media--liquidity" aria-hidden="true"></div>
+                        <div class="insight-card__body">
+                            <span class="insight-card__tag" data-i18n="insights.card1.tag">Detection lab</span>
+                            <h3 data-i18n="insights.card1.title">Liquidity sweeps that mark bottoms</h3>
+                            <p data-i18n="insights.card1.body">Review how we combine tape imbalance, options flow, and insider prints to qualify exhaustion reversals before they ignite.</p>
+                            <a class="insight-card__link" href="https://ai.market-watch.xyz/blog" target="_blank" rel="noopener" data-i18n="insights.card.cta">Read the analysis</a>
+                        </div>
+                    </article>
+                    <article class="insight-card">
+                        <div class="insight-card__media insight-card__media--discipline" aria-hidden="true"></div>
+                        <div class="insight-card__body">
+                            <span class="insight-card__tag" data-i18n="insights.card2.tag">Desk discipline</span>
+                            <h3 data-i18n="insights.card2.title">Accountability threads vs. FOMO</h3>
+                            <p data-i18n="insights.card2.body">See the psychology prompts, emotion check-ins, and review cadence we use to keep revenge trades off the desk.</p>
+                            <a class="insight-card__link" href="https://ai.market-watch.xyz/blog" target="_blank" rel="noopener" data-i18n="insights.card.cta">Read the analysis</a>
+                        </div>
+                    </article>
+                    <article class="insight-card">
+                        <div class="insight-card__media insight-card__media--compliance" aria-hidden="true"></div>
+                        <div class="insight-card__body">
+                            <span class="insight-card__tag" data-i18n="insights.card3.tag">Compliance &amp; automation</span>
+                            <h3 data-i18n="insights.card3.title">Integrating MCP agents with IBKR</h3>
+                            <p data-i18n="insights.card3.body">Walk through our webhook lifecycle that drafts, routes, and reconciles conditional orders with full audit trails.</p>
+                            <a class="insight-card__link" href="https://ai.market-watch.xyz/blog" target="_blank" rel="noopener" data-i18n="insights.card.cta">Read the analysis</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
         <section id="social" class="section social">
             <div class="container">
                 <h2 data-i18n="social.title">Stay connected across every feed</h2>
@@ -604,6 +800,58 @@
                         </a>
                     </article>
                 </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="section pricing">
+            <div class="container">
+                <h2 data-i18n="pricing.title">Transparent pricing roadmap</h2>
+                <p class="lead" data-i18n="pricing.lead">Beta members trade free while we harden the stack. Here’s how subscriptions unlock once we graduate.</p>
+                <div class="pricing__grid">
+                    <article class="pricing-card pricing-card--current">
+                        <header class="pricing-card__header">
+                            <span class="pricing-card__badge" data-i18n="pricing.beta.badge">Now</span>
+                            <h3 data-i18n="pricing.beta.title">Beta access</h3>
+                            <p class="pricing-card__price" data-i18n="pricing.beta.price">$0 / month</p>
+                            <p class="pricing-card__subtitle" data-i18n="pricing.beta.subtitle">Invite-only while we collect feedback</p>
+                        </header>
+                        <ul class="pricing-card__list">
+                            <li data-i18n="pricing.beta.point1">Unlimited A+ alerts, briefs, watchlists, and Discord accountability floors.</li>
+                            <li data-i18n="pricing.beta.point2">All connectors (ChatGPT, MCP, API, webhooks) plus Interactive Brokers draft orders.</li>
+                            <li data-i18n="pricing.beta.point3">Full risk dashboards, equity curve, and credit counter with weekly human review.</li>
+                        </ul>
+                        <button class="button button--ghost pricing-card__cta" type="button" data-i18n="pricing.beta.cta">Request beta invite</button>
+                    </article>
+                    <article class="pricing-card">
+                        <header class="pricing-card__header">
+                            <span class="pricing-card__badge pricing-card__badge--soon" data-i18n="pricing.pro.badge">Coming soon</span>
+                            <h3 data-i18n="pricing.pro.title">Pro desk</h3>
+                            <p class="pricing-card__price" data-i18n="pricing.pro.price">From $149 / month</p>
+                            <p class="pricing-card__subtitle" data-i18n="pricing.pro.subtitle">Per trader, billed monthly</p>
+                        </header>
+                        <ul class="pricing-card__list">
+                            <li data-i18n="pricing.pro.point1">Everything in beta plus allocation rules, advanced Pine engines, and exportable receipts.</li>
+                            <li data-i18n="pricing.pro.point2">Desk-level analytics, SLA dashboards, and programmatic access to trade lifecycle logs.</li>
+                            <li data-i18n="pricing.pro.point3">Priority support with weekend monitoring and expedited feature requests.</li>
+                        </ul>
+                        <button class="button pricing-card__cta" type="button" data-i18n="pricing.pro.cta">Join waitlist</button>
+                    </article>
+                    <article class="pricing-card pricing-card--enterprise">
+                        <header class="pricing-card__header">
+                            <span class="pricing-card__badge pricing-card__badge--enterprise" data-i18n="pricing.enterprise.badge">Custom</span>
+                            <h3 data-i18n="pricing.enterprise.title">Enterprise desks</h3>
+                            <p class="pricing-card__price" data-i18n="pricing.enterprise.price">Volume-based</p>
+                            <p class="pricing-card__subtitle" data-i18n="pricing.enterprise.subtitle">For funds, brokers, and educator networks</p>
+                        </header>
+                        <ul class="pricing-card__list">
+                            <li data-i18n="pricing.enterprise.point1">Dedicated clusters, SSO federation, custom risk rules, and compliance exports.</li>
+                            <li data-i18n="pricing.enterprise.point2">White-label dashboards, multi-language scripting, and shared liquidity analytics.</li>
+                            <li data-i18n="pricing.enterprise.point3">Service-level agreements with 24/7 engineering coverage and executive reviews.</li>
+                        </ul>
+                        <a class="button button--ghost pricing-card__cta" href="mailto:hello@market-watch.xyz" data-i18n="pricing.enterprise.cta">Schedule a call</a>
+                    </article>
+                </div>
+                <p class="pricing__note" data-i18n="pricing.note">Founding beta members lock in preferential pricing once subscriptions open. Halal oversight and education tiers remain included.</p>
             </div>
         </section>
 
@@ -841,6 +1089,35 @@
                     'stack.trust.point1': 'Backtests, equity curves, max drawdown, and credit usage dashboards ship with every program.',
                     'stack.trust.point2': 'Discord archives by symbol and global floor never delete messages—every update is auditable.',
                     'stack.trust.point3': '24/7 monitoring, SLA reporting, and a dedicated engineering team keep connectors healthy.',
+                    'performance.title': 'Proven outcomes you can audit in real time',
+                    'performance.lead': 'Every alert ships with rolling stats, Discord receipts, and dashboards so you can verify our edge without marketing fluff.',
+                    'performance.point1': 'Backtests compare expectation versus realised reward/risk so desk leaders can size with confidence.',
+                    'performance.point2': 'Outcome receipts update equity curve, drawdown log, and alert reliability scores after every session.',
+                    'performance.point3': 'External reviewers sample trades weekly and publish commentary that feeds the next iteration.',
+                    'performance.imageAlt': 'Performance dashboard with equity curve and stat cards.',
+                    'performance.stat1.value': '72%',
+                    'performance.stat1.label': 'Rolling win rate on A+ setups (18-month sample)',
+                    'performance.stat1.note': 'Verified during weekly manual reviews.',
+                    'performance.stat2.value': '3.4x',
+                    'performance.stat2.label': 'Average reward-to-risk once an alert triggers',
+                    'performance.stat2.note': 'Measured from trigger to planned exit ladder.',
+                    'performance.stat3.value': '-4.8%',
+                    'performance.stat3.label': 'Max drawdown across the model portfolio',
+                    'performance.stat3.note': 'Protected by enforced stops and credit guardrails.',
+                    'performance.stat4.value': '143',
+                    'performance.stat4.label': 'Documented playbooks in the A+ knowledge base',
+                    'performance.stat4.note': 'Each includes catalysts, translations, and post-trade debrief.',
+                    'lifecycle.title': 'Lifecycle automations keep every alert improving',
+                    'lifecycle.lead': 'We orchestrate the loop from detection to review so humans focus on judgement while MarketWatch AI synchronises evidence and actions.',
+                    'lifecycle.step1.title': 'Detect',
+                    'lifecycle.step1.body': 'Multi-signal scanners fuse order flow, liquidity sweeps, options skew, insider moves, and blockchain flows.',
+                    'lifecycle.step2.title': 'Validate',
+                    'lifecycle.step2.body': 'Analysts confirm catalysts, float/dilution checks, Sharia compliance, and position sizing math before publishing.',
+                    'lifecycle.step3.title': 'Publish',
+                    'lifecycle.step3.body': 'Alerts route to web, Discord, MCP agents, and webhooks with receipts, focus prompts, and automation-ready payloads.',
+                    'lifecycle.step4.title': 'Review',
+                    'lifecycle.step4.body': 'Post-trade outcomes auto-log, update dashboards, trigger accountability threads, and refresh backtests.',
+                    'lifecycle.note': 'Each stage is timestamped, signed, and exposed via API so compliance, bots, and human traders stay aligned.',
                     'community.title': 'Discord floors built for accountability',
                     'community.lead': 'A global floor for market mood, symbol-specific war rooms, and immutable transcripts mean you never tackle the market solo.',
                     'community.case1.name': 'Global floor updates',
@@ -861,6 +1138,56 @@
                     'distribution.ai.title': 'ChatGPT &amp; Claude connectors',
                     'distribution.ai.body': 'Call MarketWatch AI from ChatGPT, Claude, Gemini, MCP agents, or your API client to pull briefs, due diligence, or push conditional orders via webhooks.',
                     'distribution.ai.link': 'Enable connectors & API',
+                    'security.title': 'Security, compliance, and uptime you can trust',
+                    'security.lead': 'Enterprise guardrails protect every dataset, connector, and replay so your desks operate with confidence.',
+                    'security.card1.title': 'Data handling',
+                    'security.card1.body': 'End-to-end encryption, segregated EU/US clusters, and signed webhook payloads keep intelligence private.',
+                    'security.card2.title': 'Access control',
+                    'security.card2.body': 'SAML/OAuth SSO, least-privilege roles, and channel-level permissions map traders to desks automatically.',
+                    'security.card3.title': 'Reliability SLAs',
+                    'security.card3.body': '99.9% uptime target with active-active failover, synthetic monitoring, and instant incident comms.',
+                    'security.card4.title': 'Audit & oversight',
+                    'security.card4.body': 'Immutable logs, SOC 2 roadmap, halal supervision, and weekly compliance recaps keep standards high.',
+                    'security.note': 'Dedicated engineers monitor health 24/7 and publish SLA metrics to every client workspace.',
+                    'insights.title': 'Latest desk insights',
+                    'insights.lead': 'We ship weekly breakdowns on detection, discipline, and compliance so you can benchmark your own process.',
+                    'insights.card1.tag': 'Detection lab',
+                    'insights.card1.title': 'Liquidity sweeps that mark bottoms',
+                    'insights.card1.body': 'Review how we combine tape imbalance, options flow, and insider prints to qualify exhaustion reversals before they ignite.',
+                    'insights.card2.tag': 'Desk discipline',
+                    'insights.card2.title': 'Accountability threads vs. FOMO',
+                    'insights.card2.body': 'See the psychology prompts, emotion check-ins, and review cadence we use to keep revenge trades off the desk.',
+                    'insights.card3.tag': 'Compliance & automation',
+                    'insights.card3.title': 'Integrating MCP agents with IBKR',
+                    'insights.card3.body': 'Walk through our webhook lifecycle that drafts, routes, and reconciles conditional orders with full audit trails.',
+                    'insights.card.cta': 'Read the analysis',
+                    'pricing.title': 'Transparent pricing roadmap',
+                    'pricing.lead': 'Beta members trade free while we harden the stack. Here’s how subscriptions unlock once we graduate.',
+                    'pricing.beta.badge': 'Now',
+                    'pricing.beta.title': 'Beta access',
+                    'pricing.beta.price': '$0 / month',
+                    'pricing.beta.subtitle': 'Invite-only while we collect feedback',
+                    'pricing.beta.point1': 'Unlimited A+ alerts, briefs, watchlists, and Discord accountability floors.',
+                    'pricing.beta.point2': 'All connectors (ChatGPT, MCP, API, webhooks) plus Interactive Brokers draft orders.',
+                    'pricing.beta.point3': 'Full risk dashboards, equity curve, and credit counter with weekly human review.',
+                    'pricing.beta.cta': 'Request beta invite',
+                    'pricing.pro.badge': 'Coming soon',
+                    'pricing.pro.title': 'Pro desk',
+                    'pricing.pro.price': 'From $149 / month',
+                    'pricing.pro.subtitle': 'Per trader, billed monthly',
+                    'pricing.pro.point1': 'Everything in beta plus allocation rules, advanced Pine engines, and exportable receipts.',
+                    'pricing.pro.point2': 'Desk-level analytics, SLA dashboards, and programmatic access to trade lifecycle logs.',
+                    'pricing.pro.point3': 'Priority support with weekend monitoring and expedited feature requests.',
+                    'pricing.pro.cta': 'Join waitlist',
+                    'pricing.enterprise.badge': 'Custom',
+                    'pricing.enterprise.title': 'Enterprise desks',
+                    'pricing.enterprise.price': 'Volume-based',
+                    'pricing.enterprise.subtitle': 'For funds, brokers, and educator networks',
+                    'pricing.enterprise.point1': 'Dedicated clusters, SSO federation, custom risk rules, and compliance exports.',
+                    'pricing.enterprise.point2': 'White-label dashboards, multi-language scripting, and shared liquidity analytics.',
+                    'pricing.enterprise.point3': 'Service-level agreements with 24/7 engineering coverage and executive reviews.',
+                    'pricing.enterprise.cta': 'Schedule a call',
+                    'pricing.note': 'Founding beta members lock in preferential pricing once subscriptions open. Halal oversight and education tiers remain included.',
                     'cta.title': 'Join the beta — free while we fine-tune',
                     'cta.body': 'Help shape a trading companion built for retail speed. Beta traders get unlimited alerts, connector access, and direct influence over the roadmap.',
                     'cta.note': 'Beta access is free today. When we graduate from beta, premium automation and analytics will sit behind a lightweight subscription—but founding accounts lock in preferential pricing.',
@@ -1039,6 +1366,35 @@
                     'stack.trust.point1': 'Backtests, courbes d\'équité, max drawdown et usage des crédits livrés avec chaque programme.',
                     'stack.trust.point2': 'Archives Discord par symbole et floor global : aucun message supprimé, audit facile.',
                     'stack.trust.point3': 'Monitoring 24/7, SLA publiés et équipe d\'ingénieurs dédiée à la disponibilité.',
+                    'performance.title': 'Des résultats prouvés, auditables en temps réel',
+                    'performance.lead': 'Chaque alerte s’accompagne de statistiques roulantes, de reçus Discord et de dashboards pour vérifier notre edge sans marketing.',
+                    'performance.point1': 'Les backtests comparent l’attendu au reward/risk réalisé afin que les leads dimensionnent en pleine confiance.',
+                    'performance.point2': 'Les reçus d’exécution mettent à jour la courbe d’équité, le journal de drawdown et la fiabilité des alertes après chaque session.',
+                    'performance.point3': 'Des reviewers externes échantillonnent les trades chaque semaine et publient un commentaire qui alimente l’itération suivante.',
+                    'performance.imageAlt': 'Tableau de bord de performance avec courbe d’équité et cartes de statistiques.',
+                    'performance.stat1.value': '72%',
+                    'performance.stat1.label': 'Taux de réussite roulant sur les setups A+ (échantillon 18 mois)',
+                    'performance.stat1.note': 'Vérifié lors des revues humaines hebdomadaires.',
+                    'performance.stat2.value': '3,4x',
+                    'performance.stat2.label': 'Reward/risk moyen une fois l’alerte déclenchée',
+                    'performance.stat2.note': 'Mesuré du trigger au plan de sortie.',
+                    'performance.stat3.value': '-4,8%',
+                    'performance.stat3.label': 'Max drawdown du portefeuille modèle',
+                    'performance.stat3.note': 'Protégé par des stops forcés et des garde-fous de crédit.',
+                    'performance.stat4.value': '143',
+                    'performance.stat4.label': 'Playbooks documentés dans la base A+',
+                    'performance.stat4.note': 'Chacun inclut catalyseurs, traductions et debrief post-trade.',
+                    'lifecycle.title': 'Une boucle automatisée qui améliore chaque alerte',
+                    'lifecycle.lead': 'Nous orchestrons la chaîne de la détection à la revue pour que l’humain reste concentré sur le jugement pendant que MarketWatch AI synchronise les preuves.',
+                    'lifecycle.step1.title': 'Détection',
+                    'lifecycle.step1.body': 'Scanners multi-signal : order flow, balayages de liquidité, skew options, insiders et flux blockchain.',
+                    'lifecycle.step2.title': 'Validation',
+                    'lifecycle.step2.body': 'Analystes humains valident catalyseurs, dilution/float, conformité sharia et sizing avant publication.',
+                    'lifecycle.step3.title': 'Publication',
+                    'lifecycle.step3.body': 'Alertes diffusées sur web, Discord, agents MCP et webhooks avec reçus et prompts de discipline.',
+                    'lifecycle.step4.title': 'Revue',
+                    'lifecycle.step4.body': 'Outcomes journalisés, dashboards mis à jour, threads d’accountability et backtests rafraîchis.',
+                    'lifecycle.note': 'Chaque étape est horodatée, signée et exposée via API pour aligner compliance, bots et traders.',
                     'community.title': 'Des floors Discord pour l\'accountability',
                     'community.lead': 'Floor global pour le mood, war rooms par symbole et transcripts immuables : jamais seul face au marché.',
                     'community.case1.name': 'Floor global',
@@ -1059,6 +1415,56 @@
                     'distribution.ai.title': 'Connecteurs ChatGPT &amp; Claude',
                     'distribution.ai.body': 'Appelez MarketWatch AI depuis ChatGPT, Claude, Gemini, agents MCP ou votre client API pour tirer briefs, due diligence ou pousser des ordres conditionnels via webhooks.',
                     'distribution.ai.link': 'Activer connecteurs & API',
+                    'security.title': 'Sécurité, conformité et disponibilité garanties',
+                    'security.lead': 'Des garde-fous enterprise protègent chaque dataset, connecteur et replay pour une opération en confiance.',
+                    'security.card1.title': 'Gestion des données',
+                    'security.card1.body': 'Chiffrement de bout en bout, clusters EU/US séparés et webhooks signés pour garder l’intelligence privée.',
+                    'security.card2.title': 'Contrôle d’accès',
+                    'security.card2.body': 'SSO SAML/OAuth, rôles à privilège minimal et permissions par channel affectent automatiquement les traders.',
+                    'security.card3.title': 'SLA de fiabilité',
+                    'security.card3.body': 'Objectif 99,9 % avec active-active, monitoring synthétique et communication incident instantanée.',
+                    'security.card4.title': 'Audit & supervision',
+                    'security.card4.body': 'Logs immuables, feuille de route SOC 2, supervision halal et recaps compliance hebdomadaires.',
+                    'security.note': 'Des ingénieurs dédiés surveillent 24/7 et publient les métriques SLA à chaque workspace.',
+                    'insights.title': 'Insights du desk',
+                    'insights.lead': 'Nous publions chaque semaine des décryptages détection, discipline et compliance pour benchmarker votre process.',
+                    'insights.card1.tag': 'Lab de détection',
+                    'insights.card1.title': 'Balayages de liquidité qui marquent les bottoms',
+                    'insights.card1.body': 'Découvrez comment nous combinons déséquilibres de carnet, flow options et prints insiders pour qualifier les reversals.',
+                    'insights.card2.tag': 'Discipline du desk',
+                    'insights.card2.title': 'Threads d’accountability vs FOMO',
+                    'insights.card2.body': 'Voyez les prompts psycho, check-ins d’émotion et cadences de revue qui neutralisent les revenge trades.',
+                    'insights.card3.tag': 'Conformité & automatisation',
+                    'insights.card3.title': 'Intégrer des agents MCP avec IBKR',
+                    'insights.card3.body': 'Parcourez notre pipeline webhook qui rédige, route et concilie des ordres conditionnels avec traçabilité complète.',
+                    'insights.card.cta': 'Lire l’analyse',
+                    'pricing.title': 'Feuille de route tarifaire transparente',
+                    'pricing.lead': 'La bêta est gratuite pendant le durcissement du stack. Voici comment les abonnements s’activeront ensuite.',
+                    'pricing.beta.badge': 'Maintenant',
+                    'pricing.beta.title': 'Accès bêta',
+                    'pricing.beta.price': '0 $ / mois',
+                    'pricing.beta.subtitle': 'Sur invitation pendant la collecte de feedback',
+                    'pricing.beta.point1': 'Alertes A+ illimitées, briefs, watchlists et floors Discord d’accountability.',
+                    'pricing.beta.point2': 'Tous les connecteurs (ChatGPT, MCP, API, webhooks) plus ordres draftés Interactive Brokers.',
+                    'pricing.beta.point3': 'Dashboards de risque complets, courbe d’équité et compteur crédit revus chaque semaine.',
+                    'pricing.beta.cta': 'Demander une invitation',
+                    'pricing.pro.badge': 'Bientôt',
+                    'pricing.pro.title': 'Desk Pro',
+                    'pricing.pro.price': 'À partir de 149 $ / mois',
+                    'pricing.pro.subtitle': 'Par trader, facturation mensuelle',
+                    'pricing.pro.point1': 'Tout le contenu bêta + règles d’allocation, Pine avancé et reçus exportables.',
+                    'pricing.pro.point2': 'Analytique desk, dashboards SLA et accès programmatique aux logs de cycle de trade.',
+                    'pricing.pro.point3': 'Support prioritaire avec monitoring week-end et accélération des demandes.',
+                    'pricing.pro.cta': 'Rejoindre la liste d’attente',
+                    'pricing.enterprise.badge': 'Sur mesure',
+                    'pricing.enterprise.title': 'Desks Enterprise',
+                    'pricing.enterprise.price': 'Tarif volume',
+                    'pricing.enterprise.subtitle': 'Pour fonds, brokers et réseaux d’éducateurs',
+                    'pricing.enterprise.point1': 'Clusters dédiés, fédération SSO, règles de risque custom et exports compliance.',
+                    'pricing.enterprise.point2': 'Dashboards white-label, scripts multi-langues et analytics de liquidité partagée.',
+                    'pricing.enterprise.point3': 'SLA contractuels avec couverture ingénieur 24/7 et revues exécutives.',
+                    'pricing.enterprise.cta': 'Planifier un appel',
+                    'pricing.note': 'Les membres fondateurs conservent un tarif préférentiel au lancement. Supervision halal et formation restent incluses.',
                     'cta.title': 'Rejoignez la bêta — gratuite pendant l\'ajustement',
                     'cta.body': 'Aidez-nous à façonner un copilote de trading taillé pour la vitesse. Accès illimité, connecteurs et influence directe sur la roadmap.',
                     'cta.note': 'L’accès bêta reste gratuit. À la sortie de bêta, certaines automatisations et analyses passeront sur un abonnement léger — les comptes fondateurs conserveront un tarif préférentiel.',
@@ -1250,6 +1656,35 @@
                     'stack.trust.point1': 'باك تست، منحنيات رأس مال، أكبر سحب، ولوحات استخدام الاعتمادات لكل برنامج.',
                     'stack.trust.point2': 'أرشيفات Discord حسب الرمز والفور العالمي لا تحذف الرسائل — كل شيء قابل للتدقيق.',
                     'stack.trust.point3': 'مراقبة 24/7، تقارير SLA، وفريق هندسي متخصص يحافظ على جاهزية الموصلات.',
+                    'performance.title': 'نتائج مثبتة يمكنك تدقيقها لحظيًا',
+                    'performance.lead': 'كل تنبيه يصل مع إحصاءات متجددة، إيصالات ديسكورد ولوحات تفصيلية لتتحقق من أفضليتنا دون مبالغة تسويقية.',
+                    'performance.point1': 'الاختبارات الخلفية تقارن التوقع مقابل العائد/المخاطرة المحقّق ليضبط قادة الديسك الأحجام بثقة.',
+                    'performance.point2': 'إيصالات النتائج تحدّث منحنى رأس المال، سجل التراجع، ومؤشر موثوقية التنبيهات بعد كل جلسة.',
+                    'performance.point3': 'مراجعون خارجيون يختبرون صفقات أسبوعيًا وينشرون تعليقات تغذي الجولة التالية.',
+                    'performance.imageAlt': 'لوحة أداء مع منحنى حقوق ومؤشرات إحصائية.',
+                    'performance.stat1.value': '72%',
+                    'performance.stat1.label': 'نسبة الفوز المتحركة لإعدادات A+ (18 شهرًا)',
+                    'performance.stat1.note': 'يتم التحقق منها خلال المراجعات الأسبوعية.',
+                    'performance.stat2.value': '3.4x',
+                    'performance.stat2.label': 'متوسط العائد إلى المخاطرة بعد تفعيل التنبيه',
+                    'performance.stat2.note': 'يُقاس من نقطة التفعيل إلى سلم الخروج المخطط.',
+                    'performance.stat3.value': '-4.8%',
+                    'performance.stat3.label': 'أقصى تراجع في المحفظة النموذجية',
+                    'performance.stat3.note': 'محمي بإيقاف خسارة إلزامي وحدود ائتمان.',
+                    'performance.stat4.value': '143',
+                    'performance.stat4.label': 'دفاتر خطط موثقة في قاعدة معرفة A+',
+                    'performance.stat4.note': 'كل خطة تتضمن محفزات، ترجمات، ومراجعة بعد الصفقة.',
+                    'lifecycle.title': 'أتمتة دورة الحياة تبقي كل تنبيه في تحسّن مستمر',
+                    'lifecycle.lead': 'ننسق الدورة من الاكتشاف إلى المراجعة حتى يركز المتداول على الحكم بينما ينسق MarketWatch AI الأدلة.',
+                    'lifecycle.step1.title': 'اكتشف',
+                    'lifecycle.step1.body': 'ماسحات متعددة الإشارات تمزج تدفق الأوامر، مسح السيولة، انحراف الخيارات، تحركات المطلعين وبيانات البلوكشين.',
+                    'lifecycle.step2.title': 'تحقق',
+                    'lifecycle.step2.body': 'المحللون يؤكدون المحفزات، التخفيف/الأسهم الحرة، الالتزام الشرعي، وحجم الصفقة قبل النشر.',
+                    'lifecycle.step3.title': 'انشر',
+                    'lifecycle.step3.body': 'يتم بث التنبيهات إلى الويب، ديسكورد، وكلاء MCP، والويب هوكس مع الإيصالات والتنبيهات السلوكية.',
+                    'lifecycle.step4.title': 'راجع',
+                    'lifecycle.step4.body': 'نتائج ما بعد الصفقة تُسجل تلقائيًا، تحدّث اللوحات، تطلق خيوط المحاسبة وتنعش الاختبارات الخلفية.',
+                    'lifecycle.note': 'كل مرحلة موثقة بالوقت، موقعة، ومتاحة عبر API لضمان تزامن الامتثال والروبوتات والمتداولين.',
                     'community.title': 'مكاتب Discord لبناء المساءلة',
                     'community.lead': 'فور عالمي للحالة المزاجية، غرف حرب لكل رمز، ونصوص ثابتة تعني أنك لن تواجه السوق وحدك.',
                     'community.case1.name': 'الفور العالمي',
@@ -1280,6 +1715,56 @@
                     'distribution.ai.title': 'موصلات ChatGPT وClaude',
                     'distribution.ai.body': 'استدع MarketWatch AI من ChatGPT أو Claude أو Gemini أو عوامل MCP أو عميل API لسحب الموجزات والعناية الواجبة أو دفع أوامر مشروطة عبر webhooks.',
                     'distribution.ai.link': 'تفعيل الموصلات وواجهة API',
+                    'security.title': 'أمن والتزام وتوافر يمكنك الوثوق به',
+                    'security.lead': 'ضوابط بمستوى المؤسسات تحمي كل مجموعة بيانات، موصل، وتسجيل حتى تعمل المكاتب بثقة.',
+                    'security.card1.title': 'معالجة البيانات',
+                    'security.card1.body': 'تشفير طرف لطرف، عناقيد منفصلة للاتحاد الأوروبي والولايات المتحدة، وتوقيع حزم الويب هوك لحماية المعلومات.',
+                    'security.card2.title': 'التحكم في الوصول',
+                    'security.card2.body': 'تسجيل دخول موحد SAML/OAuth، أدوار بأدنى امتياز، وصلاحيات القنوات تعيّن المتداولين تلقائيًا.',
+                    'security.card3.title': 'اتفاقيات مستوى الخدمة للموثوقية',
+                    'security.card3.body': 'هدف توافر 99.9٪ مع تشغيل نشط مزدوج، مراقبة اصطناعية، وإشعارات فورية عند الحوادث.',
+                    'security.card4.title': 'التدقيق والإشراف',
+                    'security.card4.body': 'سجلات غير قابلة للتغيير، خارطة طريق SOC 2، إشراف شرعي، وموجز امتثال أسبوعي يحافظ على المعايير.',
+                    'security.note': 'مهندسون مخصصون يراقبون طوال اليوم وينشرون مؤشرات SLA لكل مساحة عمل.',
+                    'insights.title': 'أحدث رؤى الطاولة',
+                    'insights.lead': 'ننشر أسبوعيًا تحليلات عن الاكتشاف، الانضباط، والامتثال لتقارن طريقتك.',
+                    'insights.card1.tag': 'مختبر الاكتشاف',
+                    'insights.card1.title': 'اجتياحات السيولة التي تحدد القيعان',
+                    'insights.card1.body': 'اطلع على كيفية دمجنا لانحياز الشريط، تدفق الخيارات، وتحركات المطلعين لتأهيل الانعكاسات قبل اشتعالها.',
+                    'insights.card2.tag': 'انضباط الطاولة',
+                    'insights.card2.title': 'خيوط المحاسبة ضد FOMO',
+                    'insights.card2.body': 'شاهد محفزات علم النفس، فحوص المزاج، وإيقاع المراجعة الذي يبعد تداول الانتقام.',
+                    'insights.card3.tag': 'الامتثال والأتمتة',
+                    'insights.card3.title': 'دمج وكلاء MCP مع IBKR',
+                    'insights.card3.body': 'تعرّف على دورة الويب هوك التي تنشئ وتوجّه وتسوّي الأوامر الشرطية مع سجل كامل.',
+                    'insights.card.cta': 'اقرأ التحليل',
+                    'pricing.title': 'خارطة تسعير شفافة',
+                    'pricing.lead': 'الوصول التجريبي مجاني بينما نقوّي المنصة. هكذا ستُفعّل الاشتراكات لاحقًا.',
+                    'pricing.beta.badge': 'الآن',
+                    'pricing.beta.title': 'وصول البيتا',
+                    'pricing.beta.price': '0 دولار / شهر',
+                    'pricing.beta.subtitle': 'بالدعوة خلال مرحلة جمع الملاحظات',
+                    'pricing.beta.point1': 'تنبيهات A+ غير محدودة، موجزات، قوائم مراقبة، وطوابق ديسكورد للمساءلة.',
+                    'pricing.beta.point2': 'جميع الموصلات (ChatGPT، MCP، API، webhooks) مع أوامر مسودة لـ Interactive Brokers.',
+                    'pricing.beta.point3': 'لوحات مخاطر كاملة، منحنى حقوق، وعدّاد ائتمان مع مراجعة بشرية أسبوعية.',
+                    'pricing.beta.cta': 'اطلب دعوة تجريبية',
+                    'pricing.pro.badge': 'قريبًا',
+                    'pricing.pro.title': 'مكتب المحترفين',
+                    'pricing.pro.price': 'ابتداءً من 149 دولار / شهر',
+                    'pricing.pro.subtitle': 'لكل متداول، فوترة شهرية',
+                    'pricing.pro.point1': 'كل ما في البيتا بالإضافة إلى قواعد التوزيع، محرك Pine متقدم، وإيصالات قابلة للتصدير.',
+                    'pricing.pro.point2': 'تحليلات على مستوى المكتب، لوحات SLA، ووصول برمجي إلى سجلات دورة التداول.',
+                    'pricing.pro.point3': 'دعم أولوية مع مراقبة في عطلة نهاية الأسبوع وتسريع الميزات.',
+                    'pricing.pro.cta': 'انضم لقائمة الانتظار',
+                    'pricing.enterprise.badge': 'مخصص',
+                    'pricing.enterprise.title': 'مكاتب المؤسسات',
+                    'pricing.enterprise.price': 'حسب الحجم',
+                    'pricing.enterprise.subtitle': 'للصناديق، الوسطاء، وشبكات التعليم',
+                    'pricing.enterprise.point1': 'عناقيد مخصصة، اتحاد SSO، قواعد مخاطر مخصصة، وتصدير تقارير الامتثال.',
+                    'pricing.enterprise.point2': 'لوحات بعلامة بيضاء، نصوص متعددة اللغات، وتحليلات سيولة مشتركة.',
+                    'pricing.enterprise.point3': 'اتفاقيات خدمة مع تغطية هندسية 24/7 ومراجعات تنفيذية.',
+                    'pricing.enterprise.cta': 'حدد موعد اتصال',
+                    'pricing.note': 'أعضاء البيتا المؤسسون يحتفظون بسعر تفضيلي عند إطلاق الاشتراكات. الإشراف الشرعي ومستويات التعليم تبقى مشمولة.',
                     'cta.title': 'انضم إلى النسخة التجريبية — مجاناً أثناء التطوير',
                     'cta.body': 'ساهم في بناء رفيق تداول سريع. متداولو النسخة التجريبية يحصلون على تنبيهات غير محدودة وموصلات ودور في تشكيل خارطة الطريق.',
                     'cta.note': 'الوصول في وضع البيتا مجاني حالياً. عند الانتقال إلى الإصدار المدفوع ستنتقل بعض أدوات الأتمتة والتحليلات إلى اشتراك خفيف — الحسابات المؤسسة ستحصل على تسعير مميز.',
@@ -1481,6 +1966,35 @@
                     'stack.trust.point1': 'Backtests, curvas de equity, max drawdown y uso de créditos acompañan cada programa.',
                     'stack.trust.point2': 'Archivos de Discord por símbolo y floor global: nunca se borra nada y todo es auditable.',
                     'stack.trust.point3': 'Monitorización 24/7, reportes SLA y un equipo de ingeniería dedicado cuidan las integraciones.',
+                    'performance.title': 'Resultados comprobados auditables en tiempo real',
+                    'performance.lead': 'Cada alerta llega con métricas vivas, recibos en Discord y dashboards para que verifiques nuestro edge sin humo de marketing.',
+                    'performance.point1': 'Los backtests comparan expectativa vs reward/risk realizado para que los leads dimensionen con confianza.',
+                    'performance.point2': 'Los recibos post trade actualizan la curva de equity, el registro de drawdown y la fiabilidad de las alertas tras cada sesión.',
+                    'performance.point3': 'Revisores externos muestrean operaciones cada semana y publican comentarios que alimentan la siguiente iteración.',
+                    'performance.imageAlt': 'Panel de rendimiento con curva de equity y tarjetas métricas.',
+                    'performance.stat1.value': '72%',
+                    'performance.stat1.label': 'Tasa de acierto rodante en setups A+ (muestra 18 meses)',
+                    'performance.stat1.note': 'Verificada en las revisiones semanales.',
+                    'performance.stat2.value': '3.4x',
+                    'performance.stat2.label': 'Reward/Risk medio una vez que se activa la alerta',
+                    'performance.stat2.note': 'Medido desde el trigger hasta la escalera de salida planificada.',
+                    'performance.stat3.value': '-4.8%',
+                    'performance.stat3.label': 'Max drawdown de la cartera modelo',
+                    'performance.stat3.note': 'Protegido con stops forzados y límites de crédito.',
+                    'performance.stat4.value': '143',
+                    'performance.stat4.label': 'Playbooks documentados en la base A+',
+                    'performance.stat4.note': 'Cada uno incluye catalizadores, traducciones y debrief post trade.',
+                    'lifecycle.title': 'Automatizaciones de ciclo de vida que mejoran cada alerta',
+                    'lifecycle.lead': 'Orquestamos el ciclo de detección a revisión para que el humano se centre en juzgar mientras MarketWatch AI sincroniza la evidencia.',
+                    'lifecycle.step1.title': 'Detecta',
+                    'lifecycle.step1.body': 'Escáneres multi-señal combinan flow, barridos de liquidez, skew de opciones, insiders y datos blockchain.',
+                    'lifecycle.step2.title': 'Valida',
+                    'lifecycle.step2.body': 'Analistas confirman catalizadores, dilución/float libre, cumplimiento sharia y sizing antes de publicar.',
+                    'lifecycle.step3.title': 'Publica',
+                    'lifecycle.step3.body': 'Las alertas salen a web, Discord, agentes MCP y webhooks con recibos y prompts de foco.',
+                    'lifecycle.step4.title': 'Revisa',
+                    'lifecycle.step4.body': 'Los resultados se registran, actualizan dashboards, disparan hilos de accountability y refrescan backtests.',
+                    'lifecycle.note': 'Cada etapa queda fechada, firmada y disponible vía API para alinear compliance, bots y traders.',
                     'community.title': 'Floors de Discord para la accountability',
                     'community.lead': 'Floor global para el pulso, war rooms por símbolo y transcripciones inmutables: jamás operas solo.',
                     'community.case1.name': 'Floor global',
@@ -1501,6 +2015,56 @@
                     'distribution.ai.title': 'Conectores ChatGPT &amp; Claude',
                     'distribution.ai.body': 'Invoca MarketWatch AI desde ChatGPT, Claude, Gemini, agentes MCP o tu cliente API para obtener briefs, due diligence o enviar órdenes condicionales vía webhooks.',
                     'distribution.ai.link': 'Activar conectores y API',
+                    'security.title': 'Seguridad, cumplimiento y disponibilidad en los que confiar',
+                    'security.lead': 'Controles de nivel enterprise protegen cada dataset, conector y replay para que tu mesa opere con confianza.',
+                    'security.card1.title': 'Gestión de datos',
+                    'security.card1.body': 'Cifrado extremo a extremo, clusters EU/US segregados y webhooks firmados protegen la inteligencia.',
+                    'security.card2.title': 'Control de acceso',
+                    'security.card2.body': 'SSO SAML/OAuth, roles de mínimo privilegio y permisos por canal asignan traders automáticamente.',
+                    'security.card3.title': 'SLAs de fiabilidad',
+                    'security.card3.body': 'Objetivo 99,9 % con active-active, monitorización sintética y comunicación inmediata ante incidentes.',
+                    'security.card4.title': 'Auditoría y supervisión',
+                    'security.card4.body': 'Logs inmutables, hoja de ruta SOC 2, supervisión halal y resúmenes de compliance semanales.',
+                    'security.note': 'Ingenieros dedicados monitorizan 24/7 y publican métricas SLA en cada workspace.',
+                    'insights.title': 'Últimos insights de la mesa',
+                    'insights.lead': 'Publicamos semanalmente desgloses de detección, disciplina y compliance para que compares tu proceso.',
+                    'insights.card1.tag': 'Laboratorio de detección',
+                    'insights.card1.title': 'Barridos de liquidez que señalan suelos',
+                    'insights.card1.body': 'Descubre cómo combinamos desequilibrio de cinta, flujo de opciones y prints de insiders para validar reversals.',
+                    'insights.card2.tag': 'Disciplina de mesa',
+                    'insights.card2.title': 'Hilos de accountability vs FOMO',
+                    'insights.card2.body': 'Revisa los prompts psicológicos, check-ins de emoción y ritmo de revisión que bloquean el revenge trade.',
+                    'insights.card3.tag': 'Compliance y automatización',
+                    'insights.card3.title': 'Integrar agentes MCP con IBKR',
+                    'insights.card3.body': 'Recorre nuestro ciclo webhook que redacta, enruta y concilia órdenes condicionales con trazabilidad completa.',
+                    'insights.card.cta': 'Leer análisis',
+                    'pricing.title': 'Hoja de ruta de precios transparente',
+                    'pricing.lead': 'La beta es gratuita mientras reforzamos el stack. Así evolucionarán las suscripciones.',
+                    'pricing.beta.badge': 'Ahora',
+                    'pricing.beta.title': 'Acceso beta',
+                    'pricing.beta.price': '$0 / mes',
+                    'pricing.beta.subtitle': 'Solo por invitación mientras recogemos feedback',
+                    'pricing.beta.point1': 'Alertas A+ ilimitadas, briefs, watchlists y floors de Discord de accountability.',
+                    'pricing.beta.point2': 'Todos los conectores (ChatGPT, MCP, API, webhooks) más órdenes borrador para Interactive Brokers.',
+                    'pricing.beta.point3': 'Dashboards de riesgo completos, curva de equity y contador de crédito con revisión humana semanal.',
+                    'pricing.beta.cta': 'Pedir invitación beta',
+                    'pricing.pro.badge': 'Próximamente',
+                    'pricing.pro.title': 'Mesa Pro',
+                    'pricing.pro.price': 'Desde $149 / mes',
+                    'pricing.pro.subtitle': 'Por trader, facturación mensual',
+                    'pricing.pro.point1': 'Todo lo de beta más reglas de asignación, motor Pine avanzado y recibos exportables.',
+                    'pricing.pro.point2': 'Analítica a nivel mesa, dashboards SLA y acceso programático a los logs de ciclo de trading.',
+                    'pricing.pro.point3': 'Soporte prioritario con monitorización fines de semana y aceleración de features.',
+                    'pricing.pro.cta': 'Unirme a la lista de espera',
+                    'pricing.enterprise.badge': 'Personalizado',
+                    'pricing.enterprise.title': 'Mesas Enterprise',
+                    'pricing.enterprise.price': 'Precio según volumen',
+                    'pricing.enterprise.subtitle': 'Para fondos, brókers y redes educativas',
+                    'pricing.enterprise.point1': 'Clusters dedicados, federación SSO, reglas de riesgo personalizadas y exports de compliance.',
+                    'pricing.enterprise.point2': 'Dashboards white-label, scripting multilingüe y analítica de liquidez compartida.',
+                    'pricing.enterprise.point3': 'SLAs contractuales con cobertura de ingeniería 24/7 y revisiones ejecutivas.',
+                    'pricing.enterprise.cta': 'Agendar llamada',
+                    'pricing.note': 'Los miembros fundadores de la beta conservarán precios preferenciales cuando lancemos suscripciones. La supervisión halal y la formación siguen incluidas.',
                     'cta.title': 'Únete a la beta — gratis mientras afinamos',
                     'cta.body': 'Ayúdanos a construir un compañero de trading veloz. Los beta testers obtienen alertas ilimitadas, conectores y voz en la hoja de ruta.',
                     'cta.note': 'El acceso a la beta es gratuito. Cuando salgamos de beta, ciertas automatizaciones y analíticas pasarán a un plan de suscripción ligero — las cuentas fundadoras conservarán precios preferenciales.',
@@ -1692,6 +2256,35 @@
                     'stack.trust.point1': '每项策略附带回测、权益曲线、最大回撤与信用使用面板。',
                     'stack.trust.point2': '按符号与全球楼层的 Discord 档案永不删除——完全可审计。',
                     'stack.trust.point3': '7x24 监控、SLA 报告与专职工程团队维护连接健康。',
+                    'performance.title': '实时可审计的验证成果',
+                    'performance.lead': '每条警报都附带滚动统计、Discord 回执和仪表板，让你无需营销话术就能确认优势。',
+                    'performance.point1': '回测对比预期与实际盈亏比，帮助席位主管自信控制仓位。',
+                    'performance.point2': '交易回执会在每次盘后更新权益曲线、回撤日志与警报可靠性评分。',
+                    'performance.point3': '外部评审每周抽样复盘并发布评论，驱动下一轮迭代。',
+                    'performance.imageAlt': '显示权益曲线和指标卡片的绩效面板。',
+                    'performance.stat1.value': '72%',
+                    'performance.stat1.label': 'A+ 设置滚动胜率（18 个月样本）',
+                    'performance.stat1.note': '每周人工复核。',
+                    'performance.stat2.value': '3.4x',
+                    'performance.stat2.label': '警报触发后的平均盈亏比',
+                    'performance.stat2.note': '从触发到计划出场梯队。',
+                    'performance.stat3.value': '-4.8%',
+                    'performance.stat3.label': '模型组合最大回撤',
+                    'performance.stat3.note': '通过强制止损与信用护栏进行控制。',
+                    'performance.stat4.value': '143',
+                    'performance.stat4.label': 'A+ 知识库中已记录的剧本数量',
+                    'performance.stat4.note': '每篇都包含催化剂、多语言版本与复盘纪要。',
+                    'lifecycle.title': '全生命周期自动化让警报持续优化',
+                    'lifecycle.lead': '我们从侦测到复盘全程编排，让交易者专注判断，MarketWatch AI 负责同步证据。',
+                    'lifecycle.step1.title': '检测',
+                    'lifecycle.step1.body': '多信号扫描结合订单流、流动性扫盘、期权偏度、内幕动向与区块链数据。',
+                    'lifecycle.step2.title': '验证',
+                    'lifecycle.step2.body': '分析师核实催化剂、稀释/流通股、清真合规与仓位规模后才发布。',
+                    'lifecycle.step3.title': '发布',
+                    'lifecycle.step3.body': '警报同步到 Web、Discord、MCP 代理和 webhooks，并附带凭证与专注提示。',
+                    'lifecycle.step4.title': '复盘',
+                    'lifecycle.step4.body': '成交结果自动记录，刷新仪表板，触发责任线程并更新回测。',
+                    'lifecycle.note': '每个环节都有时间戳与签名，并可通过 API 获取，确保合规、机器人和交易员同步。',
                     'community.title': 'Discord 楼层确保彼此督导',
                     'community.lead': '全球楼层掌握情绪，符号战房与不可变记录让你不再单打独斗。',
                     'community.case1.name': '全球楼层',
@@ -1722,6 +2315,56 @@
                     'distribution.ai.title': 'ChatGPT &amp; Claude 连接器',
                     'distribution.ai.body': '通过 ChatGPT、Claude、Gemini、MCP 代理或 API 客户端调用 MarketWatch AI，获取简报、尽调或通过 webhook 推送条件单。',
                     'distribution.ai.link': '启用连接器与 API',
+                    'security.title': '值得信赖的安全、合规与高可用',
+                    'security.lead': '企业级护栏覆盖每个数据集、连接器与重放记录，让团队操作更安心。',
+                    'security.card1.title': '数据治理',
+                    'security.card1.body': '端到端加密，欧盟/美国集群隔离，webhook 签名确保情报不外泄。',
+                    'security.card2.title': '访问控制',
+                    'security.card2.body': 'SAML/OAuth 单点登录、最小权限角色与频道级授权自动匹配交易员。',
+                    'security.card3.title': '可靠性 SLA',
+                    'security.card3.body': '99.9% 可用性目标，主动-主动架构、合成监测与事件即时通报。',
+                    'security.card4.title': '审计与监管',
+                    'security.card4.body': '不可篡改日志、SOC 2 路线图、清真监督与每周合规通报，标准始终在线。',
+                    'security.note': '专职工程师 7x24 监控并向所有工作区公布 SLA 指标。',
+                    'insights.title': '桌面最新洞察',
+                    'insights.lead': '每周发布侦测、纪律与合规专题，帮助你检视自己的流程。',
+                    'insights.card1.tag': '检测实验室',
+                    'insights.card1.title': '流动性扫盘识别底部',
+                    'insights.card1.body': '了解如何融合盘口失衡、期权流与内幕动向，在反转点点火前完成确认。',
+                    'insights.card2.tag': '执行纪律',
+                    'insights.card2.title': '责任线程对抗 FOMO',
+                    'insights.card2.body': '看看心理提示、情绪打卡与复盘节奏如何阻断报复性交易。',
+                    'insights.card3.tag': '合规与自动化',
+                    'insights.card3.title': '让 MCP 代理联通 IBKR',
+                    'insights.card3.body': '梳理我们的 webhook 流程：如何生成、路由并核对条件单且保留完整追踪。',
+                    'insights.card.cta': '阅读解析',
+                    'pricing.title': '透明的定价路线图',
+                    'pricing.lead': 'Beta 期间完全免费，以下是订阅上线后的演进方式。',
+                    'pricing.beta.badge': '当前',
+                    'pricing.beta.title': 'Beta 访问',
+                    'pricing.beta.price': '$0 / 月',
+                    'pricing.beta.subtitle': '仅限邀请，专注收集反馈',
+                    'pricing.beta.point1': '无限 A+ 警报、简报、观察名单以及 Discord 责任制楼层。',
+                    'pricing.beta.point2': '全部连接器（ChatGPT、MCP、API、webhook）加上 Interactive Brokers 条件单草稿。',
+                    'pricing.beta.point3': '完整风险面板、权益曲线与信用计数，每周人工复核。',
+                    'pricing.beta.cta': '申请 Beta 邀请',
+                    'pricing.pro.badge': '即将上线',
+                    'pricing.pro.title': 'Pro 桌面',
+                    'pricing.pro.price': '每席位每月 $149 起',
+                    'pricing.pro.subtitle': '按交易员计费，月度结算',
+                    'pricing.pro.point1': 'Beta 全部功能 + 配仓规则、高级 Pine 引擎与可导出回执。',
+                    'pricing.pro.point2': '桌面级分析、SLA 面板与交易生命周期日志的程序化访问。',
+                    'pricing.pro.point3': '优先支持，周末监控与快速响应需求。',
+                    'pricing.pro.cta': '加入候补名单',
+                    'pricing.enterprise.badge': '定制',
+                    'pricing.enterprise.title': '企业桌面',
+                    'pricing.enterprise.price': '按规模定价',
+                    'pricing.enterprise.subtitle': '适用于基金、券商及教育网络',
+                    'pricing.enterprise.point1': '专属集群、SSO 联邦、自定义风险规则与合规导出。',
+                    'pricing.enterprise.point2': '白标仪表、多语言脚本与共享流动性分析。',
+                    'pricing.enterprise.point3': '24/7 工程保障与高层评审的服务级别协议。',
+                    'pricing.enterprise.cta': '预约通话',
+                    'pricing.note': 'Beta 首批用户在订阅上线后保留优惠价，清真监管与学习模块持续包含。',
                     'cta.title': '加入公测 — 调优期间免费',
                     'cta.body': '帮助我们打造高速交易助手。公测用户可获得无限警报、连接器以及路线图优先权。',
                     'cta.primary': '免费开始',
