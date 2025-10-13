@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="220" viewBox="0 0 360 220" role="img" aria-labelledby="title desc">
+  <title id="title">Watchlist tag expression</title>
+  <desc id="desc">Diagram showing breakout intersect momentum minus dilution tag filters.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1d4ed8" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.15" />
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="360" height="220" rx="18" fill="#f8fafc" />
+  <rect x="12" y="12" width="336" height="196" rx="16" fill="url(#bg)" />
+  <g font-family="Inter, sans-serif" font-size="14" fill="#0f172a" font-weight="600">
+    <text x="32" y="52">Watchlist expression</text>
+  </g>
+  <g font-family="Inter, sans-serif" font-size="13" fill="#1d4ed8" font-weight="600">
+    <text x="32" y="84">breakout ∩ momentum ⧵ dilution</text>
+  </g>
+  <g font-family="Inter, sans-serif" font-size="12" fill="#0f172a">
+    <text x="32" y="114">include tag: breakout</text>
+    <text x="32" y="134">include tag: momentum</text>
+    <text x="32" y="154">exclude tag: dilution</text>
+  </g>
+  <g>
+    <rect x="220" y="76" width="108" height="32" rx="10" fill="#1d4ed8" opacity="0.15" />
+    <text x="274" y="97" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#1d4ed8" font-weight="600">Breakout</text>
+    <rect x="220" y="114" width="108" height="32" rx="10" fill="#2563eb" opacity="0.18" />
+    <text x="274" y="135" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#2563eb" font-weight="600">Momentum</text>
+    <rect x="220" y="152" width="108" height="32" rx="10" fill="#f97316" opacity="0.18" />
+    <text x="274" y="173" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#f97316" font-weight="600">Dilution</text>
+  </g>
+</svg>
