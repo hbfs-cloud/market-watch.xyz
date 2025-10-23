@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://ai.market-watch.xyz/</loc>
+    <loc>https://market-watch.xyz/</loc>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://ai.market-watch.xyz/?lang=fr</loc>
+    <loc>https://market-watch.xyz/?lang=fr</loc>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://ai.market-watch.xyz/?lang=ar</loc>
+    <loc>https://market-watch.xyz/?lang=ar</loc>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://ai.market-watch.xyz/?lang=es</loc>
+    <loc>https://market-watch.xyz/?lang=es</loc>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://ai.market-watch.xyz/?lang=zh</loc>
+    <loc>https://market-watch.xyz/?lang=zh</loc>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
