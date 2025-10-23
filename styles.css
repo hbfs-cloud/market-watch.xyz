@@ -8,6 +8,11 @@
     --accent-strong: rgba(37, 99, 235, 0.85);
     --text: #0f172a;
     --text-muted: #64748b;
+    --text-light: rgba(248, 250, 252, 0.85);
+    --border-slate: rgba(148, 163, 184, 0.2);
+    --border-white-soft: rgba(255, 255, 255, 0.35);
+    --gradient-blue-light: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(14, 165, 233, 0.08));
+    --gradient-blue-medium: linear-gradient(135deg, rgba(37, 99, 235, 0.12), rgba(14, 165, 233, 0.12));
     --radius: 18px;
     --shadow: 0 25px 45px rgba(15, 23, 42, 0.12);
 }
@@ -66,6 +71,8 @@ a:hover {
 .nav__title {
     font-weight: 600;
     letter-spacing: 0.02em;
+    font-size: 1rem;
+    color: var(--text);
 }
 
 @media (max-width: 900px) {
@@ -74,16 +81,10 @@ a:hover {
     }
 }
 
-
 .nav__logo {
     width: 36px;
     height: 36px;
     display: block;
-}
-
-.nav__title {
-    font-size: 1rem;
-    color: var(--text);
 }
 
 .nav__links {
@@ -1804,6 +1805,26 @@ body.rtl .education-data i {
     outline-offset: 2px;
 }
 
+.waitlist-field input.input--error {
+    border-color: #ef4444;
+    background: rgba(239, 68, 68, 0.1);
+}
+
+.waitlist-field input.input--error:focus {
+    outline-color: #ef4444;
+}
+
+.waitlist-field__error {
+    display: none;
+    font-size: 0.85rem;
+    color: #fecdd3;
+    margin-top: 0.25rem;
+}
+
+.waitlist-field__error:not(:empty) {
+    display: block;
+}
+
 .waitlist-status {
     min-height: 1.25rem;
     font-size: 0.9rem;
@@ -2317,5 +2338,12 @@ body.rtl .education-data i {
 @media (min-width: 721px) {
     .floating-cta {
         display: none;
+    }
+}
+
+/* Loading spinner animation */
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
     }
 }
