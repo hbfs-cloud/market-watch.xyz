@@ -766,7 +766,7 @@
                         <div class="card__icon" aria-hidden="true"><i class="ri-radar-line"></i></div>
                         <h3 class="card__title" data-i18n="features.scanner.title">Scanner Quotidien</h3>
                         <p class="card__body" data-i18n="features.scanner.body">Setups algorithmiques détectés chaque jour sur les actions. Analyse multi-stratégie avec suivi de performance et rétrospective historique complète.</p>
-                        <a class="card__link" href="https://articles.market-watch.xyz" target="_blank" rel="noopener">
+                        <a class="card__link articles-link" href="https://articles.market-watch.xyz/?tab=scanner" target="_blank" rel="noopener">
                             <span data-i18n="features.cta">Explorer</span>
                             <i class="ri-arrow-right-line" aria-hidden="true"></i>
                         </a>
@@ -775,7 +775,7 @@
                         <div class="card__icon" aria-hidden="true"><i class="ri-file-chart-line"></i></div>
                         <h3 class="card__title" data-i18n="features.reports.title">Rapports Hebdomadaires</h3>
                         <p class="card__body" data-i18n="features.reports.body">Analyse macro approfondie couvrant les marchés, secteurs, crypto, métaux et géopolitique. Une lecture structurée chaque semaine pour garder une longueur d'avance.</p>
-                        <a class="card__link" href="https://articles.market-watch.xyz" target="_blank" rel="noopener">
+                        <a class="card__link articles-link" href="https://articles.market-watch.xyz/?tab=weekly" target="_blank" rel="noopener">
                             <span data-i18n="features.cta">Explorer</span>
                             <i class="ri-arrow-right-line" aria-hidden="true"></i>
                         </a>
@@ -784,7 +784,7 @@
                         <div class="card__icon" aria-hidden="true"><i class="ri-graduation-cap-line"></i></div>
                         <h3 class="card__title" data-i18n="features.education.title">Formation en 3 Niveaux</h3>
                         <p class="card__body" data-i18n="features.education.body">Du débutant en 30 minutes à la maîtrise experte — des parcours structurés pour chaque niveau, avec plus de 28 guides disponibles.</p>
-                        <a class="card__link" href="https://articles.market-watch.xyz" target="_blank" rel="noopener">
+                        <a class="card__link articles-link" href="https://articles.market-watch.xyz/?tab=series" target="_blank" rel="noopener">
                             <span data-i18n="features.cta">Explorer</span>
                             <i class="ri-arrow-right-line" aria-hidden="true"></i>
                         </a>
@@ -1026,6 +1026,17 @@
                 try { localStorage.setItem(TOAST_KEY, '1'); } catch (_) {}
             });
         }
+
+        // Sync language to articles.market-watch.xyz (uses localStorage key 'mw-lang', supports fr/en)
+        function syncArticlesLang() {
+            var currentLang = langSelect ? langSelect.value : DEFAULT_LANG;
+            var articlesLang = (currentLang === 'en') ? 'en' : 'fr';
+            try { localStorage.setItem('mw-lang', articlesLang); } catch (_) {}
+        }
+
+        document.querySelectorAll('a.articles-link, a[href*="articles.market-watch.xyz"]').forEach(function (link) {
+            link.addEventListener('click', syncArticlesLang);
+        });
     })();
     </script>
 </body>
