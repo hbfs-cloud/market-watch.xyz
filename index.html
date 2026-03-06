@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -913,7 +913,7 @@
     (function () {
         var STORAGE_KEY  = 'mwai-site-lang';
         var TOAST_KEY    = 'marketwatch-lang-toast-dismissed';
-        var DEFAULT_LANG = 'fr';
+        var DEFAULT_LANG = 'en';
 
         var langSelect     = document.querySelector('[data-role="lang-select"]');
         var langCurrent    = document.querySelector('[data-role="lang-current"]');
@@ -1030,7 +1030,7 @@
         // Sync language to articles.market-watch.xyz (uses localStorage key 'mw-lang', supports fr/en)
         function syncArticlesLang() {
             var currentLang = langSelect ? langSelect.value : DEFAULT_LANG;
-            var articlesLang = (currentLang === 'en') ? 'en' : 'fr';
+            var articlesLang = (currentLang === 'fr') ? 'fr' : 'en';
             try { localStorage.setItem('mw-lang', articlesLang); } catch (_) {}
         }
 
