@@ -47,8 +47,8 @@ const translations = {
         'terminal.prompt': 'Analyze this ticker in depth:\n— Macro & sector context\n— Technical structure (S/R, trend)\n— Institutional flow & options flow\n— Upcoming catalysts and key risks\n— Grade A+ to F with conviction level',
         'terminal.output.label': 'Claude · Analysis',
         'terminal.output.text': '<strong>NVDA — Grade A+</strong> · High conviction<br>AI sector accelerating, breakout confirmed on institutional volumes. Bullish options flow, active insiders. Entry: 850–870, stop: 820, target: 950+.',
-        'footer.brand': 'Market Watch',
-        'footer.copy': '© {year} Market Watch · Financial intelligence for every trader.',
+        'footer.brand': 'DailyTickers',
+        'footer.copy': '© {year} DailyTickers · Financial intelligence for every trader.',
     },
     fr: {
         'nav.launch': 'Voir les Articles',
@@ -98,8 +98,8 @@ const translations = {
         'terminal.prompt': 'Analyse ce ticker en profondeur :\n— Contexte macro & sectoriel\n— Structure technique (S/R, tendance)\n— Flux institutionnels & options flow\n— Catalyseurs à venir et risques clés\n— Grade A+ à F avec niveau de conviction',
         'terminal.output.label': 'Claude · Analyse générée',
         'terminal.output.text': '<strong>NVDA — Grade A+</strong> · Conviction élevée<br>Secteur IA en accélération, breakout confirmé sur volumes institutionnels. Options flow haussier, insiders actifs. Zone d\'entrée : 850–870, stop : 820, cible : 950+.',
-        'footer.brand': 'Market Watch',
-        'footer.copy': '© {year} Market Watch · Intelligence financière pour tous les traders.',
+        'footer.brand': 'DailyTickers',
+        'footer.copy': '© {year} DailyTickers · Intelligence financière pour tous les traders.',
     },
     ar: {
         'nav.launch': 'تصفح المقالات',
@@ -149,8 +149,8 @@ const translations = {
         'terminal.prompt': 'حلّل هذه الورقة المالية بعمق :\n— السياق الكلي والقطاعي\n— الهيكل التقني (دعم/مقاومة، اتجاه)\n— تدفق المؤسسات وتدفق الخيارات\n— المحفزات القادمة والمخاطر الرئيسية\n— تقييم A+ إلى F مع مستوى القناعة',
         'terminal.output.label': 'Claude · التحليل',
         'terminal.output.text': '<strong>NVDA — تقييم A+</strong> · قناعة عالية<br>قطاع الذكاء الاصطناعي في تسارع، اختراق مؤكد على حجم مؤسسي. تدفق خيارات صاعد، المطلعون نشطون. منطقة الدخول: 850–870، وقف: 820، هدف: +950.',
-        'footer.brand': 'Market Watch',
-        'footer.copy': '© {year} Market Watch · ذكاء مالي لجميع المتداولين.',
+        'footer.brand': 'DailyTickers',
+        'footer.copy': '© {year} DailyTickers · ذكاء مالي لجميع المتداولين.',
     },
     es: {
         'nav.launch': 'Ver Artículos',
@@ -200,8 +200,8 @@ const translations = {
         'terminal.prompt': 'Analiza este ticker en profundidad:\n— Contexto macro y sectorial\n— Estructura técnica (S/R, tendencia)\n— Flujo institucional y de opciones\n— Catalizadores próximos y riesgos clave\n— Grado A+ a F con nivel de convicción',
         'terminal.output.label': 'Claude · Análisis generado',
         'terminal.output.text': '<strong>NVDA — Grado A+</strong> · Convicción alta<br>Sector IA en aceleración, breakout confirmado en volúmenes institucionales. Flujo de opciones alcista, insiders activos. Entrada: 850–870, stop: 820, objetivo: 950+.',
-        'footer.brand': 'Market Watch',
-        'footer.copy': '© {year} Market Watch · Inteligencia financiera para todos los traders.',
+        'footer.brand': 'DailyTickers',
+        'footer.copy': '© {year} DailyTickers · Inteligencia financiera para todos los traders.',
     },
     zh: {
         'nav.launch': '浏览文章',
@@ -251,7 +251,7 @@ const translations = {
         'terminal.prompt': '深度分析此股票代码：\n— 宏观与行业背景\n— 技术结构（支撑/阻力、趋势）\n— 机构资金流与期权流\n— 即将到来的催化剂和关键风险\n— A+至F评级及信念等级',
         'terminal.output.label': 'Claude · 分析结果',
         'terminal.output.text': '<strong>NVDA — A+评级</strong> · 高信念<br>AI行业加速发展，机构量确认突破。期权流看涨，内部人士活跃。入场区间：850–870，止损：820，目标：950+。',
-        'footer.brand': 'Market Watch',
-        'footer.copy': '© {year} Market Watch · 面向每一位交易者的金融情报。',
+        'footer.brand': 'DailyTickers',
+        'footer.copy': '© {year} DailyTickers · 面向每一位交易者的金融情报。',
     },
 };
