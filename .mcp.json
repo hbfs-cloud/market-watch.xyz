@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "pagemap": {
+      "command": "/Users/marketwatchxyz/.local/bin/uvx",
+      "args": ["retio-pagemap", "--allow-local"]
+    },
+    "browsermcp": {
+      "command": "npx",
+      "args": ["@browsermcp/mcp@latest"]
+    },
+    "real-browser": {
+      "command": "node",
+      "args": ["/Users/marketwatchxyz/.claude/mcp-servers/real-browser/index.js"],
+      "env": {
+        "CHROME_PROFILE": "/Users/marketwatchxyz/Library/Application Support/Google/Chrome/Profile 3"
+      }
+    }
+  }
+}
